@@ -33,12 +33,6 @@
         }
       endforeach;
       ?>
-<!--        <li class="">-->
-<!--            <a href="--><?//=site_url("admin/setting")?><!--"> <i class="fa fa-cogs"></i> <span>Cấu hình chung</span> </a>-->
-<!--        </li>-->
-<!--        <li class="">-->
-<!--            <a href="--><?//=site_url("report")?><!--"> <i class="fa fa-cogs"></i> <span>Báo cáo</span> </a>-->
-<!--        </li>-->
     </ul>
   </section>
 </aside>
