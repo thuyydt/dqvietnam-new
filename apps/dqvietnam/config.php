@@ -4,6 +4,8 @@ $root = str_replace('\\','/',dirname(__FILE__));
 
 if (getenv('CI_ENV') === 'production') {
     define('BASE_URL', 'https://dqvietnam.edu.vn/');
+    define('BASE_ADMIN_URL', 'https://dqvietnam.edu.vn/admin/');
+    define('BASE_SCRIPT_NAME', '/');
 } else {
     $domain = $_SERVER['HTTP_HOST'];
     $script_name = str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
@@ -11,9 +13,9 @@ if (getenv('CI_ENV') === 'production') {
     $base = "http://" . $domain;
     if (!empty($_SERVER['HTTPS'])) $base = "https://" . $domain;
     define('BASE_URL', $base);
+    define('BASE_ADMIN_URL', $base."admin/");
+    define('BASE_SCRIPT_NAME', $script_name);
 }
-define('BASE_ADMIN_URL', $base."admin/");
-define('BASE_SCRIPT_NAME', $script_name);
 define('MEDIA_NAME',"public/media/");
 define('MEDIA_PATH',$root.'/'.MEDIA_NAME);
 define('MEDIA_URL',BASE_URL . MEDIA_NAME);

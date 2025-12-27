@@ -102,9 +102,6 @@ services:
     networks:
       - app_network
     volumes:
-  redis_data:
-    driver: local
-
       - mongo_data:/data/db
 
   mysql:
@@ -118,6 +115,16 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     networks:
       - app_network
+
+volumes:
+  web_root:
+    driver: local
+  mongo_data:
+    driver: local
+  mysql_data:
+    driver: local
+  redis_data:
+    driver: local
 
 networks:
   app_network:

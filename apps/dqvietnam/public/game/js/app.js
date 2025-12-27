@@ -27,8 +27,6 @@ $(function () {
     })
 
     POPUP.init();
-    $('.lazy').Lazy();
-
 
     // $('.slider-thebai .game-04').slick({
     //     infinite: false,
