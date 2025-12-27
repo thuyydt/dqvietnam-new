@@ -34,17 +34,9 @@ class C19_Controller extends CI_Controller
 
 
         if (DEBUG_MODE == TRUE) {
-            //Load third party
-            $this->load->add_package_path(APPPATH . 'third_party', 'codeigniter-debugbar');
             $this->output->enable_profiler(TRUE);
         }
-        //set cấu hình debug cookie
-        if ($this->input->get('is_debug') === 'true') {
-            //Load third party
-            $this->load->add_package_path(APPPATH . 'third_party    ', 'codeigniter-debugbar');
-            set_cookie('is_debug', true, 60 * 60 * 24 * 30);
-            redirect($this->uri->uri_string());
-        }
+        
         if (get_cookie('is_debug', true) == true) {
             $this->output->enable_profiler(TRUE);
         }

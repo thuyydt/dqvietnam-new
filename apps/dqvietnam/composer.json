@@ -17,7 +17,6 @@
   },
   "require": {
     "php": ">=8.0",
-    "tan5en5/codeigniter-debugbar": "dev-master",
     "ext-json": "*",
     "ext-curl": "*",
     "nesbot/carbon": "^2.46",
