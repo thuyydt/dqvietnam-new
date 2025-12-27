@@ -1,6 +1,8 @@
 <header class="c-header">
   <div class="block">
-    <a class="navbar-brand" href=" <?= urlRoute() ?>"><img src="<?= $this->templates_assets ?>/images/logo-01.png" loading="lazy"/></a>
+    <a class="navbar-brand" href=" <?= urlRoute() ?>">
+      <img src="<?= $this->templates_assets ?>/images/logo-01.png" loading="lazy"/>
+    </a>
     <div class="account">
       <a href="<?= urlRoute('register') ?>" class="btn-header">Đăng Ký</a>
       <a href="<?= urlRoute('login') ?>" class="btn-header">Đăng Nhập</a>
@@ -25,12 +27,10 @@
   transition: all 0.5s ease;
   z-index: 1000;
 }
-
 .btn-header:hover,
 .btn-header:active {
   color: #fff;
   background-color: #fe3b35;
 }
-
 </style>
 <!-- End header -->

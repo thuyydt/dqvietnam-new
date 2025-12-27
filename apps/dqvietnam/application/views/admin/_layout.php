@@ -206,13 +206,8 @@ $session = $this->session->school_id;
 <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/4.23.6/antd-with-locales.min.js"
         integrity="sha512-8Tg6ryAtaX4wUGXz5iGz73vuTd80+hfQUGQMfucIKogTeIfCG2q6HUDuG7x36q066XH/+LB1MJ/QRJxb8YIFFA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
-        integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="<?= $this->templates_assets . 'js/apiV2.js?v=' . time() ?>"></script>
-
 <?php $version = "3.8";
 if (!empty($controller)): ?>
     <script src="<?= $this->templates_assets . 'js/pages/' . $controller . '.js?v=' . $version ?>"></script>

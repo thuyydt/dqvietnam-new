@@ -1,8 +1,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<meta content="<?= $this->security->get_csrf_hash() ?>" data-name="<?= $this->security->get_csrf_token_name() ?>"
-      name="csrf-token">
+<meta content="<?= $this->security->get_csrf_hash() ?>" data-name="<?= $this->security->get_csrf_token_name() ?>" name="csrf-token">
 <?php if (!empty($SEO)) : ?>
     <title><?php echo isset($SEO['meta_title']) ? $SEO['meta_title'] : ''; ?></title>
     <meta name="description" content="<?php echo isset($SEO['meta_description']) ? $SEO['meta_description'] : ''; ?>"/>
@@ -39,8 +38,6 @@
     <!--Meta Facebook Homepage-->
     <link rel="canonical" href="<?php echo base_url(); ?>"/>
 <?php endif; ?>
-
-
 <link rel="icon"
       href="<?php echo !empty($this->settings['favicon']) ? getImageThumb($this->settings['favicon'], 32, 32) : base_url("/public/favicon.ico"); ?>"
       sizes="32x32">

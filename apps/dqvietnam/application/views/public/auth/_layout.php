@@ -50,7 +50,7 @@ $version = time();
 
         @keyframes ldio-wdfcbcdcozs-r {
             0% {
-                transform: translate(74px, 40px) scale(1):
+                transform: translate(74px, 40px) scale(1);
             }
             100% {
                 transform: translate(74px, 40px) scale(0);
@@ -174,16 +174,13 @@ $version = time();
     ?>
 </div>
 
-<div id="notify-rotate"><img src="public/images/rotatedevice.jpg" alt="" loading="lazy"/></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
-        integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<div id="notify-rotate">
+    <img src="public/images/rotatedevice.jpg" alt="" loading="lazy"/>
+</div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="<?= $this->templates_assets . 'js/app.js?v=' . $version ?>"></script>
 <script src="<?= $this->templates_assets . 'js/version2.js?v=' . $version ?>"></script>
 <script src="<?= $this->templates_assets . 'js/custom.js?v=' . $version ?>"></script>
-
 <?= !empty($this->settings['embeb_js']) ? $this->settings['embeb_js'] : '' ?>
-
 </body>
-
 </html>

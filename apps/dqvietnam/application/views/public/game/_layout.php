@@ -2,6 +2,7 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 $version = "3.8";
 ?>
+
 <!DOCTYPE html>
 <html lang="<?= $this->lang_code ?>">
 <head>
@@ -26,7 +27,6 @@ $version = "3.8";
         <link rel="stylesheet" href="<?= $this->templates_assets . 'css/custom.css?v=' . time() ?>">
     <?php } ?>
     <link rel="stylesheet" href="<?= '/public/game/css/optimize.css?v=' . time() ?>">
-
     <script>
         var current_url = '<?= current_url() ?>',
             base_url = '<?= BASE_URL ?>',
@@ -50,14 +50,11 @@ $version = "3.8";
 <script defer src="/public/js/utils.js"></script>
 <script defer src="/public/game/list/js/main.js?v=2.7"></script>
 <script defer src="/public/js/common.js?v=<?php echo time() ?>"></script>
-
 <?php if ($type_lib == 'play') { ?>
     <script defer src="<?= $this->templates_assets . 'js/vue.js?v=' . time() ?>"></script>
 <?php } ?>
-
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js" integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script defer src="/public/auth/js/version2.js?v=<?= time() ?>"></script>
-
 <script>
     const onResetPwd = async (element) => {
         const formData = $('#form-update-password').serializeArray();
@@ -79,5 +76,4 @@ $version = "3.8";
     <img src="public/images/rotatedevice.jpg" alt="" loading="lazy"/>
 </div>
 </body>
-
 </html>

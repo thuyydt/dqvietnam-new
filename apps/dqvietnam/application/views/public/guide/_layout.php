@@ -28,19 +28,13 @@ $version = "3.8";
     </script>
     <?= !empty($this->settings['script_head']) ? $this->settings['script_head'] : '' ?>
 </head>
-
 <body>
-
 <?php echo !empty($main_content) ? $main_content : ''; ?>
-
 <div id="notify-rotate"><img src="public/images/rotatedevice.jpg" alt="" loading="lazy"/></div>
-
 <script src="<?= $this->templates_assets . 'js/app.js?v=' . time() ?>"></script>
 <script src="<?= $this->templates_assets . 'js/vue.js?v=' . time() ?>"></script>
 <?= !empty($this->settings['embeb_js']) ? $this->settings['embeb_js'] : '' ?>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
-        integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script defer src="/public/auth/js/version2.js?v=<?= time() ?>"></script>
 <script>
     let heartbeatInterval = null;
@@ -55,5 +49,4 @@ $version = "3.8";
     });
 </script>
 </body>
-
 </html>
