@@ -229,12 +229,105 @@ RUN chown -R www-data:www-data /app
 
 Việc phục vụ file tĩnh (đặc biệt là Video/Audio) là gánh nặng lớn nhất. Nếu để Web Server (PHP) xử lý hoặc Proxy ngược qua Nginx mà không tối ưu, hệ thống sẽ bị nghẽn băng thông ngay lập tức.
 
-### Phương án A: Sử dụng CDN (Khuyên dùng)
+### Phương án A: Sử dụng CDN (Tổng quan)
 Đây là phương án tối ưu nhất.
 1.  Code upload sẽ đẩy file lên **AWS S3 / MinIO / DigitalOcean Spaces**.
 2.  Dùng **Cloudflare** hoặc **AWS CloudFront** để cache và phân phối file.
 3.  Web Server chỉ trả về URL (ví dụ: `https://cdn.dqvietnam.com/images/abc.jpg`).
 4.  **Ưu điểm:** Giảm 90% tải băng thông cho server gốc.
+
+### Phương án A.1: Triển khai Cloudflare R2 (Khuyên dùng cho Video/Audio)
+Cloudflare R2 tương thích hoàn toàn với S3 API nhưng **miễn phí băng thông ra (egress fees)**, cực kỳ phù hợp cho site nhiều ảnh/video như DQVietnam.
+
+#### 1. Cài đặt thư viện AWS SDK cho PHP
+Vì R2 tương thích S3, ta dùng AWS SDK của PHP.
+Chạy lệnh trong thư mục `apps/dqvietnam`:
+```bash
+composer require aws/aws-sdk-php
+```
+
+#### 2. Cấu hình CodeIgniter
+Thêm vào `application/config/config.php` hoặc tạo file config riêng `application/config/r2.php`:
+
+```php
+$config['r2_account_id']  = 'YOUR_CLOUDFLARE_ACCOUNT_ID';
+$config['r2_access_key']  = 'YOUR_R2_ACCESS_KEY_ID';
+$config['r2_secret_key']  = 'YOUR_R2_SECRET_ACCESS_KEY';
+$config['r2_bucket_name'] = 'dqvietnam-media';
+$config['r2_endpoint']    = 'https://YOUR_CLOUDFLARE_ACCOUNT_ID.r2.cloudflarestorage.com';
+$config['r2_public_domain'] = 'https://media.dqvietnam.com'; // Domain custom đã map với R2 bucket
+```
+
+#### 3. Tạo Library Upload (application/libraries/R2_storage.php)
+```php
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+use Aws\S3\S3Client;
+use Aws\Exception\AwsException;
+
+class R2_storage {
+    protected $ci;
+    protected $s3;
+    protected $bucket;
+    protected $public_domain;
+
+    public function __construct() {
+        $this->ci =& get_instance();
+        $this->ci->load->config('r2'); // Load file config/r2.php nếu có
+
+        $this->bucket = $this->ci->config->item('r2_bucket_name');
+        $this->public_domain = $this->ci->config->item('r2_public_domain');
+
+        $this->s3 = new S3Client([
+            'region' => 'auto',
+            'endpoint' => $this->ci->config->item('r2_endpoint'),
+            'version' => 'latest',
+            'credentials' => [
+                'key'    => $this->ci->config->item('r2_access_key'),
+                'secret' => $this->ci->config->item('r2_secret_key'),
+            ],
+        ]);
+    }
+
+    public function upload_file($source_path, $destination_path, $mime_type = null) {
+        try {
+            $result = $this->s3->putObject([
+                'Bucket' => $this->bucket,
+                'Key'    => $destination_path, // Ví dụ: images/2023/avatar.jpg
+                'SourceFile' => $source_path,
+                'ContentType' => $mime_type,
+                'ACL'    => 'public-read', // Hoặc private tùy nhu cầu
+            ]);
+            
+            // Trả về URL public
+            return $this->public_domain . '/' . $destination_path;
+        } catch (AwsException $e) {
+            log_message('error', 'R2 Upload Error: ' . $e->getMessage());
+            return false;
+        }
+    }
+}
+```
+
+#### 4. Sử dụng trong Controller
+Thay vì `move_uploaded_file` vào thư mục local, bạn gọi library này:
+
+```php
+$this->load->library('r2_storage');
+$file_tmp = $_FILES['userfile']['tmp_name'];
+$file_name = 'uploads/' . time() . '_' . $_FILES['userfile']['name'];
+$mime = $_FILES['userfile']['type'];
+
+$url = $this->r2_storage->upload_file($file_tmp, $file_name, $mime);
+
+if ($url) {
+    // Lưu $url vào database
+    echo "Upload thành công: " . $url;
+} else {
+    echo "Upload thất bại";
+}
+```
 
 ### Phương án B: Tự host (Sử dụng Server 1 làm Static Server)
 Nếu bạn muốn tiết kiệm chi phí CDN và tự host, bạn **TUYỆT ĐỐI KHÔNG** để request ảnh/video đi qua Web Server (Server 3, 4). Hãy để Server 1 (Nginx LB) phục vụ trực tiếp.
