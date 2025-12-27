@@ -18,6 +18,13 @@ define('MINIFY', getenv('CI_MINIFY') === 'true');
 define('CMS_VERSION','4.3');
 define('MAINTAIN_MODE', getenv('CI_MAINTAIN_MODE') === 'true'); //Bảo trì
 define('DEBUG_MODE', getenv('CI_DEBUG') === 'true');
+
+// Version for CSS/JS caching
+if (DEBUG_MODE) {
+    define('ASSET_VERSION', time());
+} else {
+    define('ASSET_VERSION', '1.0.0');
+}
 define('CACHE_MODE', getenv('CI_CACHE') !== 'false');
 define('CACHE_TIMEOUT_LOGIN',1800);
 

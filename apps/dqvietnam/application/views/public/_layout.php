@@ -13,11 +13,11 @@
             "name": "web.vn"
         }
     </script>
-    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/app.css?v=' . time() ?>">
-    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/main.min.css?v=' . time() ?>">
-    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/optimize.css?v=' . time() ?>">
-    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/home.css?v=' . time() ?>">
-    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/responsive.css?v=' . time() ?>">
+    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/app.css?v=' . ASSET_VERSION ?>">
+    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/main.min.css?v=' . ASSET_VERSION ?>">
+    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/optimize.css?v=' . ASSET_VERSION ?>">
+    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/home.css?v=' . ASSET_VERSION ?>">
+    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/responsive.css?v=' . ASSET_VERSION ?>">
     <script>
         var current_url = '<?= current_url() ?>',
             base_url = '<?= BASE_URL ?>',
@@ -40,7 +40,7 @@
 
 <div id="fb-root"></div>
 
-<script defer src="<?= $this->templates_assets . 'js/app.js?v=' . time() ?>"></script>
+<script defer src="<?= $this->templates_assets . 'js/app.js?v=' . ASSET_VERSION ?>"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

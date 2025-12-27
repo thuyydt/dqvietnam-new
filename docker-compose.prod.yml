@@ -51,6 +51,7 @@ services:
       - ./apps/dqvietnam/dbbak:/app/dqvietnam/dbbak
       - ./backup-db:/app/backup-db
     environment:
+      - CI_ENV=production
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
