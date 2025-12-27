@@ -66,7 +66,7 @@ $tabs = [
                     </div>
                 </div>
                 <div class="d-flex flex-column align-items-center">
-                    <img width="250" src="/public/admin/img/report/logo.png" alt="logo"  loading="lazy"/>
+                    <img width="250" src="/public/admin/img/report/logo.png" alt="logo" loading="lazy"/>
                     <button class="btn mt-3 btn-download btn-default">Tải xuống <i class="fa fa-download"></i></button>
                 </div>
             </div>
