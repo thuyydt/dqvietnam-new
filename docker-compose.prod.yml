@@ -1,0 +1,115 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:latest
+    container_name: redis
+    restart: always
+    networks:
+      - app_network
+
+  nginx:
+    container_name: nginx
+    image: nginx:1.29.4-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Shared volume to access static files from web container
+      # Note: On first run, Docker copies data from 'web' image to this volume.
+      # For updates, you may need to remove this volume or sync files manually.
+      - web_root:/app
+      - ./conf/nginx:/etc/nginx/conf.d/
+      - ./conf/ssl:/etc/nginx/ssl
+      # Mount media files (Persistent data) - These must match the web service mounts
+      - ./apps/dqvietnam/public/media:/app/dqvietnam/public/media
+      - ./apps/dqvietnam/public/videos:/app/dqvietnam/public/videos
+      - ./apps/dqvietnam/public/audio:/app/dqvietnam/public/audio
+      - ./apps/dqvietnam/public/images:/app/dqvietnam/public/images
+      - ./apps/dqvietnam/public/download:/app/dqvietnam/public/download
+    restart: always
+    networks:
+      - app_network
+    depends_on:
+      - web
+
+  web:
+    container_name: web
+    image: dqvietnam-new-web:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      # Shared volume to expose code to nginx
+      - web_root:/app
+      # Mount media files (Persistent data)
+      - ./apps/dqvietnam/public/media:/app/dqvietnam/public/media
+      - ./apps/dqvietnam/public/videos:/app/dqvietnam/public/videos
+      - ./apps/dqvietnam/public/audio:/app/dqvietnam/public/audio
+      - ./apps/dqvietnam/public/images:/app/dqvietnam/public/images
+      - ./apps/dqvietnam/public/download:/app/dqvietnam/public/download
+      - ./apps/dqvietnam/dbbak:/app/dqvietnam/dbbak
+      - ./backup-db:/app/backup-db
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+      - CI_ENCRYPTION_KEY=${CI_ENCRYPTION_KEY}
+      - CI_DB_PASSWORD=${CI_DB_PASSWORD}
+      - CI_DEBUG=${CI_DEBUG}
+      - CI_MINIFY=${CI_MINIFY}
+      - CI_CACHE=${CI_CACHE}
+      - CI_MAINTAIN_MODE=${CI_MAINTAIN_MODE}
+      - DB_DEFAULT_USER=${DB_DEFAULT_USER}
+      - RSA_PRIVATE_KEY=${RSA_PRIVATE_KEY}
+      - RSA_PUBLIC_KEY=${RSA_PUBLIC_KEY}
+      - FB_SECRET=${FB_SECRET}
+      - FB_API=${FB_API}
+      - GG_SECRET=${GG_SECRET}
+      - GG_KEY=${GG_KEY}
+      - GG_API=${GG_API}
+      - GG_CAPTCHA_SITE_KEY=${GG_CAPTCHA_SITE_KEY}
+      - GG_CAPTCHA_SECRET_KEY=${GG_CAPTCHA_SECRET_KEY}
+      - JWT_CONSUMER_KEY=${JWT_CONSUMER_KEY}
+      - JWT_CONSUMER_SECRET=${JWT_CONSUMER_SECRET}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      - REDIS_PASS=${REDIS_PASS}
+      - REDIS_PREFIX=${REDIS_PREFIX}
+      - YANDEX_TRANSLATE_API_KEY=${YANDEX_TRANSLATE_API_KEY}
+    restart: always
+    networks:
+      - app_network
+
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    networks:
+      - app_network
+    volumes:
+      - mongo_data:/data/db
+
+  mysql:
+    container_name: mysql
+    image: mariadb:10.5
+    restart: always
+    command: --max_connections=1000 --wait_timeout=60 --interactive_timeout=60
+    volumes:
+      - mysql_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+  mongo_data:
+  web_root:
