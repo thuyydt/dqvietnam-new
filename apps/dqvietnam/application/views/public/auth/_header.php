@@ -1,6 +1,6 @@
 <header class="c-header">
   <div class="block">
-    <a class="navbar-brand" href=" <?= urlRoute() ?>"><img src="<?= $this->templates_assets ?>/images/logo-01.png"></a>
+    <a class="navbar-brand" href=" <?= urlRoute() ?>"><img src="<?= $this->templates_assets ?>/images/logo-01.png" loading="lazy"/></a>
     <div class="account">
       <a href="<?= urlRoute('register') ?>" class="btn-header">Đăng Ký</a>
       <a href="<?= urlRoute('login') ?>" class="btn-header">Đăng Nhập</a>

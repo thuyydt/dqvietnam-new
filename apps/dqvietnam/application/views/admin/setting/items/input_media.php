@@ -21,6 +21,6 @@
       <a class="fancybox" href="<?php echo getImageThumb($value) ?>"
          title="Click để xem ảnh">
         <img src="<?php echo getImageThumb($value, 64, 45) ?>"
-             width="30" height="22px"> </a></span>
+             width="30" height="22px" loading="lazy"/> </a></span>
   </div>
 </div>

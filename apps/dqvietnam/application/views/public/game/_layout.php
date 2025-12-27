@@ -81,7 +81,7 @@ $version = "3.8";
         clearInterval(heartbeatInterval);
     });
 </script>
-<div id="notify-rotate"><img src="public/images/rotatedevice.jpg" alt=""></div>
+<div id="notify-rotate"><img src="public/images/rotatedevice.jpg" alt="" loading="lazy"/></div>
 </body>
 
 </html>

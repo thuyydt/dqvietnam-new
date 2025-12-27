@@ -1,20 +1,12 @@
 <div class="img-bg">
-    <img class="lazy" data-src="../../../../public/images/element-03.png"/>
+    <img src="../../../../public/images/element-03.png" loading="lazy"/>
 </div>
 <footer class="footer">
     <div class="container">
         <div class="row inner-footer">
             <div class="col-12 col-lg-4">
-                <img data-src="../../../../public/images/logo-01.png" class="logo lazy"/>
+                <img src="../../../../public/images/logo-01.png" loading="lazy" class="logo"/>
                 <div class="info">
-                    <!-- <p class="strong">Công ty CP Truyền thông và Giáo dục Cầu Vồng</p>
-                    <p>
-                      <spans class="strong">Địa chỉ:</spans> LK05 HDI Home, 201 Nguyễn
-                      Tuân, Thanh Xuân, Hà Nội
-                    </p>
-                    <p><span class="strong">Tel:</span> 0904 255 215</p>
-                    <p><span class="strong" s>Email:</span> info@dqvietnam.edu.vn</p> -->
-
                     <p class="strong"> <?= $this->info->get('company[name]') ?></p>
                     <p>
                         <spans class="strong">Địa chỉ:</spans><?= $this->info->get('company[address]') ?>
@@ -55,18 +47,12 @@
                     <div class="col-12 col-xl-4 col-lg-4 col-md-12">
                         <h2><a href="">Hỗ trợ</a></h2>
                         <ul class="footer-list">
-<!--                            <li class="footer-item">-->
-<!--                                <a href="/ho-tro#account">Kích hoạt tài khoản</a>-->
-<!--                            </li>-->
                             <li class="footer-item">
                                 <a href="/ho-tro#study">Hướng dẫn học</a>
                             </li>
                             <li class="footer-item">
                                 <a href="/ho-tro#faq">Câu hỏi thường gặp</a>
                             </li>
-<!--                            <li class="footer-item">-->
-<!--                                <a href="/ho-tro#pay">Hướng dẫn thanh toán</a>-->
-<!--                            </li>-->
                         </ul>
                     </div>
                 </div>
@@ -92,14 +78,14 @@
             <div class="col-12 col-lg-2">
                 <div class="social flex-end">
                     <a href="<?= $this->info->get('social[facebook]') ?>" target="_blank">
-                        <img src="../../../../public/images/iconfacebook.png" alt="" srcset=""/>
+                        <img src="../../../../public/images/iconfacebook.png" alt="" srcset="" loading="lazy" />
                     </a>
                     <a href="<?= $this->info->get('social[youtube]') ?>" target="_blank">
-                        <img src="../../../../public/images/iconyoutube.png" alt="" srcset=""/>
+                        <img src="../../../../public/images/iconyoutube.png" alt="" srcset="" loading="lazy" />
                     </a>
                     <a href="<?= $this->info->get('social[instagram]') ?>"
                        target="_blank">
-                        <img src="../../../../public/images/iconinsta.png" alt="" srcset=""/>
+                        <img src="../../../../public/images/iconinsta.png" alt="" srcset="" loading="lazy" />
                     </a>
                 </div>
             </div>
@@ -122,29 +108,19 @@
 <!-- slide out -->
 
 <button class="onTop" id="onTop">
-    <img id="onTop" src="<?= $this->templates_assets ?>img/backtotop.svg"/>
+    <img id="onTop" src="<?= $this->templates_assets ?>img/backtotop.svg" loading="lazy"/>
 </button>
 
 <div class="socials">
     <a href="<?= $this->info->get('social[facebook]') ?>" target="_blank">
-        <img width="42" src="<?= $this->templates_assets ?>img/mes.svg"/>
+        <img width="42" src="<?= $this->templates_assets ?>img/mes.svg" loading="lazy"/>
     </a>
     <a href="<?= $this->info->get('social[zalo]') ?>" target="_blank">
-        <img width="48" src="<?= $this->templates_assets ?>img/zalo.svg"/>
+        <img width="48" src="<?= $this->templates_assets ?>img/zalo.svg" loading="lazy"/>
     </a>
     <a href="<?= $this->info->get('social[youtube]') ?>" target="_blank">
-        <img src="<?= $this->templates_assets ?>img/youtube.svg"/>
+        <img src="<?= $this->templates_assets ?>img/youtube.svg" loading="lazy"/>
     </a>
-
-    <!-- <a href="https://www.facebook.com/dqvietnam.org">
-    <img width="42" src="<?= $this->templates_assets ?>img/mes.svg" />
-  </a>
-  <a href="https://zalo.me/0376012702">
-    <img width="48" src="<?= $this->templates_assets ?>img/zalo.svg" />
-  </a>
-  <a href="https://www.youtube.com/channel/UCMKe_DE9k6RRsQExbZxtufA">
-    <img src="<?= $this->templates_assets ?>img/youtube.svg" />
-  </a> -->
 </div>
 <script>
     const toTop = document.getElementById('onTop');

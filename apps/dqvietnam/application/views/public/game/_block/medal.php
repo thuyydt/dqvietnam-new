@@ -9,8 +9,8 @@
                 $k = $i * 10; ?>
                 <div class="item">
                     <div class="item-wrapper <?= $turn > $k ? 'active' : '' ?>">
-                        <img src="public/game/list/images/ruong.png" class="statu-1">
-                        <img src="public/game/list/images/<?= $i ?>.png" class="statu-2">
+                        <img src="public/game/list/images/ruong.png" class="statu-1" loading="lazy"/>
+                        <img src="public/game/list/images/<?= $i ?>.png" class="statu-2" loading="lazy"/>
                     </div>
                 </div>
             <?php } ?>

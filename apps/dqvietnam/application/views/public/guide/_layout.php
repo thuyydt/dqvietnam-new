@@ -33,7 +33,7 @@ $version = "3.8";
 
 <?php echo !empty($main_content) ? $main_content : ''; ?>
 
-<div id="notify-rotate"><img src="public/images/rotatedevice.jpg" alt=""></div>
+<div id="notify-rotate"><img src="public/images/rotatedevice.jpg" alt="" loading="lazy"/></div>
 
 <script src="<?= $this->templates_assets . 'js/app.js?v=' . time() ?>"></script>
 <script src="<?= $this->templates_assets . 'js/vue.js?v=' . time() ?>"></script>

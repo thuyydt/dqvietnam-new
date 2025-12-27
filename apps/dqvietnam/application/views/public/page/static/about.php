@@ -51,9 +51,7 @@
 
           <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="box">
-              <img width="100%"
-                alt="Tiến sĩ Yuhyun Park &ndash; Viện trưởng Viện DQ Hoa Kỳ tại Diễn đ&agrave;n kinh tế thế giới"
-                class="img-fluid" src="/public/img/author.png" />
+              <img width="100%" alt="Tiến sĩ Yuhyun Park &ndash; Viện trưởng Viện DQ Hoa Kỳ tại Diễn đ&agrave;n kinh tế thế giới" class="img-fluid" src="/public/img/author.png" loading="lazy" />
               <p class="txt-normal2 text-center fz-20 fw-700">
                 Tiến sĩ Yuhyun Park &ndash; Viện trưởng Viện DQ Hoa Kỳ
                 tại Diễn đ&agrave;n kinh tế thế giới
@@ -62,8 +60,7 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="box">
-              <img width="100%" alt="Giấy c&ocirc;ng nhận bởi c&aacute;c tổ chức quốc tế" class="img-fluid"
-                src="/public/img/certification.png" />
+              <img width="100%" alt="Giấy c&ocirc;ng nhận bởi c&aacute;c tổ chức quốc tế" class="img-fluid" src="/public/img/certification.png" loading="lazy" />
               <p class="txt-normal2 text-center fz-20 fw-700">
                 Được c&ocirc;ng nhận bởi c&aacute;c tổ chức quốc tế
               </p>
@@ -77,7 +74,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
-              <div class="icon"><img src="/public/img/person.svg" /></div>
+              <div class="icon"><img src="/public/img/person.svg" loading="lazy" /></div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
                   Danh t&iacute;nh kỹ thuật số (Digital Identity)
@@ -91,7 +88,7 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
-              <div class="icon"><img src="/public/img/clock.svg" /></div>
+              <div class="icon"><img src="/public/img/clock.svg" loading="lazy" /></div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
                   Danh t&iacute;nh kỹ thuật số (Digital Identity)
@@ -105,7 +102,9 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
-              <div class="icon"><img src="/public/img/block.svg" /></div>
+              <div class="icon">
+                <img src="/public/img/block.svg" loading="lazy" />
+              </div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
                   An to&agrave;n kỹ thuật số (Digital Safety)
@@ -122,7 +121,9 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
-              <div class="icon"><img src="/public/img/def.svg" /></div>
+              <div class="icon">
+                <img src="/public/img/def.svg" loading="lazy" />
+              </div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
                   Bảo mật kỹ thuật số (Digital Security)
@@ -140,7 +141,9 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
-              <div class="icon"><img src="/public/img/min.svg" /></div>
+              <div class="icon">
+                <img src="/public/img/min.svg" loading="lazy" />
+              </div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
                   Tr&iacute; th&ocirc;ng minh cảm x&uacute;c kỹ thuật
@@ -157,7 +160,7 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
-              <div class="icon"><img src="/public/img/new.svg" /></div>
+              <div class="icon"><img src="/public/img/new.svg" loading="lazy" /></div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
                   Giao tiếp kỹ thuật số (Digital Communication)
@@ -171,7 +174,7 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
-              <div class="icon"><img src="/public/img/person.svg" /></div>
+              <div class="icon"><img src="/public/img/person.svg" loading="lazy" /></div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
                   Tr&igrave;nh độ kỹ thuật số (Digital Literacy)
@@ -186,7 +189,7 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
-              <div class="icon"><img src="/public/img/person.svg" /></div>
+              <div class="icon"><img src="/public/img/person.svg" loading="lazy" /></div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
                   Quyền kỹ thuật số (Digital Rights)
@@ -267,7 +270,7 @@
         </h2>
         <div class="row">
           <div class="col-12">
-            <img src="/public/img/info.png" class="img-fluid w-100" />
+            <img src="/public/img/info.png" class="img-fluid w-100" loading="lazy" />
           </div>
         </div>
       </div>
@@ -297,7 +300,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="../../../../public/images/dqlagi/learn/1.png" />
+                  <img src="../../../../public/images/dqlagi/learn/1.png" loading="lazy" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-1">
@@ -316,7 +319,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="../../../../public/images/dqlagi/learn/2.png" />
+                  <img src="../../../../public/images/dqlagi/learn/2.png" loading="lazy" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-2">
@@ -335,7 +338,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="../../../../public/images/dqlagi/learn/3.png" />
+                  <img src="../../../../public/images/dqlagi/learn/3.png" loading="lazy" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-3">
@@ -353,7 +356,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="../../../../public/images/dqlagi/learn/4.png" />
+                  <img src="../../../../public/images/dqlagi/learn/4.png" loading="lazy" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-4">
@@ -371,7 +374,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="../../../../public/images/dqlagi/learn/5.png" />
+                  <img src="../../../../public/images/dqlagi/learn/5.png" loading="lazy" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-5">
@@ -390,7 +393,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="../../../../public/images/dqlagi/learn/6.png" />
+                  <img src="../../../../public/images/dqlagi/learn/6.png" loading="lazy" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-6">
@@ -410,7 +413,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="../../../../public/images/dqlagi/learn/7.png" />
+                  <img src="../../../../public/images/dqlagi/learn/7.png" loading="lazy" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-7">
@@ -428,7 +431,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="../../../../public/images/dqlagi/learn/8.png" />
+                  <img src="../../../../public/images/dqlagi/learn/8.png" loading="lazy" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-8">

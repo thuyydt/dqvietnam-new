@@ -65,7 +65,7 @@
 
             <div class="right">
                 <div class="avatar-info">
-                    <div class="image-avatar"><img
+                    <div class="image-avatar"><img loading="lazy"
                                 src="<?= empty($account->avatar) ? 'public/game/images/avatar.png' : getImageThumb($account->avatar) ?>"
                                 alt="image-avatar"></div>
                     <label for="avatar" class="btn add-avatar">

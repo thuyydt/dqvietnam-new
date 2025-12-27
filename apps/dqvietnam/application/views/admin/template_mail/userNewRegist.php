@@ -175,11 +175,11 @@
 <body>
 <div class="email">
     <div class="logo">
-        <img src="cid:<?= $logo ?> alt=""/>
+        <img src="cid:<?= $logo ?>" alt="" loading="lazy" />
     </div>
     <div class="sub-title">Tạo tài khoản thành công</div>
     <div class="title">
-        <img src="cid:<?= $contentTitle ?>" alt=""/>
+        <img src="cid:<?= $contentTitle ?>" alt="" loading="lazy" />
     </div>
     <div class="txt">
         Để bắt đầu chương trình học, bạn vui lòng truy cập: <br/>
@@ -190,8 +190,8 @@
         <p>Mật khẩu: <?php echo $password ?? '___' ?></p></p>
     </div>
     <div class="amiga">
-        <img src="cid:<?= $hello ?>" alt=""/>
-        <img src="cid:<?= $amiga ?>" alt=""/>
+        <img src="cid:<?= $hello ?>" alt="" loading="lazy" />
+        <img src="cid:<?= $amiga ?>" alt="" loading="lazy" />
     </div>
     <div class="footer">
         <ul class="footer-inner">

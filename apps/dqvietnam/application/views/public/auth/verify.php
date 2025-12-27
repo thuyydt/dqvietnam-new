@@ -1,7 +1,7 @@
 <main class="c-main">
     <div class="c-accuracy">
         <div class="wrapper">
-            <img src="<?= $this->templates_assets ?>/images/element-10.png">
+            <img src="<?= $this->templates_assets ?>/images/element-10.png" loading="lazy"/>
             <h2 class="title">Xác thực tài khoản</h2>
             <div class="info">
                 Thông tin xác thực đã được gửi tới địa chỉ email<br>

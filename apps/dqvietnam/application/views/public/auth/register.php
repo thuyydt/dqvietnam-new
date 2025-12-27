@@ -1,5 +1,5 @@
-<img src="<?= $this->templates_assets ?>/images/element-06.png" class="element-bg element-bg-01">
-<img src="<?= $this->templates_assets ?>/images/element-07.png" class="element-bg element-bg-02">
+<img src="<?= $this->templates_assets ?>/images/element-06.png" class="element-bg element-bg-01" loading="lazy"/>
+<img src="<?= $this->templates_assets ?>/images/element-07.png" class="element-bg element-bg-02" loading="lazy"/>
 
 <main class="c-main v1">
 

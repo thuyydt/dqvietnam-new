@@ -6,9 +6,9 @@ $hero_banner = $this->info->get('hero_banner');
 <main class="hero-page">
     <section class="banner">
         <?php if ($hero_banner) { ?>
-            <img src="<?php echo $hero_banner ?>" alt="" srcset="" />
+            <img src="<?php echo $hero_banner ?>" alt="" srcset="" loading="lazy" />
         <?php } else { ?>
-            <img src="../../../../public/images/dqlagi/banner.jpg" alt="" srcset=""/>
+            <img src="../../../../public/images/dqlagi/banner.jpg" alt="" srcset="" loading="lazy" />
         <?php } ?>
     </section>
     <section class="section what">
@@ -43,11 +43,11 @@ $hero_banner = $this->info->get('hero_banner');
                     </ul>
                 </div>
                 <div class="col-lg-6">
-                    <img src="../../../../public/images/dqlagi/1.jpg" alt="minhhoa" srcset=""/>
+                    <img src="../../../../public/images/dqlagi/1.jpg" alt="minhhoa" srcset="" loading="lazy" />
                 </div>
                 <div class="row padding-top-24">
                     <div class="col-lg-6">
-                        <img src="../../../../public/images/dqlagi/ipad.jpg" alt="minhoa" srcset=""/>
+                        <img src="../../../../public/images/dqlagi/ipad.jpg" alt="minhhoa" srcset="" loading="lazy" />
                     </div>
                     <div class="col-lg-6">
                         <div class="title color-red">Người Hùng DQ là gì?</div>
@@ -85,7 +85,7 @@ $hero_banner = $this->info->get('hero_banner');
                     <div class="box">
                         <div class="inner-box">
                             <div class="icon">
-                                <img src="../../../../public/images/dqlagi/learn/1.png"/>
+                                <img src="../../../../public/images/dqlagi/learn/1.png" loading="lazy"/>
                             </div>
                             <div class="txt">
                                 <p class="item-title color-1">
@@ -104,7 +104,7 @@ $hero_banner = $this->info->get('hero_banner');
                     <div class="box">
                         <div class="inner-box">
                             <div class="icon">
-                                <img src="../../../../public/images/dqlagi/learn/2.png"/>
+                                <img src="../../../../public/images/dqlagi/learn/2.png" loading="lazy"/>
                             </div>
                             <div class="txt">
                                 <p class="item-title color-2">
@@ -124,7 +124,7 @@ $hero_banner = $this->info->get('hero_banner');
                     <div class="box">
                         <div class="inner-box">
                             <div class="icon">
-                                <img src="../../../../public/images/dqlagi/learn/3.png"/>
+                                <img src="../../../../public/images/dqlagi/learn/3.png" loading="lazy"/>
                             </div>
                             <div class="txt">
                                 <p class="item-title color-3">
@@ -142,7 +142,7 @@ $hero_banner = $this->info->get('hero_banner');
                     <div class="box">
                         <div class="inner-box">
                             <div class="icon">
-                                <img src="../../../../public/images/dqlagi/learn/4.png"/>
+                                <img src="../../../../public/images/dqlagi/learn/4.png" loading="lazy"/>
                             </div>
                             <div class="txt">
                                 <p class="item-title color-4">
@@ -161,7 +161,7 @@ $hero_banner = $this->info->get('hero_banner');
                     <div class="box">
                         <div class="inner-box">
                             <div class="icon">
-                                <img src="../../../../public/images/dqlagi/learn/5.png"/>
+                                <img src="../../../../public/images/dqlagi/learn/5.png" loading="lazy"/>
                             </div>
                             <div class="txt">
                                 <p class="item-title color-5">
@@ -181,7 +181,7 @@ $hero_banner = $this->info->get('hero_banner');
                     <div class="box">
                         <div class="inner-box">
                             <div class="icon">
-                                <img src="../../../../public/images/dqlagi/learn/6.png"/>
+                                <img src="../../../../public/images/dqlagi/learn/6.png" loading="lazy"/>
                             </div>
                             <div class="txt">
                                 <p class="item-title color-6">
@@ -201,7 +201,7 @@ $hero_banner = $this->info->get('hero_banner');
                     <div class="box">
                         <div class="inner-box">
                             <div class="icon">
-                                <img src="../../../../public/images/dqlagi/learn/7.png"/>
+                                <img src="../../../../public/images/dqlagi/learn/7.png" loading="lazy"/>
                             </div>
                             <div class="txt">
                                 <p class="item-title color-7">
@@ -219,7 +219,7 @@ $hero_banner = $this->info->get('hero_banner');
                     <div class="box">
                         <div class="inner-box">
                             <div class="icon">
-                                <img src="../../../../public/images/dqlagi/learn/8.png"/>
+                                <img src="../../../../public/images/dqlagi/learn/8.png" loading="lazy"/>
                             </div>
                             <div class="txt">
                                 <p class="item-title color-8">
@@ -250,17 +250,17 @@ $hero_banner = $this->info->get('hero_banner');
                 <div class="col-lg-8">
                     <div class="row">
                         <div class="col-lg-4 img-wrap">
-                            <img class="pp-img" src="../../../../public/images/dqlagi/pp1.png" alt="" srcset=""/>
+                            <img class="pp-img" src="../../../../public/images/dqlagi/pp1.png" alt="" srcset="" loading="lazy"/>
                             <div class="img-desc">
                                 • Series hoạt hình sinh động với đồ họa đặc sắc
                             </div>
                         </div>
                         <div class="col-lg-4 img-wrap">
-                            <img class="pp-img" src="../../../../public/images/dqlagi/pp2.png" alt="" srcset=""/>
+                            <img class="pp-img" src="../../../../public/images/dqlagi/pp2.png" alt="" srcset="" loading="lazy"/>
                             <div class="img-desc">• Trò chơi tương tác hấp dẫn</div>
                         </div>
                         <div class="col-lg-4 img-wrap">
-                            <img class="pp-img" src="../../../../public/images/dqlagi/pp3.png" alt="" srcset=""/>
+                            <img class="pp-img" src="../../../../public/images/dqlagi/pp3.png" alt="" srcset="" loading="lazy"/>
                             <div class="img-desc">• Trắc nghiệm tình huống đa dạng</div>
                         </div>
                     </div>
@@ -282,7 +282,7 @@ $hero_banner = $this->info->get('hero_banner');
                 </div>
                 <div class="row">
                     <div class="col-lg-4 item-step">
-                        <img src="../../../../public/images/dqlagi/pp4.png" alt="" srcset=""/>
+                        <img src="../../../../public/images/dqlagi/pp4.png" alt="" srcset="" loading="lazy"/>
                         <div class="img-desc">Bước 1: Học trước trên E-Learning</div>
                         <div class="img-content">
                             Xem các video hoạt hình tình huống, trả lời câu hỏi trắc
@@ -291,7 +291,7 @@ $hero_banner = $this->info->get('hero_banner');
                         </div>
                     </div>
                     <div class="col-lg-4 item-step">
-                        <img src="../../../../public/images/dqlagi/pp5.png" alt="" srcset=""/>
+                        <img src="../../../../public/images/dqlagi/pp5.png" alt="" srcset="" loading="lazy"/>
                         <div class="img-desc">Bước 2: Thảo luận</div>
                         <div class="img-content">
                             Trẻ thảo luận các tình huống với giáo viên hoặc cha mẹ, đặt
@@ -299,7 +299,7 @@ $hero_banner = $this->info->get('hero_banner');
                         </div>
                     </div>
                     <div class="col-lg-4 item-step">
-                        <img src="../../../../public/images/dqlagi/pp6.png" alt="" srcset=""/>
+                        <img src="../../../../public/images/dqlagi/pp6.png" alt="" srcset="" loading="lazy"/>
                         <div class="img-desc">
                             Bước 3: Hoàn tất môn học
                         </div>
@@ -338,7 +338,7 @@ $hero_banner = $this->info->get('hero_banner');
                             </div>
                         </div>
                         <div class="card-content">
-                            <img src="../../../../public/images/dqlagi/card.png" alt=""/>
+                            <img src="../../../../public/images/dqlagi/card.png" alt="" loading="lazy"/>
                         </div>
                     </div>
                     <div class="wrap-card">
@@ -355,7 +355,7 @@ $hero_banner = $this->info->get('hero_banner');
                         </div>
 
                         <div class="card-content">
-                            <img src="../../../../public/images/dqlagi/card2.png" alt="" srcset=""/>
+                            <img src="../../../../public/images/dqlagi/card2.png" alt="" srcset="" loading="lazy"/>
                         </div>
                     </div>
                 </div>
@@ -369,26 +369,23 @@ $hero_banner = $this->info->get('hero_banner');
             </div>
             <div class="row">
                 <div class="col-lg-4 give-item">
-                    <img class="img-loiich" src="../../../../public/images/dqlagi/loiich1.png" alt=""/>
+                    <img class="img-loiich" src="../../../../public/images/dqlagi/loiich1.png" alt="" loading="lazy"/>
                     <ul class="give-item-content shadow-card-blur">
                         <li class="item-list">
-                            <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt=""
-                                 srcset=""/>
+                            <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt="" srcset="" loading="lazy"/>
                             <span>Có thái độ, hành vi an toàn và trách nhiệm khi tham gia
                 trực tuyến.
               </span>
                         </li>
                         <li class="item-list">
-                            <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt=""
-                                 srcset=""/>
+                            <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt="" srcset="" loading="lazy"/>
                             <span>
                 Biết cân bằng thời gian tiếp xúc màn hình các thiết bị điện
                 tử, mạng xã hội.
               </span>
                         </li>
                         <li class="item-list">
-                            <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt=""
-                                 srcset=""/>
+                            <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt="" srcset="" loading="lazy"/>
                             <span>
                 Hiểu rõ hơn về sự hiện diện trực tuyến, quyền riêng tư và
                 bảo vệ dữ liệu tránh sự xâm nhập của mã độc, tin tặc…
@@ -398,23 +395,23 @@ $hero_banner = $this->info->get('hero_banner');
                 </div>
 
                 <div class="col-lg-4 give-item">
-                    <img class="img-loiich" src="../../../../public/images/dqlagi/loiich2.png" alt=""/>
+                    <img class="img-loiich" src="../../../../public/images/dqlagi/loiich2.png" alt="" loading="lazy"/>
                     <ul class="give-item-content shadow-card-blur">
                         <li class="item-list">
                             <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt=""
-                                 srcset=""/>
+                                 srcset="" loading="lazy"/>
                             <span>Phát triển tư duy phản biện, tỉnh táo trước những thông tin
                 trên mạng.
               </span>
                         </li>
                         <li class="item-list">
                             <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt=""
-                                 srcset=""/>
+                                 srcset="" loading="lazy"/>
                             <span> Biết đồng cảm với những cảm xúc của người khác. </span>
                         </li>
                         <li class="item-list">
                             <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt=""
-                                 srcset=""/>
+                                 srcset="" loading="lazy"/>
                             <span>Giảm thiểu các rủi ro khi trực tuyến và tận dụng các cơ hội
                 từ thế giới kỹ thuật số mang lại.
               </span>
@@ -423,11 +420,11 @@ $hero_banner = $this->info->get('hero_banner');
                 </div>
 
                 <div class="col-lg-4 give-item">
-                    <img class="img-loiich" src="../../../../public/images/dqlagi/loiich3.png" alt=""/>
+                    <img class="img-loiich" src="../../../../public/images/dqlagi/loiich3.png" alt="" loading="lazy"/>
                     <ul class="give-item-content shadow-card-blur">
                         <li class="item-list">
                             <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt=""
-                                 srcset=""/>
+                                 srcset="" loading="lazy"/>
                             <span>Các hướng dẫn sẽ giúp cho cha mẹ, người chăm sóc hay giáo
                 viên có thể học và chơi cùng với trẻ và hỗ trợ chúng trong
                 việc phát triển sự hiểu biết về thế giới kỹ thuật số và khả
@@ -443,27 +440,8 @@ $hero_banner = $this->info->get('hero_banner');
     <section class="section countdown">
         <div class="container flex-top-center">
             <div class="wrap-countdown text-center">
-<!--                            <div class="title color-red text-center">-->
-<!--                                Chương trình khuyến mãi gói cá nhân 30%-->
-<!--                            </div>-->
-<!--                            <p class="only-in text-center">Chỉ còn trong</p>-->
-<!--                            <div id="countdown">-->
-<!--                                <ul class="countdownTime">-->
-<!--                                    <li><span id="days"></span>Ngày</li>-->
-<!--                                    <li><span id="hours"></span>Giờ</li>-->
-<!--                                    <li><span id="minutes"></span>Phút</li>-->
-<!--                                    <li><span id="seconds"></span>Giây</li>-->
-<!--                                </ul>-->
-<!--                            </div>-->
-<!--                            <div class="countdown-"></div>-->
-<!--                            <form action="" class="form-submit">-->
-<!--                                <input type="text" placeholder="Họ và tên"/>-->
-<!--                                <input type="text" placeholder="Số điện thoại"/>-->
-<!--                                <button class="btn-register">ĐĂNG KÝ HỌC</button>-->
-<!--                            </form>-->
                 <a style="margin-top: 200px" href="https://docs.google.com/forms/d/e/1FAIpQLSdb79Q6Sm9ASZq8_RptQDsrhJlqMlgHU2MumLST3CfeRMt1Sw/viewform" class="btn-register">ĐĂNG KÝ HỌC</a>
-
-                        </div>
+            </div>
         </div>
     </section>
 </main>

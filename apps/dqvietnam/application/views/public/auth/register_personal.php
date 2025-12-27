@@ -4,7 +4,7 @@
       <a href="<?= base_url() ?>" class="btn-exit"></a>
       <div class="col left">
 
-        <div class="img v1"><img src="<?= $this->templates_assets ?>/images/element-08.png"></div>
+        <div class="img v1"><img src="<?= $this->templates_assets ?>/images/element-08.png" loading="lazy"/></div>
 
       </div>
       <div class="col right" style="padding: 69px 73.5px 25px 73.5px;">

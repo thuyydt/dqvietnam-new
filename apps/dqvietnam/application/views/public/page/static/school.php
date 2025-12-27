@@ -7,7 +7,7 @@
             <div class="title-letter">THƯ NGỎ</div>
           </div>
           <div class="col-lg-6 avatar-img">
-            <img class="avatar" src="../../../../public/images/schools/giaosu.png" alt="" srcset="" />
+            <img class="avatar" src="../../../../public/images/schools/giaosu.png" alt="" srcset="" loading="lazy"/>
             <div class="img-desc">NGND.PGS.TS. Nguyễn Võ Kỳ Anh</div>
           </div>
         </div>
@@ -85,25 +85,25 @@
           </div>
           <ul class="list">
             <li class="item-list">
-              <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt="" srcset="" />
+              <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt="" srcset="" loading="lazy"/>
               <span>Phát triển sự hiểu biết về thế giới kỹ thuật số </span>
             </li>
             <li class="item-list">
-              <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt="" srcset="" />
+              <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt="" srcset="" loading="lazy"/>
               <span>
                 Khám phá những hành vi tích cực cần thiết để trở nên tử tế
                 và tôn trọng trên mạng
               </span>
             </li>
             <li class="item-list">
-              <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt="" srcset="" />
+              <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt="" srcset="" loading="lazy"/>
               <span>
                 Kiểm soát các rủi ro trực tuyến, hành vi tiêu cực, tin tức
                 giả mạo, các cuộc tấn công mạng
               </span>
             </li>
             <li class="item-list">
-              <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt="" srcset="" />
+              <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt="" srcset="" loading="lazy"/>
               <span>
                 Biết tìm kiếm sự giúp đỡ từ những người đáng tin cậy
               </span>
@@ -111,38 +111,11 @@
           </ul>
         </div>
         <div class="col-lg-6">
-          <img src="../../../../public/images/dqlagi/soccon.gif" alt="" srcset="" />
+          <img src="../../../../public/images/dqlagi/soccon.gif" alt="" srcset="" loading="lazy"/>
         </div>
       </div>
     </div>
   </section>
-<!--  <section class="section documents">-->
-<!--    <div class="container">-->
-<!--      <div class="title color-red">-->
-<!--        Tài liệu cho nhà trường – Công cụ hỗ trợ giáo viên-->
-<!--      </div>-->
-<!--      <div class="row">-->
-<!--        <div class="col-lg-6 item-biasach">-->
-<!--          <img class="img-biasach" src="../../../../public/images/dqlagi/bia1.png" alt="" />-->
-<!--          <div class="desc-img">Sổ tay hướng dẫn cho nhà trường</div>-->
-<!--        </div>-->
-<!--        <div class="col-lg-6 item-biasach">-->
-<!--          <img class="img-biasach" src="../../../../public/images/dqlagi/bia2.png" alt="" />-->
-<!--          <div class="desc-img">-->
-<!--            Bài giảng 8 năng lực công dân kỹ thuật số - Dành cho giáo viên-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="row">-->
-<!--        <div class="col-12 bosach">-->
-<!--          <img src="../../../../public/images/dqlagi/bosach.png" alt="" />-->
-<!--          <div class="desc-img">-->
-<!--            Bộ sách 8 cuốn năng lực công dân kỹ thuật số - Dành cho học sinh-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
   <section class="section plan">
     <div class="container">
       <div class="title color-white">Lộ trình dạy và học tại trường</div>
@@ -340,7 +313,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="/public/img/bia-school.jpeg" alt="" srcset="" />
+          <img src="/public/img/bia-school.jpeg" alt="" srcset="" loading="lazy"/>
         </div>
       </div>
     </div>

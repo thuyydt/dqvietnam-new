@@ -40,15 +40,15 @@
           <div class="step-title">
             Bước 2: Xem video giới thiệu về Người hùng DQ
           </div>
-          <img src="../../../../public/images/supports/qr.png" alt="" srcset="" />
+          <img src="../../../../public/images/supports/qr.png" alt="" srcset="" loading="lazy"/>
           <div class="divider"></div>
           <div class="step-title">Bước 3: Thực hiện nhiệm vụ từ 1 – 80</div>
-          <img src="../../../../public/images/supports/ipad.png" alt="" srcset="" />
+          <img src="../../../../public/images/supports/ipad.png" alt="" srcset="" loading="lazy"/>
           <div class="divider"></div>
           <div class="step-title">
             Bước 4: Ôn tập kiến thức thông qua bộ học liệu
           </div>
-          <img src="../../../../public/images/supports/tailieu.png" alt="" srcset="" />
+          <img src="../../../../public/images/supports/tailieu.png" alt="" srcset="" loading="lazy"/>
         </div>
         <div class="tab-pane">
           <div class="step-title">1. DQ là viết tắt của gì?</div>
@@ -73,7 +73,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/1.png" />
+                    <img src="../../../../public/images/dqlagi/learn/1.png" loading="lazy"/>
                   </div>
                   <div class="txt">
                     <p class="item-title">
@@ -86,7 +86,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/5.png" />
+                    <img src="../../../../public/images/dqlagi/learn/5.png" loading="lazy"/>
                   </div>
                   <div class="txt">
                     <p class="item-title">Quản lý an ninh mạng</p>
@@ -97,7 +97,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/2.png" />
+                    <img src="../../../../public/images/dqlagi/learn/2.png" loading="lazy"/>
                   </div>
                   <div class="txt">
                     <p class="item-title">Quản lý bắt nạt trên mạng</p>
@@ -108,7 +108,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/6.png" />
+                    <img src="../../../../public/images/dqlagi/learn/6.png" loading="lazy"/>
                   </div>
                   <div class="txt">
                     <p class="item-title">Quản lý dấu chân kỹ thuật số</p>
@@ -119,7 +119,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/3.png" />
+                    <img src="../../../../public/images/dqlagi/learn/3.png" loading="lazy"/>
                   </div>
                   <div class="txt">
                     <p class="item-title">Quản lý quyền riêng tư</p>
@@ -130,7 +130,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/7.png" />
+                    <img src="../../../../public/images/dqlagi/learn/7.png" loading="lazy"/>
                   </div>
                   <div class="txt">
                     <p class="item-title">Tư duy phản biện</p>
@@ -141,7 +141,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/4.png" />
+                    <img src="../../../../public/images/dqlagi/learn/4.png" loading="lazy"/>
                   </div>
                   <div class="txt">
                     <p class="item-title">Danh tính kỹ thuật số</p>
@@ -152,7 +152,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/8.png" />
+                    <img src="../../../../public/images/dqlagi/learn/8.png" loading="lazy"/>
                   </div>
                   <div class="txt">
                     <p class="item-title">Cảm thông kỹ thuật số</p>
@@ -206,24 +206,24 @@
 <!--          <div class="step-title">-->
 <!--            Bước 1: Vào mục Đăng ký chọn gói khoá học-->
 <!--          </div>-->
-<!--          <img src="../../../../../public/images/supports/1.png" alt="" />-->
+<!--          <img src="../../../../../public/images/supports/1.png" alt="" loading="lazy"/>-->
 <!--          <div class="divider"></div>-->
 <!--          <div class="step-title">Bước 2: Nhập thông tin đăng ký</div>-->
 <!--          <div class="row">-->
 <!--            <div class="col-lg-6">-->
 <!--              <div class="desc text-center">• Đăng ký cá nhân</div>-->
-<!--              <img src="../../../../public/images/supports/step21.png" alt="" />-->
+<!--              <img src="../../../../public/images/supports/step21.png" alt="" loading="lazy"/>-->
 <!--            </div>-->
 <!--            <div class="col-lg-6">-->
 <!--              <div class="desc text-center">• Đăng ký trường học</div>-->
-<!--              <img src="../../../../public/images/supports/step22.png" alt="" />-->
+<!--              <img src="../../../../public/images/supports/step22.png" alt="" loading="lazy"/>-->
 <!--            </div>-->
 <!--          </div>-->
 <!--          <div class="divider"></div>-->
 <!--          <div class="step-title">-->
 <!--            Bước 3: Thanh toán theo STK hiển thị kèm mã thanh toán-->
 <!--          </div>-->
-<!--          <img src="../../../../public/images/supports/step3.png" alt="" />-->
+<!--          <img src="../../../../public/images/supports/step3.png" alt="" loading="lazy"/>-->
 <!--        </div>-->
       </div>
     </div>

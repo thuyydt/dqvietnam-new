@@ -38,7 +38,7 @@ $version = "3.9";
 </div>
 
 
-<div id="notify-rotate"><img src="public/images/rotatedevice.jpg" alt=""></div>
+<div id="notify-rotate"><img src="public/images/rotatedevice.jpg" alt="" loading="lazy"/></div>
 
 <script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>

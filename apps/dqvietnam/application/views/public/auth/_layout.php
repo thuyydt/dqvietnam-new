@@ -174,7 +174,7 @@ $version = time();
     ?>
 </div>
 
-<div id="notify-rotate"><img src="public/images/rotatedevice.jpg" alt=""></div>
+<div id="notify-rotate"><img src="public/images/rotatedevice.jpg" alt="" loading="lazy"/></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
         integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

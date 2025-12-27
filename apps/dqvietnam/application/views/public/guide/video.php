@@ -2,8 +2,8 @@
 
     <div class="media">
         <div class="media-wrapper">
-            <video controls autoplay controlsList="nodownload">
-                <source src="<?= $this->templates_assets ?>videos/video.mp4" type="video/mp4">
+            <video controls autoplay controlsList="nodownload" loading="lazy">
+                <source src="<?= $this->templates_assets ?>videos/video.mp4" type="video/mp4"  />
             </video>
         </div>
         <!-- auto play video -->

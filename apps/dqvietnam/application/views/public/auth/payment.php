@@ -80,8 +80,7 @@
                 <div class="col-md-6">
                     <div class="form-wrap">
                         <div class="radius">
-                            <img src="<?php echo $this->info->get('img_payleft') ?>" width="100%" class="img-fluid"/>
-<!--                            <img src="/public/img/left.png" width="100%" class="img-fluid"/>-->
+                            <img src="<?php echo $this->info->get('img_payleft') ?>" width="100%" class="img-fluid" loading="lazy"/>
                         </div>
                         <div class="input-group">
                             <input id="pay-code" placeholder="DQ02494" class="form-input"/>
@@ -93,7 +92,7 @@
                 <div class="col-md-6">
                     <div class="content-right">
                         <div class="img">
-                            <img src="<?php echo $this->info->get('img_payright') ?>" width="200" class="img-fluid"/>
+                            <img src="<?php echo $this->info->get('img_payright') ?>" width="200" class="img-fluid" loading="lazy"/>
                         </div>
                         <div class="content">
                             <?php $content =  $this->info->get('pay_content');
