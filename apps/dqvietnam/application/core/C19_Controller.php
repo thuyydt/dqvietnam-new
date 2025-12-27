@@ -37,9 +37,9 @@ class C19_Controller extends CI_Controller
             $this->output->enable_profiler(TRUE);
         }
         
-        if (get_cookie('is_debug', true) == true) {
-            $this->output->enable_profiler(TRUE);
-        }
+        // if (get_cookie('is_debug', true) == true) {
+        //     $this->output->enable_profiler(TRUE);
+        // }
 
         if (ACTIVE_REDIS == TRUE) {
             try {
