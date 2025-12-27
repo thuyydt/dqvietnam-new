@@ -14,7 +14,7 @@ class Game extends Public_Controller
 
         if (!empty($this->auth)) {
             $this->user_id = $this->auth->user_id;
-        } else if (empty($this->auth) && $_COOKIE['dq_try_play']) {
+        } else if (empty($this->auth) && !empty($_COOKIE['dq_try_play'])) {
             $this->user_id = $_COOKIE['dq_try_play'];
         } else {
             redirect('login');

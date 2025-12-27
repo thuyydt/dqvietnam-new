@@ -48,4 +48,6 @@ RUN apt-get update \
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 COPY conf/php.ini /usr/local/etc/php/conf.d/php-81.ini
+
+RUN chown -R www-data:www-data /data/php
 RUN chmod +x /usr/local/sbin/php-fpm

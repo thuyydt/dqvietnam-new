@@ -34,6 +34,10 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
       - CI_ENCRYPTION_KEY=${CI_ENCRYPTION_KEY}
       - CI_DB_PASSWORD=${CI_DB_PASSWORD}
+      - CI_DEBUG=${CI_DEBUG}
+      - CI_MINIFY=${CI_MINIFY}
+      - CI_CACHE=${CI_CACHE}
+      - CI_MAINTAIN_MODE=${CI_MAINTAIN_MODE}
       - DB_DEFAULT_USER=${DB_DEFAULT_USER}
       - RSA_PRIVATE_KEY=${RSA_PRIVATE_KEY}
       - RSA_PUBLIC_KEY=${RSA_PUBLIC_KEY}
@@ -61,8 +65,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
-    ports:
-      - "127.0.0.1:27017:27017"
+    # ports:
+    #   - "127.0.0.1:27017:27017"
     networks:
       - app_network
     volumes:

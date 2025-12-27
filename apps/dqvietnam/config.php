@@ -12,19 +12,19 @@ define('BASE_SCRIPT_NAME', $script_name);
 define('MEDIA_NAME',"public/media/");
 define('MEDIA_PATH',$root.'/'.MEDIA_NAME);
 define('MEDIA_URL',BASE_URL . MEDIA_NAME);
-define('MINIFY',FALSE);
+define('MINIFY', getenv('CI_MINIFY') === 'true');
 
 //CONFIG BASE
 define('CMS_VERSION','4.3');
-define('MAINTAIN_MODE',FALSE); //Bảo trì
-define('DEBUG_MODE', FALSE);
-define('CACHE_MODE',TRUE);
+define('MAINTAIN_MODE', getenv('CI_MAINTAIN_MODE') === 'true'); //Bảo trì
+define('DEBUG_MODE', getenv('CI_DEBUG') === 'true');
+define('CACHE_MODE', getenv('CI_CACHE') !== 'false');
 define('CACHE_TIMEOUT_LOGIN',1800);
 
 //CONFIG DB
 define('DB_DEFAULT_HOST','mysql');
-define('DB_DEFAULT_USER', getenv('DB_DEFAULT_USER') ?: 'root');
-define('DB_DEFAULT_PASSWORD', getenv('CI_DB_PASSWORD') ?: 'n0kuqThog5ar8jF3khxX');
+define('DB_DEFAULT_USER', getenv('DB_DEFAULT_USER'));
+define('DB_DEFAULT_PASSWORD', getenv('CI_DB_PASSWORD'));
 define('DB_DEFAULT_NAME','cauvong');
 define('PRIVATE_KEY', getenv('RSA_PRIVATE_KEY') ?: '');
 define('PUBLIC_KEY', getenv('RSA_PUBLIC_KEY') ?: '');

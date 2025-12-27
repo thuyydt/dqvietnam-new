@@ -80,7 +80,7 @@ $db['default'] = array(
     'database' => DB_DEFAULT_NAME,
     'dbdriver' => 'mysqli',
     'dbprefix' => 'c19_',
-    'pconnect' => FALSE,
+    'pconnect' => TRUE,
     'db_debug' => (ENVIRONMENT !== 'production'),
     'cache_on' => FALSE,
     'cachedir' => '',
