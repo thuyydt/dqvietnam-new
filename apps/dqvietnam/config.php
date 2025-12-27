@@ -1,12 +1,17 @@
 <?php
 
 $root = str_replace('\\','/',dirname(__FILE__));
-$domain = $_SERVER['HTTP_HOST'];
-$script_name = str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
-$domain .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
-$base = "http://" . $domain;
-if (!empty($_SERVER['HTTPS'])) $base = "https://" . $domain;
-define('BASE_URL', $base);
+
+if (getenv('CI_ENV') === 'production') {
+    define('BASE_URL', 'https://dqvietnam.edu.vn/');
+} else {
+    $domain = $_SERVER['HTTP_HOST'];
+    $script_name = str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
+    $domain .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
+    $base = "http://" . $domain;
+    if (!empty($_SERVER['HTTPS'])) $base = "https://" . $domain;
+    define('BASE_URL', $base);
+}
 define('BASE_ADMIN_URL', $base."admin/");
 define('BASE_SCRIPT_NAME', $script_name);
 define('MEDIA_NAME',"public/media/");

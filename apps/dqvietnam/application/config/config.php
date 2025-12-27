@@ -327,7 +327,11 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = getenv('CI_ENCRYPTION_KEY') ?: 'c19';
+$config['encryption_key'] = getenv('CI_ENCRYPTION_KEY');
+
+if (empty($config['encryption_key'])) {
+    die('CI_ENCRYPTION_KEY must be set in environment variables for security.');
+}
 
 /*
 |--------------------------------------------------------------------------

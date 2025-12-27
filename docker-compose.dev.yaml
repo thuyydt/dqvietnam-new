@@ -29,6 +29,7 @@ services:
     volumes:
       - ./apps:/app
     environment:
+      - CI_ENV=development
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
@@ -59,7 +60,7 @@ services:
       - app_network
 
   mongodb:
-    image: mongo
+    image: mongo:8.2
     container_name: mongodb
     restart: always
     environment:
@@ -72,6 +73,11 @@ services:
     volumes:
       # - ./db/mongod.conf:/etc/mongod.conf
       - mongo_data:/data/db
+    deploy: # Thêm resource limits
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
 
   mysql:
     container_name: mysql
