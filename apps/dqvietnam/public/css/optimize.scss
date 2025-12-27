@@ -1,0 +1,282 @@
+$redColor: #f45234;
+$boxTitle: #4764af;
+$normalColor: #324a6d;
+$normalColor2: #1c2448;
+$gold: #f4aa1a;
+$sky: #3cb6f4;
+$red: #ed444a;
+$purple: #9140ff;
+$blue: #366af6;
+$pink: #ff65a5;
+$green: #43d78b;
+$orange: #ff9041;
+.wrap-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gold {
+  color: $gold;
+}
+
+.sky {
+  color: $sky;
+}
+
+.red {
+  color: $red;
+}
+
+.purple {
+  color: $purple;
+}
+
+.blue {
+  color: $blue;
+}
+
+.pink {
+  color: $pink;
+}
+
+.green {
+  color: $green;
+}
+
+.orange {
+  color: $orange;
+}
+
+.onTop {
+  position: fixed;
+  bottom: 0;
+  right: -10px;
+  z-index: 11;
+  transition: 0.5s;
+  visibility: hidden;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.socials {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 10px;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin: 5px 0;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.txt-red {
+  color: $redColor;
+}
+
+.about-dq {
+  .heading {
+    background-image: url("../img/banner.gif");
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+  }
+
+  .text-scroll {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: #c9eb52;
+    color: black;
+    font-size: 24px;
+    text-transform: uppercase;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .fz-22 {
+    font-size: 22px;
+  }
+
+  .fz-40 {
+    font-size: 40px;
+  }
+
+  .fz-16 {
+    font-size: 16px;
+  }
+
+  .fz-20 {
+    font-size: 20px;
+  }
+
+  .lh-48 {
+    line-height: 48px;
+  }
+
+  .fw-700 {
+    font-weight: 700;
+  }
+
+  .fw-600 {
+    font-weight: 600;
+  }
+
+  .fz-28 {
+    font-size: 28px;
+  }
+
+  .fz-25 {
+    font-size: 25px;
+  }
+
+  .fz-48 {
+    font-size: 48px;
+  }
+
+  .fw-800 {
+    font-weight: 800;
+  }
+
+  .txt-normal {
+    color: $normalColor;
+  }
+
+  .txt-box {
+    color: $boxTitle;
+  }
+
+  .txt-normal2 {
+    color: $normalColor2;
+  }
+
+  .mt--50 {
+    margin-top: 50px;
+  }
+
+  .mt--100 {
+    margin-top: 100px;
+  }
+
+  .pb--100 {
+    padding-bottom: 100px;
+  }
+
+  .bg-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .bg-top {
+    background-position: top;
+  }
+
+  .bg-one {
+    background-image: url("../img/one.png");
+  }
+
+  .bg-two {
+    background-image: url("../img/two.png");
+  }
+
+  .bg-three {
+    background-image: url("../img/three.png");
+  }
+
+  .block-1 {
+    background-image: url("../img/playground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .fields {
+      .mg-top-60 {
+        margin-top: 60px;
+      }
+      .box {
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 25px;
+        background: #ffffff;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+        height: 100%;
+
+        &:hover {
+          box-shadow: 0 4px 4px rgba(16, 131, 247, 0.25);
+        }
+        .icon {
+          margin-top: -60px;
+          text-align: center;
+        }
+        .txt {
+          margin-top: 20px;
+          > p:first-child {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .block-2 {
+    background-image: url("/public/img/bg-block2.png");
+
+    .box {
+      background-size: 100% 100%;
+      max-width: 350px;
+      margin-bottom: 24px;
+
+      h4 {
+        text-transform: uppercase;
+      }
+
+      .content {
+        padding: 20px 20px 20px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .block-4 {
+    background-image: url("../img/bg-block4.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: non-repeat;
+  }
+  .wrap-content {
+    width: 100%;
+    padding-bottom: 60px;
+    .content-main {
+      margin: 0 auto;
+      width: 70%;
+      color: #4764af;
+      font-size: 40px;
+      line-height: 1.6;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+}

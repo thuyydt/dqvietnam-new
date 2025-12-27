@@ -1,0 +1,51 @@
+{
+  "name": "cms",
+  "version": "4.2.0",
+  "description": "cms Apecsoft",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "buffer": "^6.0.3",
+    "css-loader": "^6.7.1",
+    "jquery": "^3.7.1",
+    "npm-watch": "^0.11.0",
+    "pinia": "^3.0.4",
+    "popper.js": "^1.16.0",
+    "process": "^0.11.10",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "file-loader": "^6.2.0",
+    "jquery-ui": "^1.12.1",
+    "laravel-mix": "^6.0.43",
+    "script-loader": "^0.7.2",
+    "vue": "^3.2.33",
+    "vue-loader": "^16.8.3",
+    "vue-template-compiler": "^2.6.11",
+    "vuex": "^4.0.2"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/apecsoftasia/cms-core.git"
+  },
+  "keywords": [
+    "cms"
+  ],
+  "author": "askeyh3t",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/apecsoftasia/cms-core/issues"
+  },
+  "homepage": "https://gitlab.com/apecsoftasia/cms-core#readme"
+}

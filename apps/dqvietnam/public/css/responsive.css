@@ -1,0 +1,208 @@
+@media (max-width: 1199.98px) {
+  .c-section__home-04 .group .item .wrapper .inner .info .title-card {
+    font-size: 24px;
+    padding-bottom: 14px; }
+
+  .c-section__home-04 .group .item .wrapper .inner .info .description {
+    font-size: 16px; }
+
+  .about-dq .block-2 .bg-img .content h4 {
+    font-size: 22px; }
+
+  .about-dq .block-2 .bg-img .content p {
+    font-size: 16px; }
+
+  .block-4 .sub-title {
+    font-size: 24px; } }
+@media (max-width: 991.98px) {
+  .fz-48 {
+    font-size: 32px !important; }
+
+  .fz-40 {
+    font-size: 28px !important; }
+
+  .fz-24 {
+    font-size: 20px !important; }
+
+  .c-section__home-04 .group .item .wrapper .inner .info .title-card {
+    font-size: 20px;
+    padding-bottom: 12px; }
+
+  .c-section__home-04 .group .item .wrapper .inner .info {
+    padding: 16px; }
+
+  .footer-bottom > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+  .footer .footer-bottom .social {
+    display: none; }
+
+  .block-1 .box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+  .block-1 img {
+    width: 80%;
+    display: block; }
+
+  .about-dq .txt-normal {
+    text-align: justify; }
+
+  .about-dq .block-1 .fields .box .icon {
+    margin-top: -80px; }
+
+  .about-dq .wrap-content .content-main {
+    width: 100%; }
+
+  .fields .description {
+    display: none; }
+
+  .block-3 {
+    display: none; }
+
+  .block-4 .content .txt-normal {
+    display: none; }
+
+  .about-dq .wrap-content .content-main {
+    font-size: 32px; }
+
+  .schools .wrap-letter {
+    margin: 0 auto; }
+
+  .supports .tab-content .tab-pane .step-title {
+    font-size: 22px !important; } }
+@media (max-width: 767.98px) {
+  .fz-48 {
+    font-size: 28px !important; }
+
+  .fz-40 {
+    font-size: 24px !important; }
+
+  .fz-24 {
+    font-size: 18px !important; }
+
+  .img-bg img {
+    width: 70%;
+    height: auto; }
+
+  .block-2 .box {
+    width: 400px;
+    margin-top: 32px; }
+
+  .about-dq .block-2 .box .content {
+    padding-left: 120px; }
+
+  .about-dq .heading {
+    background-image: url("../img/banner.jpg"); }
+  .about-dq .wrap-content .content-main {
+    font-size: 32px; }
+
+  .hero-page .method-learn {
+    text-align: center !important; }
+    .hero-page .method-learn .mohinh .card-content {
+      flex: 0 0 100% !important;
+      max-width: 100% !important; }
+      .hero-page .method-learn .mohinh .card-content .desc {
+        text-align: start !important;
+        font-size: 16px; }
+    .hero-page .method-learn .mohinh .card-content:nth-child(even) {
+      display: none !important; }
+  .hero-page .give .item-list {
+    font-size: 16px; }
+
+  .countdown .wrap-countdown {
+    max-width: 80%; }
+    .countdown .wrap-countdown .countdownTime span {
+      font-size: 32px !important; }
+    .countdown .wrap-countdown .form-submit input {
+      font-size: 18px; }
+    .countdown .wrap-countdown .form-submit button.btn-register {
+      font-size: 18px;
+      padding: 12px; }
+
+  .schools .thoikhoabieu .box-title {
+    height: auto !important;
+    padding: 12px; }
+  .schools .thoikhoabieu .box-blan {
+    padding: 12px 6px; }
+
+  .schools .thoikhoabieu .box-content {
+    font-size: 18px;
+    height: auto; }
+
+  .reports .report {
+    padding: 0 12px 12px !important; }
+    .reports .report .desc {
+      font-size: 18px; } }
+@media (max-width: 575.98px) {
+  .fz-48 {
+    font-size: 24px !important; }
+
+  .fz-40 {
+    font-size: 20px !important; }
+
+  .fz-24 {
+    font-size: 16px !important; }
+
+  .img-bg img {
+    width: 70%;
+    height: auto; }
+
+  .c-section__home-01 .hero {
+    height: 700px; }
+
+  .main-runtext .holder .text-container a {
+    font-size: 22px;
+    line-height: 40px;
+    height: 40px; }
+
+  .c-section__home-04 .group {
+    display: flex;
+    justify-content: center; }
+    .c-section__home-04 .group .item {
+      width: 70%;
+      margin-bottom: 32px; }
+
+  .c-section__home-04 .group .item .wrapper .inner .info .title-card {
+    font-size: 24px;
+    padding-bottom: 0; }
+
+  .c-section__home-04 .group .item .wrapper .inner .info .description {
+    font-size: 16px; }
+
+  .about-dq .wrap-content .content-main {
+    font-size: 24px; }
+
+  .hero-page .method-learn {
+    padding-bottom: 50px; }
+  .hero-page .img-loiich {
+    margin-top: -100px !important; }
+  .hero-page .give {
+    padding-bottom: 32px !important; }
+    .hero-page .give .give-item {
+      margin: 0 !important;
+      max-width: 100%;
+      box-sizing: border-box; }
+      .hero-page .give .give-item .img-loiich {
+        display: none; }
+      .hero-page .give .give-item .give-item-content {
+        height: auto !important;
+        margin: 0px !important;
+        margin-bottom: 32px !important;
+        padding: 32px; }
+
+  .parents .banner .keywords {
+    display: none !important; }
+
+  .supports {
+    padding-bottom: 600px !important; }
+
+  .footer {
+    font-size: 14px !important; }
+    .footer .info p {
+      font-size: 14px !important; } }
+
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,32 @@
+
+svg.eye-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+svg.eye-password path#off {
+    display: block;
+}
+
+svg.eye-password path#on {
+    display: none;
+}
+
+svg.eye-password.on path#off {
+    display: none;
+}
+
+svg.eye-password.on path#on {
+    display: block;
+}
+
+.c-main .account-box .wrapper .right .form .form-group.spacing-10 {
+    margin-top: 10px !important;
+}
+
+.c-pay .wrapper .info {
+    font-size: 26px !important;
+}

@@ -1,0 +1,88 @@
+.bieu-do .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    font-size: 4.5vh;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.bieu-do .armorial .list .item{
+    position: absolute;
+    width: 4vh;
+}
+
+.bieu-do .armorial .list .item.s1{
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.bieu-do .armorial .list .item.s2{
+    top: 12%;
+    right: 12%;
+}
+
+.bieu-do .armorial .list .item.s3{
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.bieu-do .armorial .list .item.s4{
+    bottom: 12%;
+    right: 12%;
+}
+
+.bieu-do .armorial .list .item.s5{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.bieu-do .armorial .list .item.s6{
+    bottom: 12%;
+    left: 12%;
+}
+
+.bieu-do .armorial .list .item.s7{
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.bieu-do .armorial .list .item.s8{
+    top: 12%;
+    left: 12%;
+}
+
+.btn-01 {
+    background-color: #FE3B35;
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #FE3B35;
+    padding: 7.5px 16px;
+    cursor: pointer;
+}
+
+.btn-01.v1 {
+    color: rgba(65, 65, 65, 0.5)
+}
+
+.btn-01.v1:hover, .btn-01.v1:focus {
+    color: #fff
+}
+
+
+.btn-fixed {
+    position: fixed;
+    top: 10px;
+    /* left: 0; */
+    z-index: 10;
+    right: 10px;
+}

@@ -1,0 +1,16 @@
+{
+    "/public/guide/js/vue.js": "/public/guide/js/vue.js",
+    "/public/game/js/vue.js": "/public/game/js/vue.js",
+    "/public/js/app.js": "/public/js/app.js",
+    "/public/css/app.css": "/public/css/app.css",
+    "/public/auth/js/app.js": "/public/auth/js/app.js",
+    "/public/auth/css/app.css": "/public/auth/css/app.css",
+    "/public/guide/css/app.css": "/public/guide/css/app.css",
+    "/public/guide/js/app.js": "/public/guide/js/app.js",
+    "/public/game/css/app.css": "/public/game/css/app.css",
+    "/public/game/js/app.js": "/public/game/js/app.js",
+    "/public/game/list/css/app.css": "/public/game/list/css/app.css",
+    "/public/game/list/js/app.js": "/public/game/list/js/app.js",
+    "/public/report/css/app.css": "/public/report/css/app.css",
+    "/public/report/js/app.js": "/public/report/js/app.js"
+}

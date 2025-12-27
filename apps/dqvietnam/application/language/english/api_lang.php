@@ -1,0 +1,25 @@
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
+//form
+$lang['valid_email'] = 'Invalid Email';
+$lang['empty_email'] = 'Email is not blank';
+$lang['login_success'] = 'Successful login';
+$lang['lock_user'] = 'Your account has been locked';
+$lang['not_found_user'] = 'Account does not exist&excl; Please check back information&period;';
+$lang['error_method_api'] = 'Please check the method API&period;';
+$lang['message_unsuccess'] = 'Please check back for information&excl;';
+$lang['register_success'] = 'Sign up successful &excl;';
+$lang['empty_login'] = 'Please complete the login information';
+$lang['empty_fcm_id'] = 'Fcm&lowbar;id not be blank';
+$lang['empty_phone'] = 'Phone number cannot be empty';
+$lang['valid_phone_length'] = 'Telephone number must be from 6-12 number of';
+$lang['valid_phone_is_number'] = 'Phone number must be numeric';
+$lang['empty_password'] = 'Password cannot be empty';
+$lang['valid_password_length'] = 'MMật password must be between 6-32 characters';
+$lang['logout_success'] = 'Sign success&excl;';
+$lang['reset_pass_success'] = 'Reset password successful&excl;';
+$lang['reset_pass_error'] = 'Reset password not successful&excl;';
+$lang['update_success'] = 'Updated successfully&excl;';
+$lang['update_unsuccess'] = 'Update failed&excl;';
+$lang['empty_identity'] = 'Email is mandatory&period;';
+$lang['empty_pass'] = 'The password is mandatory&period;';
+$lang['empty_group_id'] = 'Type of customer is mandatory&period;';

@@ -1,0 +1,4 @@
+
+$(function () {
+    // Activation page scripts
+});

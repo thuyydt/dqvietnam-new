@@ -1,0 +1,183 @@
+.settings {
+  max-width: 500px;
+  max-height: 350px; }
+  .settings .info-user__wrapper .heading {
+    margin-bottom: 30px;
+    font-family: "VT323", monospace;
+    font-weight: bold;
+    font-size: 35px; }
+  .settings .info-user__wrapper .item {
+    margin-bottom: 20px; }
+    .settings .info-user__wrapper .item .action input {
+      width: 100%; }
+    .settings .info-user__wrapper .item .label {
+      font-family: "VT323", monospace;
+      font-size: 25px;
+      text-transform: uppercase;
+      color: black; }
+
+.current-space:after {
+  position: absolute;
+  z-index: -2;
+  content: '';
+  width: 100%;
+  height: 100%;
+  bottom: 75%;
+  left: 40px;
+  background-image: url("../images/co3.png");
+  background-repeat: no-repeat;
+  background-size: 80%; }
+
+.info-user .slider-thebai {
+  /* max-height: 250px; */
+  overflow-y: scroll;
+  overflow-x: hidden; }
+  .info-user .slider-thebai .game-04 {
+    display: flex; }
+    .info-user .slider-thebai .game-04 .item {
+      margin: 15px;
+      width: calc(100% / 4); }
+
+.slider video::-webkit-media-controls-timeline {
+  pointer-events: none; }
+
+@keyframes ldio-3mwthuf7dsa {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+.ldio-3mwthuf7dsa div {
+  box-sizing: border-box !important; }
+
+.ldio-3mwthuf7dsa > div {
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  top: 28px;
+  left: 28px;
+  border-radius: 50%;
+  border: 16px solid #000;
+  border-color: #e15b64 transparent #e15b64 transparent;
+  animation: ldio-3mwthuf7dsa 1s linear infinite; }
+
+.ldio-3mwthuf7dsa > div:nth-child(2), .ldio-3mwthuf7dsa > div:nth-child(4) {
+  width: 108px;
+  height: 108px;
+  top: 46px;
+  left: 46px;
+  animation: ldio-3mwthuf7dsa 1s linear infinite reverse; }
+
+.ldio-3mwthuf7dsa > div:nth-child(2) {
+  border-color: transparent #f8b26a transparent #f8b26a; }
+
+.ldio-3mwthuf7dsa > div:nth-child(3) {
+  border-color: transparent; }
+
+.ldio-3mwthuf7dsa > div:nth-child(3) div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(45deg); }
+
+.ldio-3mwthuf7dsa > div:nth-child(3) div:before, .ldio-3mwthuf7dsa > div:nth-child(3) div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -16px;
+  left: 48px;
+  background: #e15b64;
+  border-radius: 50%;
+  box-shadow: 0 128px 0 0 #e15b64; }
+
+.ldio-3mwthuf7dsa > div:nth-child(3) div:after {
+  left: -16px;
+  top: 48px;
+  box-shadow: 128px 0 0 0 #e15b64; }
+
+.ldio-3mwthuf7dsa > div:nth-child(4) {
+  border-color: transparent; }
+
+.ldio-3mwthuf7dsa > div:nth-child(4) div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(45deg); }
+
+.ldio-3mwthuf7dsa > div:nth-child(4) div:before, .ldio-3mwthuf7dsa > div:nth-child(4) div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -16px;
+  left: 30px;
+  background: #f8b26a;
+  border-radius: 50%;
+  box-shadow: 0 92px 0 0 #f8b26a; }
+
+.ldio-3mwthuf7dsa > div:nth-child(4) div:after {
+  left: -16px;
+  top: 30px;
+  box-shadow: 92px 0 0 0 #f8b26a; }
+
+.loadingio-spinner-double-ring-lqtfmr7tpk {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  z-index: 99;
+  overflow: hidden; }
+
+.ldio-3mwthuf7dsa {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+  /* see note above */ }
+
+.ldio-3mwthuf7dsa div {
+  box-sizing: content-box; }
+
+.current-flag {
+  position: absolute;
+  z-index: 0;
+  top: -80px;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.aylana {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-top: 6px solid cyan;
+  animation: anim 2s linear infinite;
+  animation-direction: all;
+  position: absolute; }
+
+.aylana:before {
+  content: "";
+  position: absolute;
+  top: 110px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: cyan; }
+
+@keyframes anim {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(-90deg); }
+  50% {
+    transform: rotate(-180deg); }
+  75% {
+    transform: rotate(-270deg); }
+  100% {
+    transform: rotate(-360deg); } }
+
+/*# sourceMappingURL=optimize.css.map */
