@@ -1,5 +1,5 @@
 <script type="text/babel">
-    const App = () => {
+  const App = () => {
         const [formSearch] = Form.useForm();
         const [form] = Form.useForm();
         const [accounts, setAccounts] = useState({pagination: null, dataSource: []});

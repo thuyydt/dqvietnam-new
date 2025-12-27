@@ -1,15 +1,15 @@
 <ul class="nav nav-pills">
   <?php if (!empty($this->config->item('cms_language'))) foreach ($this->config->item('cms_language') as $lang_code => $lang_name) { ?>
     <li<?php echo ($lang_code == 'vi') ? ' class="active"' : ''; ?>><a
-          href="#tab_<?php echo $id_image ?>_<?php echo $lang_code; ?>"
-          data-toggle="tab"><?php echo $lang_name; ?></a>
-    </li>
-  <?php } ?>
+        href="#tab_<?php echo $id_image ?>_<?php echo $lang_code; ?>"
+        data-toggle="tab"><?php echo $lang_name; ?></a>
+      </li>
+    <?php } ?>
 </ul>
 <div class="tab-content">
   <?php if (!empty($this->config->item('cms_language'))) foreach ($this->config->item('cms_language') as $lang_code => $lang_name) { ?>
     <div class="tab-pane <?php echo ($lang_code == 'vi') ? 'active' : ''; ?>"
-         id="tab_<?php echo $id_image ?>_<?php echo $lang_code; ?>">
+      id="tab_<?php echo $id_image ?>_<?php echo $lang_code; ?>">
       <div class="box-body">
         <div class="row">
           <?php
@@ -26,5 +26,4 @@
       </div>
     </div>
   <?php } ?>
-
 </div>

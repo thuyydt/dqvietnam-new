@@ -1,12 +1,12 @@
 <nav class="navbar navbar-left s-nav">
-    <ul class="nav">
-        <li class="nav-item"><a href="<?= BASE_URL ?>" class="nav-link">Trang Chủ</a></li>
-        <?= $right ?>
-    </ul>
+  <ul class="nav">
+    <li class="nav-item"><a href="<?= BASE_URL ?>" class="nav-link">Trang Chủ</a></li>
+    <?= $right ?>
+  </ul>
 </nav>
-<a class="navbar-brand" href="<?= BASE_URL ?>" aria-label="Trang chủ"><img src="public/images/logo-01.png" alt="DQ Vietnam Logo"/></a>
+<a class="navbar-brand" href="<?= BASE_URL ?>" aria-label="Trang chủ"><img src="public/images/logo-01.png" alt="DQ Vietnam Logo" /></a>
 <nav class="navbar navbar-right">
-    <ul class="nav">
-        <?= $left ?>
-    </ul>
+  <ul class="nav">
+    <?= $left ?>
+  </ul>
 </nav>

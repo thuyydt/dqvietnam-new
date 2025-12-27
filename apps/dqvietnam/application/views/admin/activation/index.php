@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed'); ?>
 <script type="text/babel">
-    const App = () => {
+  const App = () => {
         const [formSearch] = Form.useForm();
         const [form] = Form.useForm();
         const [codes, setCodes] = useState({pagination: null, dataSource: []});

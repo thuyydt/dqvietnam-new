@@ -4,7 +4,7 @@
       <a href="<?= base_url() ?>" class="btn-exit"></a>
       <div class="col left">
 
-        <div class="img v1"><img src="<?= $this->templates_assets ?>/images/element-08.png" loading="lazy"/></div>
+        <div class="img v1"><img src="<?= $this->templates_assets ?>/images/element-08.png" loading="lazy" /></div>
 
       </div>
       <div class="col right" style="padding: 69px 73.5px 25px 73.5px;">
@@ -21,10 +21,10 @@
               <input name="username" type="text" class="form-control input-email" placeholder="Email (Cha/Me) ">
               <!-- <div class="form-text">Thông báo lỗi</div> -->
             </div>
-              <div class="form-group spacing-10">
-                  <input name="phone" type="text" class="form-control input-account" placeholder="Số điện thoại">
-                  <!-- <div class="form-text">Thông báo lỗi</div> -->
-              </div>
+            <div class="form-group spacing-10">
+              <input name="phone" type="text" class="form-control input-account" placeholder="Số điện thoại">
+              <!-- <div class="form-text">Thông báo lỗi</div> -->
+            </div>
             <div class="form-group spacing-10">
               <input name="birthday" type="date" class="form-control input-date" placeholder="Ngày sinh">
               <!-- <div class="form-text">Thông báo lỗi</div> -->

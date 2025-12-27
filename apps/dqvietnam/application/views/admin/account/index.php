@@ -1,8 +1,7 @@
 <?php
-
 defined('BASEPATH') or exit('No direct script access allowed'); ?>
 <script type="text/babel">
-    const SCHOOL = '<?= isset($school_id) ? $school_id : '' ?>';
+  const SCHOOL = '<?= isset($school_id) ? $school_id : '' ?>';
     const IS_ACCOUNTANT = '<?php echo isset($userInfo->roleName) ? $userInfo->roleName === 'Accountant' : false ?>';
 
     const App = () => {

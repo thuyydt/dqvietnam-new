@@ -2,7 +2,7 @@
 
 defined('BASEPATH') or exit('No direct script access allowed'); ?>
 <script type="text/babel">
-    const SCHOOL = '<?= isset($school_id) ? $school_id : '' ?>';
+  const SCHOOL = '<?= isset($school_id) ? $school_id : '' ?>';
     const App = () => {
         const [formSearch] = Form.useForm();
         const [payments, setPayments] = useState({pagination: null, dataSource: []});

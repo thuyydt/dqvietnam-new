@@ -1,5 +1,5 @@
 <script type="text/babel">
-    const App = () => {
+  const App = () => {
         const {Image} = antd;
         const [state, setState] = useState({
             logo: '',

@@ -32,15 +32,6 @@ class C19_Controller extends CI_Controller
         //Load database
         $this->load->database();
 
-
-        if (DEBUG_MODE == TRUE) {
-            $this->output->enable_profiler(TRUE);
-        }
-        
-        // if (get_cookie('is_debug', true) == true) {
-        //     $this->output->enable_profiler(TRUE);
-        // }
-
         if (ACTIVE_REDIS == TRUE) {
             try {
                 $this->redis = new \Redis();

@@ -15,12 +15,12 @@
         if (!empty($value['children'])) {
           $childs = $this->load->view($this->template_path . '_tree_view', $value, TRUE);
         }
-          if (!empty($childs) || in_array($value['controller'], $cmsNotPer) || perUserLogin($value['href'], $cmsCusPer, $cmsPerMethod)) {
+        if (!empty($childs) || in_array($value['controller'], $cmsNotPer) || perUserLogin($value['href'], $cmsCusPer, $cmsPerMethod)) {
           if (!empty($childs)) {
             $iconTree = '<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>';
             $childs = '<ul class="treeview-menu">' . $childs . '</ul>';
           }
-          ?>
+      ?>
           <li class="<?= $value['class'] ?>">
             <a href="<?= empty($value['class']) ? BASE_ADMIN_URL . $value['href'] : '#' ?>">
               <i class="<?= $value['icon'] ?>"></i>
@@ -29,7 +29,7 @@
             </a>
             <?= $childs ?>
           </li>
-          <?php
+      <?php
         }
       endforeach;
       ?>
