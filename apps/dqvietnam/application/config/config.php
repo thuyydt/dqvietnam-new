@@ -532,3 +532,16 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+/*
+|--------------------------------------------------------------------------
+| Yandex Translate API Key
+|--------------------------------------------------------------------------
+|
+| API Key for Yandex Translate service.
+|
+*/
+$config['yandex_translate_api_key'] = '';
+if (getenv('YANDEX_TRANSLATE_API_KEY')) {
+    $config['yandex_translate_api_key'] = getenv('YANDEX_TRANSLATE_API_KEY');
+}

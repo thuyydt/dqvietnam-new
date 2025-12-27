@@ -49,7 +49,7 @@ class Translate extends Admin_Controller
     {
         $handler = curl_init();
         curl_setopt($handler, CURLOPT_RETURNTRANSFER, true);
-        $parameters['key'] = ''; // TODO: Add API Key via config or env
+        $parameters['key'] = $this->config->item('yandex_translate_api_key');
         $parameters['lang'] = 'vi-' . $code;
 
         $data = $this->input->post('text');
