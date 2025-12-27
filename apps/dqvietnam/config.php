@@ -23,7 +23,7 @@ define('MINIFY', getenv('CI_MINIFY') === 'true');
 
 //CONFIG BASE
 define('CMS_VERSION','4.3');
-define('MAINTAIN_MODE', getenv('CI_MAINTAIN_MODE') === 'true'); //Bảo trì
+define('MAINTAIN_MODE', getenv('CI_MAINTAIN_MODE') === 'true'); // Enable or disable maintain mode
 define('DEBUG_MODE', getenv('CI_DEBUG') === 'true');
 
 // Version for CSS/JS caching

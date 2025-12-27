@@ -89,8 +89,6 @@ class Account extends Admin_Controller
         if (!$data['info']) {
             throw new Exception("Tài khoản không tồn tại");
         }
-        /*Breadcrumbs*/
-        $data['main_content'] = $this->load->view($this->template_path . $this->_name_controller . '/detail', $data, TRUE);
         $this->load->view($this->template_path . '/account/report/layout', $data);
     }
 
