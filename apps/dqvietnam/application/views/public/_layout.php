@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="<?= $this->lang_code ?>">
-
 <head>
     <base href="<?= BASE_URL ?>">
     <?php $this->load->view($this->template_path . '_meta') ?>
@@ -9,8 +8,8 @@
             "@context": "http:\/\/schema.org",
             "@type": "WebSite",
             "@id": "#website",
-            "url": "https:\/\/web.vn\/",
-            "name": "web.vn"
+            "url": "<?= base_url() ?>",
+            "name": "DQ Vietnam"
         }
     </script>
     <link rel="stylesheet" href="<?= $this->templates_assets . 'css/app.css?v=' . ASSET_VERSION ?>">
@@ -27,9 +26,7 @@
     </script>
     <?= !empty($this->settings['script_head']) ? $this->settings['script_head'] : '' ?>
 </head>
-
 <body>
-
 <div class="app">
     <?php
     $this->load->view($this->template_path . '_header');
@@ -37,12 +34,8 @@
     $this->load->view($this->template_path . '_footer');
     ?>
 </div>
-
 <div id="fb-root"></div>
-
 <script src="<?= $this->templates_assets . 'js/app.js?v=' . ASSET_VERSION ?>"></script>
-
 <?= !empty($this->settings['embeb_js']) ? $this->settings['embeb_js'] : '' ?>
-
 </body>
 </html>

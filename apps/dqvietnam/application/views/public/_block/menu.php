@@ -4,7 +4,7 @@
         <?= $right ?>
     </ul>
 </nav>
-<a class="navbar-brand" href="#"><img src="public/images/logo-01.png" loading="lazy"/></a>
+<a class="navbar-brand" href="<?= BASE_URL ?>" aria-label="Trang chủ"><img src="public/images/logo-01.png" alt="DQ Vietnam Logo"/></a>
 <nav class="navbar navbar-right">
     <ul class="nav">
         <?= $left ?>

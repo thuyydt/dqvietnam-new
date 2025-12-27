@@ -54,25 +54,27 @@ function menus_main($classname = '', $id = '', $submenuclass = '')
 {
     $ci =& get_instance();
 
-    //if (!$ci->cache->get('menu_main')) {
-
-    $ci->load->model('Pages_model');
-    $ci->load->library('NavsMenu');
     $ci->load->helper('link');
     $ci->load->helper('url');
 
-    $pageModel = new Pages_model();
+    if (!$data = $ci->cache->get('menu_main_data')) {
+        $ci->load->model('Pages_model');
+        $ci->load->library('NavsMenu');
+        
+        $pageModel = new Pages_model();
 
-    $data = $pageModel->getData([
-        'where' => [
-            'status' => 1,
-            'layout' => 'page',
-            'location !=' => 0
-        ],
-        'order' => [
-            'sort' => 'ASC'
-        ]
-    ]);
+        $data = $pageModel->getData([
+            'where' => [
+                'status' => 1,
+                'layout' => 'page',
+                'location !=' => 0
+            ],
+            'order' => [
+                'sort' => 'ASC'
+            ]
+        ]);
+        $ci->cache->save('menu_main_data', $data, 60 * 60 * 30);
+    }
 
     $right = $left = '';
     $slug = $ci->uri->segment(1);
@@ -88,7 +90,7 @@ function menus_main($classname = '', $id = '', $submenuclass = '')
     }
 
     $menuHtml = $ci->load->view($ci->template_path . '_block/menu', compact('right', 'left'), TRUE);
-    $ci->cache->save('menu_main', $menuHtml, 60 * 60 * 30);
+    // $ci->cache->save('menu_main', $menuHtml, 60 * 60 * 30);
     // }
     //$menuHtml = $ci->cache->get('menu_main');
     return $menuHtml;

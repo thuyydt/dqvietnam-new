@@ -19,6 +19,14 @@ class Home extends Public_Controller
     {
         $data= [];
 
+        $data['SEO'] = [
+            'meta_title' => 'Trang chủ - DQ Vietnam',
+            'meta_description' => 'DQ Vietnam - Nền tảng giáo dục và truyền thông hàng đầu. Cung cấp các giải pháp học tập và phát triển kỹ năng toàn diện.',
+            'meta_keyword' => 'DQ Vietnam, giáo dục, truyền thông, học trực tuyến, kỹ năng sống',
+            'url' => base_url(),
+            'image' => base_url('public/images/logo-01.png')
+        ];
+
         $data['pages'] = $this->_data_page->getPageByLayout(['hero', 'rules', 'privacy', 'support', 'active_account', 'tutorial', 'faqs', 'payment_guide']);
         $data['pages'] = convert_field_to_key($data['pages'], 'layout');
 
