@@ -81,7 +81,12 @@
         <div class="col-md-6">
           <div class="form-wrap">
             <div class="radius">
-              <img src="<?php echo $this->info->get('img_payleft') ?>" width="100%" class="img-fluid" loading="lazy" />
+              <?php 
+                $img_left = $this->info->get('img_payleft');
+                // Check if URL is absolute (contains http:// or https://)
+                $img_left_url = (strpos($img_left, 'http://') === 0 || strpos($img_left, 'https://') === 0) ? $img_left : base_url($img_left);
+              ?>
+              <img src="<?php echo $img_left_url ?>" width="100%" class="img-fluid" loading="lazy" />
             </div>
             <div class="input-group">
               <input id="pay-code" placeholder="DQ02494" class="form-input" />
@@ -93,7 +98,12 @@
         <div class="col-md-6">
           <div class="content-right">
             <div class="img">
-              <img src="<?php echo $this->info->get('img_payright') ?>" width="200" class="img-fluid" loading="lazy" />
+              <?php 
+                $img_right = $this->info->get('img_payright');
+                // Check if URL is absolute (contains http:// or https://)
+                $img_right_url = (strpos($img_right, 'http://') === 0 || strpos($img_right, 'https://') === 0) ? $img_right : base_url($img_right);
+              ?>
+              <img src="<?php echo $img_right_url ?>" width="200" class="img-fluid" loading="lazy" />
             </div>
             <div class="content">
               <?php $content =  $this->info->get('pay_content');
