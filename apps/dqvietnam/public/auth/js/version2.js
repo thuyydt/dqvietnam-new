@@ -49,7 +49,24 @@ const CLIENT_V2 = {
                     messages.some(value => Message.show(value.shift(), true));
                 }
             } catch (e) {
-                Message.show(e.message, true);
+                // Handle API error response
+                if (e.response && e.response.data) {
+                    const errorData = e.response.data;
+                    if (errorData.message) {
+                        // If message is an object (validation errors)
+                        if (typeof errorData.message === 'object') {
+                            const messages = Object.values(errorData.message);
+                            messages.forEach(msg => Message.show(msg, true));
+                        } else {
+                            // If message is a string
+                            Message.show(errorData.message, true);
+                        }
+                    } else {
+                        Message.show(e.message, true);
+                    }
+                } else {
+                    Message.show(e.message, true);
+                }
             } finally {
                 setLoadPage(false);
                 $(element).removeAttr('disabled')

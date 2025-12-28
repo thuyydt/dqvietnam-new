@@ -203,37 +203,43 @@ class Auth extends C19_Controller
 
   public function register()
   {
-    $this->load->library('form_validation');
-    $this->form_validation->set_rules('username', 'Email', 'required|valid_email|is_unique[account.username]');
-    $this->form_validation->set_rules('password', 'Mật khẩu', 'required|min_length[6]');
-    $this->form_validation->set_rules('re_password', 'Nhập lại mật khẩu', 'required|matches[password]');
-    $this->form_validation->set_rules('phone', 'Số điện thoại', 'required|numeric|exact_length[10]');
-    $this->form_validation->set_rules('birthday', 'Ngày sinh', 'required');
-    $this->form_validation->set_rules('full_name', 'Họ và tên', 'required');
+    try {
+      $this->load->library('form_validation');
+      $this->form_validation->set_rules('username', 'Email', 'required|valid_email|is_unique[account.username]');
+      $this->form_validation->set_rules('password', 'Mật khẩu', 'required|min_length[6]');
+      $this->form_validation->set_rules('re_password', 'Nhập lại mật khẩu', 'required|matches[password]');
+      $this->form_validation->set_rules('phone', 'Số điện thoại', 'required|numeric|exact_length[10]');
+      $this->form_validation->set_rules('birthday', 'Ngày sinh', 'required');
+      $this->form_validation->set_rules('full_name', 'Họ và tên', 'required');
 
-    if ($this->form_validation->run() == FALSE) {
-      return $this->json_response(['success' => false, 'message' => validation_errors()], 400);
+      if ($this->form_validation->run() == FALSE) {
+        // Format validation errors as an array
+        $errors = $this->form_validation->error_array();
+        return $this->json_response(['success' => false, 'message' => $errors], 400);
+      }
+
+      $data = $this->input->post();
+      // Remove re_password if it exists in data
+      unset($data['re_password']);
+
+      // Add missing fields
+      $data['ip_address'] = $this->input->ip_address();
+      $data['email'] = $data['username'];
+      $data['created_on'] = time();
+      $data['active'] = 1;
+      $data['regular_pwd'] = $data['password'];
+      $data['password'] = $this->bcrypt->hash($data['password']);
+
+      $id = $this->Account_model->insert($data);
+
+      // Dispatch email job - In CI we might send email directly or use a queue library if available
+      // For now, I'll skip the job dispatch or just send email if simple
+      // Laravel: AccountMailJob::dispatch(...)
+
+      return $this->json_response(['success' => true, 'message' => 'Đăng ký tài khoản thành công']);
+    } catch (Exception $e) {
+      return $this->json_response(['success' => false, 'message' => $e->getMessage()], 500);
     }
-
-    $data = $this->input->post();
-    // Remove re_password if it exists in data
-    unset($data['re_password']);
-
-    // Add missing fields
-    $data['ip_address'] = $this->input->ip_address();
-    $data['email'] = $data['username'];
-    $data['created_on'] = time();
-    $data['active'] = 1;
-    $data['regular_pwd'] = $data['password'];
-    $data['password'] = $this->bcrypt->hash($data['password']);
-
-    $id = $this->Account_model->insert($data);
-
-    // Dispatch email job - In CI we might send email directly or use a queue library if available
-    // For now, I'll skip the job dispatch or just send email if simple
-    // Laravel: AccountMailJob::dispatch(...)
-
-    return $this->json_response(['success' => 1]);
   }
 
   public function forgot()
