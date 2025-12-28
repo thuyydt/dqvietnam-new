@@ -19,7 +19,7 @@ $version = time();
   </script>
   <link rel="stylesheet" href="<?= $this->templates_assets . 'css/app.css?v=' . time() ?>">
   <link rel="stylesheet" href="<?= $this->templates_assets . 'css/main.min.css?v=' . time() ?>">
-  <link rel="stylesheet" href="<?= $this->templates_assets . 'css/home.css?v=' . time() ?>">
+  <link rel="stylesheet" href="<?= BASE_URL . 'public/css/home.css?v=' . time() ?>">
   <script>
     var current_url = '<?= current_url() ?>',
       base_url = '<?= BASE_URL ?>',

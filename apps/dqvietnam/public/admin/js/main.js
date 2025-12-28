@@ -20,7 +20,6 @@ $(document).ajaxSend(function (elm, xhr, s) {
         s.data += '&';
     }
     s.data += csrfName + '=' + csrfValue;
-    // console.log( s.data);
 });
 //file js dinh nghia ham dung chung
 var save_method = '',
@@ -403,7 +402,6 @@ function loadImageThumb(url, name) {
     }
     var imageThumbnail = $('[name="' + name + '"]');
     // imageThumbnail.attr('src', media_url + url);
-    console.log(url);
     if (url == '' || url == null) {
         var link = 'https://placehold.co/400x200';
     } else {
@@ -456,7 +454,6 @@ function chooseImage(idElement, callback) {
             let url = args.focusedFile.url;
             let urlImageResponse = url.replace(script_name + media_name, '');
             let image = args.focusedFile.url;
-            console.log('args', args)
             if (callback) {
                 callback(image, idElement);
                 return;
@@ -684,8 +681,6 @@ function create_slug(title, ele) {
 }
 
 function init_slug(listen, target) {
-
-    console.log($('#' + listen))
     $('#' + listen).on('paste', function (e) {
         setTimeout(function () {
             create_slug($('#' + listen).val(), '#' + target);
@@ -1285,7 +1280,6 @@ function loadFilterCategory() {
             dataType: 'json',
             delay: 250,
             processResults: function (data) {
-                console.log(data);
                 return {
                     results: data
                 };
@@ -1444,7 +1438,6 @@ function getFormattedDateTime(date, element) {
         let year = date.getFullYear();
         let month = (1 + date.getMonth()).toString().padStart(2, '0');
         let day = date.getDate().toString().padStart(2, '0');
-        console.log(expl);
         return day + '-' + month + '-' + year + ' ' + expl[1];
     } else {
         return '';

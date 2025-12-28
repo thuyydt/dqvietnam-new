@@ -166,7 +166,7 @@ $session = $this->session->school_id;
   <script src="<?= $this->templates_assets . 'bower_components/datatables.net-buttons/js/buttons.colVis.min.js' ?>"></script>
   <script src="<?= $this->templates_assets . 'bower_components/moment/min/moment.min.js' ?>"></script>
   <script src="<?= $this->templates_assets . 'bower_components/bootstrap-daterangepicker/daterangepicker.js' ?>"></script>
-  <script src="<?= $this->templates_assets . 'bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js' ?>"></script>
+  <script src="<?= $this->templates_assets . 'bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js' ?>"></script>
   <script src="<?= $this->templates_assets . 'bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js' ?>"></script>
   <script src="<?= $this->templates_assets . 'bower_components/select2/dist/js/select2.min.js' ?>"></script>
   <script src="<?= $this->templates_assets . 'bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js' ?>"></script>
@@ -174,7 +174,7 @@ $session = $this->session->school_id;
   <script src="<?= $this->templates_assets . 'js/jquery.nestable.js' ?>"></script>
   <script src="<?= $this->templates_assets . 'bower_components/jquery-slimscroll/jquery.slimscroll.min.js' ?>"></script>
   <script src="<?= $this->templates_assets . 'bower_components/bootstrap-daterangepicker/daterangepicker.js' ?>"></script>
-  <script src="<?= $this->templates_assets . 'bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js' ?>"></script>
+  <script src="<?= $this->templates_assets . 'bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js' ?>"></script>
   <script src="<?= $this->templates_assets . 'bower_components/jquery-number/jquery.number.min.js' ?>"></script>
   <script src="<?= $this->templates_assets . 'js/bootstrap-datetimepicker.min.js' ?>"></script>
   <script src="<?= $this->templates_assets . 'bower_components/fancybox/dist/jquery.fancybox.min.js' ?>"></script>
