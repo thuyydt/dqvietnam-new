@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: askeyh3t
@@ -14,10 +15,10 @@ if (!function_exists('checkDateOrder')) {
    */
   function checkDateOrder($date1, $date2)
   {
-//    dd(strtotime($date2).'__'.strtotime('+1 day',strtotime($date1)));
-    if (strtotime('+1 day',strtotime($date1)) >= strtotime($date2)) {
+    //    dd(strtotime($date2).'__'.strtotime('+1 day',strtotime($date1)));
+    if (strtotime('+1 day', strtotime($date1)) >= strtotime($date2)) {
       return true;
-    }else{
+    } else {
       return false;
     }
   }

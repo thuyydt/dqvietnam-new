@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 class Location_model extends C19_Model
 {
@@ -217,7 +217,7 @@ class Location_model extends C19_Model
   public function getDataCity($params = array(), $isGetCountry = 0)
   {
     $this->table = $this->_table_city;
-    $this->column_search = array("$this->table.title","$this->table.id","$this->table.slug","$this->table.region","$this->table.name_with_type");
+    $this->column_search = array("$this->table.title", "$this->table.id", "$this->table.slug", "$this->table.region", "$this->table.name_with_type");
     $this->column_order = array("$this->table.id", "$this->table.id", "$this->table.title", "$this->table.type", "$this->table.name_with_type", "$this->table.latitude", "$this->table.longitude"); //thiết lập cột sắp xếp
     $list = $this->getDataLocation($params, "object", $isGetCountry);
     return $list;
@@ -229,12 +229,12 @@ class Location_model extends C19_Model
     $this->column_order = array("$this->table.id", "$this->table.id", "$this->table.title", "$this->table.currency_name", "$this->table.currency_code", "$this->table.currency_symbol", "$this->table.format", "$this->table.status");
     return $this->getDataLocation($params);
   }
-  public function getLocationByIdSelect2($id,$type ='city')
+  public function getLocationByIdSelect2($id, $type = 'city')
   {
     $table = 'location_' . $type;
-    $this->db->select('id,title')->where('id',$id);
+    $this->db->select('id,title')->where('id', $id);
     $result = $this->db->get($table)->result();
-    if(!empty($result)){
+    if (!empty($result)) {
       $result[0]->text = $result[0]->title;
     }
     return $result;
@@ -298,7 +298,7 @@ class Location_model extends C19_Model
   public function getDataDistrict($params = array())
   {
     $this->table = $this->_table_district;
-    $this->column_search = array("$this->table.title","$this->table.id","$this->table.type","$this->table.name_with_type");
+    $this->column_search = array("$this->table.title", "$this->table.id", "$this->table.type", "$this->table.name_with_type");
     $this->column_order = array("$this->table.id", "$this->table.id", "$this->table.title", "$this->table.city_id", "$this->table.type", "$this->table.name_with_type", "$this->table.is_featured", "$this->table.longitude", "$this->table.latitude"); //thiết lập cột sắp xếp
     return $this->getDataLocation($params);
   }
@@ -311,12 +311,13 @@ class Location_model extends C19_Model
   public function getDataWard($params)
   {
     $this->table = $this->_table_ward;
-    $this->column_search = array("$this->table.title","$this->table.id","$this->table.type","$this->table.name_with_type");
+    $this->column_search = array("$this->table.title", "$this->table.id", "$this->table.type", "$this->table.name_with_type");
     $this->column_order = array("$this->table.id"); //thiết lập cột sắp xếp
     return $this->getDataLocation($params);
   }
-  public function getDistrictByIdCity($city){
-    $query =$this->db->where('city_id',$city)->order_by('title','asc')->get($this->_table_district);
+  public function getDistrictByIdCity($city)
+  {
+    $query = $this->db->where('city_id', $city)->order_by('title', 'asc')->get($this->_table_district);
     return $query->result();
   }
 
@@ -387,5 +388,4 @@ class Location_model extends C19_Model
     $this->db->order_by('order', 'DESC');
     return $this->db->get()->result();
   }
-
 }

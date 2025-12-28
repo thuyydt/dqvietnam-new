@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: doan_du
@@ -7,26 +8,19 @@
  */
 
 
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 class Schools extends API_Controller
 {
-    private $schools_model;
+  private $schools_model;
 
-    public function __construct()
-    {
-        parent::__construct();
+  public function __construct()
+  {
+    parent::__construct();
 
-        $this->load->model(['Schools_model']);
-        $this->schools_model = new Schools_model();
+    $this->load->model(['Schools_model']);
+    $this->schools_model = new Schools_model();
+  }
 
-    }
-
-    public function register() {
-
-    }
-
-
-
-
+  public function register() {}
 }

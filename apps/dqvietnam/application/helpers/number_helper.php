@@ -1,4 +1,5 @@
 <?php
+
 /**
  * User: linhth
  * Date: 13/03/2019
@@ -17,7 +18,6 @@ if (!function_exists('formatMoney')) {
   {
     return $prefix ? number_format($number, $decimals, ',', '.') . ' ' . $unit : $unit . number_format($number, $decimals, ',', '0');
   }
-
 }
 
 if (!function_exists('status_display')) {

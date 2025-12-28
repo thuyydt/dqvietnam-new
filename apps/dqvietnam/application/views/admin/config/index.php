@@ -10,10 +10,10 @@
             metaKeyword: '',
             videoTutorial: '',
             img_payleft: '',
-            img_payight: '',
+            img_payright: '',
             pay_content: '',
-            "home_banner": "/images/element-24.jfif",
-            "hero_banner": "/images/dqlagi/banner.jpg",
+            "home_banner": "/public/images/element-24.jfif",
+            "hero_banner": "/public/images/dqlagi/banner.jpg",
             "social[facebook]": "",
             "social[youtube]": "",
             "social[twitter]": "",
@@ -59,7 +59,6 @@
 
         useEffect(async () => {
             const activities = await API_V2.ACTIVITIES.GET();
-            console.log('activities', activities)
             setActivities(activities)
             const setting = await API_V2.SETTING.GET();
             let toState = state;

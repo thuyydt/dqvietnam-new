@@ -9,6 +9,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="icon" href="<?= base_url('public/favicon.ico') ?>" type="image/x-icon">
 </head>
 
 <body onload="loadMoxman()">

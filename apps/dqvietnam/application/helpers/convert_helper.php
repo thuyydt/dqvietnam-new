@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: askeyh3t
@@ -9,7 +10,7 @@
 if (!function_exists('add_redis_convert_video')) {
   function add_redis_convert_video($id)
   {
-    $_this =& get_instance();
+    $_this = &get_instance();
     $key1 = CONVERT_VIDEO_1;
     $key2 = CONVERT_VIDEO_2;
     $key3 = CONVERT_VIDEO_3;

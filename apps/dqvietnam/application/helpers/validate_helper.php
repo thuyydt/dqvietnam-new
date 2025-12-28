@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: doan_du
@@ -39,7 +40,6 @@ if (!function_exists('validatePhone')) {
       if ($length_phone != 10)
         return false;
       return true;
-
     } elseif (in_array($first_phone, array('01'))) {
       if ($length_phone != 11)
         return false;
@@ -47,7 +47,6 @@ if (!function_exists('validatePhone')) {
     }
 
     return true;
-
   }
 }
 

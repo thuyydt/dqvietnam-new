@@ -35,7 +35,7 @@
   <!--Meta Facebook Homepage-->
   <link rel="canonical" href="<?php echo base_url(); ?>" />
 <?php } ?>
-<link rel="icon" href="<?= $this->info->get('favicon', base_url("/public/favicon.ico")); ?>" sizes="32x32">
-<link rel="icon" href="<?= $this->info->get('favicon', base_url("/public/favicon.ico")); ?>" sizes="192x192">
-<link rel="apple-touch-icon-precomposed" href="<?= $this->info->get('favicon', base_url("/public/favicon.ico")); ?>">
-<meta name="msapplication-TileImage" content="<?= $this->info->get('favicon', base_url("/public/favicon.ico")); ?>">
+<link rel="icon" href="<?= $this->info->get('favicon', base_url("public/favicon.ico")); ?>" sizes="32x32">
+<link rel="icon" href="<?= $this->info->get('favicon', base_url("public/favicon.ico")); ?>" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="<?= $this->info->get('favicon', base_url("public/favicon.ico")); ?>">
+<meta name="msapplication-TileImage" content="<?= $this->info->get('favicon', base_url("public/favicon.ico")); ?>">

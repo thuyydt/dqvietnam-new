@@ -1,12 +1,12 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
-function getSettings($setting,$lang_code =''){
-    $_this =& get_instance();
-    if(!empty($lang_code)){
-        return (isset($_this->settings[$setting][$lang_code])) ? $_this->settings[$setting][$lang_code] :'';
-    }
-    else{
-        return (isset($_this->settings[$setting])) ? $_this->settings[$setting] :'';
-    }
+function getSettings($setting, $lang_code = '')
+{
+  $_this = &get_instance();
+  if (!empty($lang_code)) {
+    return (isset($_this->settings[$setting][$lang_code])) ? $_this->settings[$setting][$lang_code] : '';
+  } else {
+    return (isset($_this->settings[$setting])) ? $_this->settings[$setting] : '';
+  }
 }
 if (!function_exists('int_number')) {
   function int_number($number)
@@ -93,33 +93,35 @@ if (!function_exists('getNumberics')) {
     return (int)end($matches[0]);
   }
 }
-function format_phone_number($number) {
-  if(strlen($number)==10)
-  $result = preg_replace('/^1?(\d{3})(\d{3})(\d{4})$/', '$1 $2 $3', $number);
+function format_phone_number($number)
+{
+  if (strlen($number) == 10)
+    $result = preg_replace('/^1?(\d{3})(\d{3})(\d{4})$/', '$1 $2 $3', $number);
   else
     $result = preg_replace('/^1?(\d{4})(\d{3})(\d{4})$/', '$1 $2 $3', $number);
   return $result;
 }
 if (!function_exists('showCenter')) {
-  function showCenter($value,$nowrap = '')
+  function showCenter($value, $nowrap = '')
   {
-   return "<div class='text-center ".(empty($nowrap) ? 'nowrap' : '')."'>".$value."</div>";
+    return "<div class='text-center " . (empty($nowrap) ? 'nowrap' : '') . "'>" . $value . "</div>";
   }
 }
 if (!function_exists('showLeft')) {
   function showLeft($value)
   {
-   return "<div class='text-left'>".$value."</div>";
+    return "<div class='text-left'>" . $value . "</div>";
   }
 }
 if (!function_exists('showRight')) {
   function showRight($value)
   {
-   return "<div class='text-right nowrap'>".$value."</div>";
+    return "<div class='text-right nowrap'>" . $value . "</div>";
   }
 }
 if (!function_exists('get_query_string')) {
-  function get_query_string(){
-    return !empty($_SERVER['QUERY_STRING']) ? '?'.$_SERVER['QUERY_STRING'] :'';
+  function get_query_string()
+  {
+    return !empty($_SERVER['QUERY_STRING']) ? '?' . $_SERVER['QUERY_STRING'] : '';
   }
 }

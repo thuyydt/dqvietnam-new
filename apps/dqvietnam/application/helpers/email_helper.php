@@ -10,7 +10,7 @@ if (!function_exists('sendMail')) {
    * */
   function sendMail($from_mail = '', $to_mail = '', $subject, $template, $data = array(), $emailToCC = '', $emailToBCC = '')
   {
-    $_this =& get_instance();
+    $_this = &get_instance();
     if (empty($subject)) $subject = 'Thông tin gửi từ ' . BASE_URL;
     $contentHtml = file_get_contents(FCPATH . 'template-mail' . DIRECTORY_SEPARATOR . $template . '.html');
     if (!empty($data)) foreach ($data as $key => $value) {

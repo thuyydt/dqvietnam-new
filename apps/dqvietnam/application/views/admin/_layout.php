@@ -17,6 +17,7 @@ $session = $this->session->school_id;
   <meta content="<?= $this->security->get_csrf_hash() ?>" data-name="<?= $this->security->get_csrf_token_name() ?>"
     name="csrf-token">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="icon" href="<?= base_url('public/favicon.ico') ?>" type="image/x-icon">
   <link rel="stylesheet" href="<?= site_url('public/admin/bower_components/bootstrap/dist/css/bootstrap.min.css') ?>">
   <link rel="stylesheet"
     href="<?= site_url('public/admin/bower_components/font-awesome/css/font-awesome.min.css') ?>">

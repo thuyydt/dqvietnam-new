@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 class Location extends Admin_Controller
 {
@@ -17,7 +17,7 @@ class Location extends Admin_Controller
     parent::__construct();
     //tải thư viện
     //$this->load->library(array('ion_auth'));
-//    $this->lang->load('location');
+    //    $this->lang->load('location');
     $this->load->model('location_model');
     $this->load->helper('download');
     $this->_data = new Location_model();
@@ -360,7 +360,6 @@ class Location extends Admin_Controller
     $message['type'] = 'success';
     $message['message'] = 'Import thành công';
     die(json_encode($message));
-
   }
 
   public function ajax_import_excel_country()
@@ -423,16 +422,14 @@ class Location extends Admin_Controller
   public function export_file($location)
   {
     switch ($location) {
-      case 'country' :
-      {
-        $file_path = '././public/download/example_data/import_country.xlsx';
-        force_download($file_path, NULL);
-      }
-      case 'city' :
-      {
-        $file_path = '././public/download/example_data/import_city.xlsx';
-        force_download($file_path, NULL);
-      }
+      case 'country': {
+          $file_path = '././public/download/example_data/import_country.xlsx';
+          force_download($file_path, NULL);
+        }
+      case 'city': {
+          $file_path = '././public/download/example_data/import_city.xlsx';
+          force_download($file_path, NULL);
+        }
     }
   }
 
@@ -480,7 +477,6 @@ class Location extends Admin_Controller
         $country = $this->_data->getCountryById($data['data']->country_id);
         $data['country'][] = array('id' => $country->id, 'text' => $country->title);
       }
-
     } else {
       $data['data'] = $this->_data->getByIdlocation(['id' => $id], 'location_' . $this->_location);
       $data['city'] = array();
@@ -490,7 +486,7 @@ class Location extends Admin_Controller
         $city = $this->_data->getCityById($data['data']->id);
       }
       $data['city'][0] = ['id' => $city->id, 'text' => $city->title];
-      if (isset($data['data']->district_id)){
+      if (isset($data['data']->district_id)) {
         $district = $this->_data->getDistrictById($data['data']->district_id);
         $data['district'][0] = ['id' => $district->id, 'text' => $district->title];
       }
@@ -534,16 +530,18 @@ class Location extends Admin_Controller
   private function _validate()
   {
     if ($this->input->server('REQUEST_METHOD') == 'POST' && !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-      $rules=[
+      $rules = [
         [
           'field' => 'name_with_type',
           'label' => 'Địa chỉ đầy đủ',
           'rules' => 'trim|xss_clean|callback_validate_html'
-        ],[
+        ],
+        [
           'field' => 'title',
           'label' => 'Tên',
           'rules' => 'required|trim|xss_clean|callback_validate_html'
-        ],[
+        ],
+        [
           'field' => 'order',
           'label' => 'Sắp xếp',
           'rules' => 'trim|xss_clean|callback_validate_html|is_natural'
@@ -552,26 +550,27 @@ class Location extends Admin_Controller
           'field' => 'latitude',
           'label' => 'Vĩ độ',
           'rules' => 'required|trim|xss_clean|callback_validate_html|numeric'
-        ],[
+        ],
+        [
           'field' => 'longitude',
           'label' => 'Kinh độ',
           'rules' => 'required|trim|xss_clean|callback_validate_html|numeric'
         ]
       ];
       if ($this->_location == 'district') {
-        $rules[]=[
+        $rules[] = [
           'field' => 'city_id',
           'label' => 'Tỉnh / Thành phố',
           'rules' => 'required|trim|xss_clean|callback_validate_html'
         ];
       }
-      if ($this->_location == 'ward'){
-        $rules[]=[
+      if ($this->_location == 'ward') {
+        $rules[] = [
           'field' => 'city_id',
           'label' => 'Tỉnh / Thành phố',
           'rules' => 'required|trim|xss_clean|callback_validate_html'
         ];
-        $rules[]=[
+        $rules[] = [
           'field' => 'district_id',
           'label' => 'Quận/huyện',
           'rules' => 'required|trim|xss_clean|callback_validate_html'
@@ -617,5 +616,4 @@ class Location extends Admin_Controller
       print json_encode($json);
     }
   }
-
 }

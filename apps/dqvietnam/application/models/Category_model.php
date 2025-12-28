@@ -1,5 +1,5 @@
 <?php
-defined("BASEPATH") OR exit("No direct script access allowed");
+defined("BASEPATH") or exit("No direct script access allowed");
 
 class Category_model extends C19_Model
 {
@@ -12,12 +12,12 @@ class Category_model extends C19_Model
   {
     parent::__construct();
     $this->table = "category";
-    $this->table_trans = "category_translations";//bảng bài viết
+    $this->table_trans = "category_translations"; //bảng bài viết
     $this->table_product = "product";
     $this->table_product_cate = "product_category";
     $this->column_order = array("$this->table.id", "$this->table.id", "$this->table.order", "$this->table_trans.title", "$this->table.is_status", "$this->table.created_time"); //thiết lập cột sắp xếp
     $this->column_search = array("$this->table.id", "$this->table_trans.title"); //thiết lập cột search
-    $this->order_default = array("$this->table.order" => "DESC","$this->table.id" => "DESC"); //cột sắp xếp mặc định
+    $this->order_default = array("$this->table.order" => "DESC", "$this->table.id" => "DESC"); //cột sắp xếp mặc định
   }
 
   public function _where_custom($args)
@@ -155,7 +155,7 @@ class Category_model extends C19_Model
     return !empty($data) ? $data->id : null;
   }
 
-  public function getAllCategoryByType($lang_code = null, $type, $parent_id = 0,$order=[])
+  public function getAllCategoryByType($lang_code = null, $type, $parent_id = 0, $order = [])
   {
     $this->db->from($this->table);
     if (!empty($this->table_trans)) $this->db->join($this->table_trans, "$this->table.id = $this->table_trans.id");
@@ -164,8 +164,8 @@ class Category_model extends C19_Model
       'language_code' => $lang_code,
       'parent_id' => $parent_id
     ]);
-    if(!empty($order)) foreach ($order as $key => $val){
-      $this->db->order_by($key,$val);
+    if (!empty($order)) foreach ($order as $key => $val) {
+      $this->db->order_by($key, $val);
     }
     $query = $this->db->get();
     return $query->result();

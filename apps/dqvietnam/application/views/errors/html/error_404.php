@@ -7,6 +7,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <head>
   <meta charset="utf-8">
   <title>404 Page Not Found</title>
+  <link rel="icon" href="<?php echo BASE_URL; ?>public/favicon.ico" type="image/x-icon">
   <style type="text/css">
     ::selection {
       background-color: #E13300;

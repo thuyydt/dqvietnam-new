@@ -68,7 +68,8 @@ $route['v2/auth/active-payment'] = 'v2/auth/active';
 $route['v2/auth/ping'] = 'v2/auth/pingPong';
 $route['v2/auth/activities'] = 'v2/auth/handle_activities';
 
-$route['v2/setting'] = 'v2/setting/handle_index';
+$route['v2/setting']['get'] = 'v2/setting/index';
+$route['v2/setting']['post'] = 'v2/setting/store';
 
 $route['v2/activation'] = 'v2/activation/index';
 $route['v2/activation/(:num)'] = 'v2/activation/handle_id/$1';

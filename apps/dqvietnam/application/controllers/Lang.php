@@ -1,25 +1,27 @@
 <?php
 
-defined('BASEPATH') OR exit('No direct script access allowed');
-class Lang extends C19_Controller {
+defined('BASEPATH') or exit('No direct script access allowed');
+class Lang extends C19_Controller
+{
 
-    public function __construct()
-    {
-        parent::__construct();
-    }
+  public function __construct()
+  {
+    parent::__construct();
+  }
 
-    public function load($files)
-    {
-        $files = explode('-', $files);
-        if(count($files) > 0){
-            $lang_text = '';
-            foreach ($files as $file){
-                $this->lang->load(trim($file));
-                foreach ($this->lang->language as $key => $lang){
-                    $lang_text .= "language['".$key."'] = '".$lang."';";
-                }
-            }
-            print $lang_text;exit;
+  public function load($files)
+  {
+    $files = explode('-', $files);
+    if (count($files) > 0) {
+      $lang_text = '';
+      foreach ($files as $file) {
+        $this->lang->load(trim($file));
+        foreach ($this->lang->language as $key => $lang) {
+          $lang_text .= "language['" . $key . "'] = '" . $lang . "';";
         }
+      }
+      print $lang_text;
+      exit;
     }
+  }
 }

@@ -3,7 +3,7 @@ if (!function_exists('authorization')) {
   function authorization($controller, $method = "view")
   {
     $_method = $method . '_' . $controller;
-    $_this =& get_instance();
+    $_this = &get_instance();
     $_this->load->library('session');
     $_this->load->model('module_model', 'module');
     //$module=$_this->module->get_datatables();
@@ -27,7 +27,7 @@ if (!function_exists('authorization')) {
 if (!function_exists('authLogin')) {
   function authLogin()
   {
-    $_this =& get_instance();
+    $_this = &get_instance();
     $_this->load->model('module_model', 'module');
     $_this->load->library('session');
     $module = $_this->module->get_datatables();
@@ -53,7 +53,7 @@ if (!function_exists('authLogin')) {
 if (!function_exists('checkPer')) {
   function checkPer($per)
   {
-    $_this =& get_instance();
+    $_this = &get_instance();
     $method = $_this->router->fetch_method();
 
     $return = true;
@@ -62,10 +62,10 @@ if (!function_exists('checkPer')) {
         case 'ajax_update': // Sửa
           if (empty($per['edit'])) $return = false;
           break;
-        case 'ajax_add':// Thêm
+        case 'ajax_add': // Thêm
           if (empty($per['add'])) $return = false;
           break;
-        case 'ajax_delete':// Xoá
+        case 'ajax_delete': // Xoá
           if (empty($per['delete'])) $return = false;
           break;
         default:
@@ -76,7 +76,8 @@ if (!function_exists('checkPer')) {
 
       $message = [
         'type' => 'warning',
-        'message' => 'Bạn không có quyền thực hiện chức năng này !'];
+        'message' => 'Bạn không có quyền thực hiện chức năng này !'
+      ];
       die(json_encode($message));
     } else {
       return true;
@@ -84,26 +85,26 @@ if (!function_exists('checkPer')) {
   }
 }
 if (!function_exists('perUserLogin')) {
-//  Kiểm tra phân quyền của user đang login
-    function perUserLogin($controller, $cmsCusPer='', $cmsPerMethod='')
-    {
-        $_this =& get_instance();
-        $return = false;
-        if ($_this->session->userdata['user_id'] != 1) {
-            $conExp = explode('/', $controller);
-            if($conExp[0] == 'dashboard'){
-                $return = true;
-            }else{
-                if (!empty($conExp[1]) && in_array($conExp[0], $cmsCusPer) && in_array($conExp[1], $cmsPerMethod)) {
-                    if (!empty($_this->session->userdata['admin_permission'][$conExp[0]][$conExp[1]])) $return = true;
-                } else {
-                    if (!empty($_this->session->userdata['admin_permission'][$conExp[0]])) $return = true;
-                }
-            }
+  //  Kiểm tra phân quyền của user đang login
+  function perUserLogin($controller, $cmsCusPer = '', $cmsPerMethod = '')
+  {
+    $_this = &get_instance();
+    $return = false;
+    if ($_this->session->userdata['user_id'] != 1) {
+      $conExp = explode('/', $controller);
+      if ($conExp[0] == 'dashboard') {
+        $return = true;
+      } else {
+        if (!empty($conExp[1]) && in_array($conExp[0], $cmsCusPer) && in_array($conExp[1], $cmsPerMethod)) {
+          if (!empty($_this->session->userdata['admin_permission'][$conExp[0]][$conExp[1]])) $return = true;
         } else {
-            $return = true;
+          if (!empty($_this->session->userdata['admin_permission'][$conExp[0]])) $return = true;
         }
-
-        return $return;
+      }
+    } else {
+      $return = true;
     }
+
+    return $return;
+  }
 }
