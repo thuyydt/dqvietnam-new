@@ -215,3 +215,7 @@ $lang['Payment_failed'] = "Thanh toán không thành công!";
 $lang['not_cart'] = "Thanh toán thành công!";
 $lang['cancel_trans'] = "Bạn đã huỷ giao dịch thanh toán!";
 $lang['quanlity_is_int'] = "Số lượng phải là số nguyên";
+// 404
+$lang['page_not_found'] = 'Không tìm thấy trang';
+$lang['label_page_not_found'] = 'Trang bạn yêu cầu không tồn tại hoặc đã bị xóa.';
+$lang['go_to_homepage'] = 'Về trang chủ';

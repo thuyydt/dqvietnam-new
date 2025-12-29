@@ -215,3 +215,7 @@ $lang['not_cart'] = "Payment success!";
 $lang['cancel_trans'] = "You have canceled the payment transaction!";
 $lang['txt_enter_password_old'] = 'Enter password old';
 $lang['txt_enter_password_new1'] = 'Enter password new';
+// 404
+$lang['page_not_found'] = 'Page Not Found';
+$lang['label_page_not_found'] = 'The page you requested was not found.';
+$lang['go_to_homepage'] = 'Go to Homepage';

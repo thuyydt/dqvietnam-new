@@ -712,7 +712,8 @@ class Public_Controller extends C19_Controller
       'format',
       'image',
       'status_order',
-      'status'
+      'status',
+      'language'
     ));
     //Detect mobile
     //$this->detectMobile = new Mobile_Detect();

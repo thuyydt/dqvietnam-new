@@ -14,9 +14,15 @@ class Page extends Public_Controller
   public function _404()
   {
     $this->output->set_status_header('404');
-    $data['heading'] = '404 Page Not Found';
-    $data['message'] = 'The page you requested was not found.';
-    $this->load->view('errors/html/error_404', $data);
+    $data['SEO'] = [
+      'meta_title' => '404 Page Not Found',
+      'meta_description' => 'The page you requested was not found.',
+      'meta_keyword' => '',
+      'url' => BASE_URL . '404',
+      'image' => ''
+    ];
+    $data['main_content'] = $this->load->view($this->template_path . 'page/_404', $data, TRUE);
+    $this->load->view($this->template_main, $data);
   }
 
   public function index($slug)

@@ -1,21 +1,12 @@
 <main>
-  <div class="page p-404">
-    <div class="page__top page__top--bg">
-      <div class="container">
-        <h1 class="title-lg">404</h1>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="page__content d-flex flex-end">
-        <div class="p-404__content">
-          <h1 class="title-lg mb-16"><?= lang('page_not_found') ?></h1>
-
-          <p class="title-md mb-40"><?= lang('label_page_not_found') ?></p>
-
-          <a href="/" class="btn btn-dark pl-40 pr-40"><?= lang('go_to_homepage') ?></a>
+    <div class="container py-5">
+        <div class="row justify-content-center align-items-center" style="min-height: 60vh; padding-top: 10rem; padding-bottom: 30rem;">
+            <div class="col-md-8 text-center">
+                <h1 class="display-1 fw-bold text-muted">404</h1>
+                <h2 class="mb-4"><?= lang('page_not_found') ?></h2>
+                <p class="lead mb-5 text-muted"><?= lang('label_page_not_found') ?></p>
+                <a href="<?= base_url() ?>" class="btn btn-primary px-5 py-2"><?= lang('go_to_homepage') ?></a>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </main>
