@@ -72,13 +72,21 @@ class Game extends Public_Controller
     turnFirst:
     $turn += 1;
 
-    // GET REPORT POINT
+    // GET REPORT POINT (with caching)
     $reportModel = new Report_model();
-    if ($turn <= 80) {
-      $points = $reportModel->getCountPointForType($this->user_id);
-    } else {
-      $points = $reportModel->getCountPointForType($this->user_id, '', 1);
+    $cacheKeyPoints = 'user_points_' . $this->user_id . '_' . ($turn <= 80 ? 'all' : 'done');
+    $points = $this->getCache($cacheKeyPoints, true);
+    
+    if (!$points) {
+      if ($turn <= 80) {
+        $points = $reportModel->getCountPointForType($this->user_id);
+      } else {
+        $points = $reportModel->getCountPointForType($this->user_id, '', 1);
+      }
+      // Cache for 5 minutes (300 seconds)
+      $this->setCache($cacheKeyPoints, $points, 300);
     }
+    
     $medium = 0;
     $list = [];
     if (!empty($points)) {
@@ -99,10 +107,17 @@ class Game extends Public_Controller
     $data['cards'] = $cards;
     // GET CARDS
 
-    // GET INFO ACCOUNT
+    // GET INFO ACCOUNT (with caching)
     if (!empty($this->auth)) {
-      $accountModel = new Account_model();
-      $data['account'] = $accountModel->getInfoUserById($this->auth->user_id);
+      $cacheKeyAccount = 'account_info_' . $this->auth->user_id;
+      $data['account'] = $this->getCache($cacheKeyAccount, true);
+      
+      if (!$data['account']) {
+        $accountModel = new Account_model();
+        $data['account'] = $accountModel->getInfoUserById($this->auth->user_id);
+        // Cache for 10 minutes (600 seconds)
+        $this->setCache($cacheKeyAccount, $data['account'], 600);
+      }
     }
     // GET INFO ACCOUNT
 
@@ -122,9 +137,17 @@ class Game extends Public_Controller
     //        }
     //Check Turn Try
 
-    // GET REPORT POINT
+    // GET REPORT POINT (with caching)
     $reportModel = new Report_model();
-    $points = $reportModel->getCountPointForType($this->user_id, '', 1);
+    $cacheKeyPoints = 'user_points_' . $this->user_id . '_done';
+    $points = $this->getCache($cacheKeyPoints, true);
+    
+    if (!$points) {
+      $points = $reportModel->getCountPointForType($this->user_id, '', 1);
+      // Cache for 5 minutes (300 seconds)
+      $this->setCache($cacheKeyPoints, $points, 300);
+    }
+    
     $medium = 0;
     $list = [];
     if (!empty($points)) {
@@ -156,9 +179,17 @@ class Game extends Public_Controller
   {
     set_cookie('dq_review_game', $key, 60 * 60 * 24 * 30);
 
-    // GET REPORT POINT
+    // GET REPORT POINT (with caching)
     $reportModel = new Report_model();
-    $points = $reportModel->getCountPointForType($this->user_id, '', 1);
+    $cacheKeyPoints = 'user_points_' . $this->user_id . '_done';
+    $points = $this->getCache($cacheKeyPoints, true);
+    
+    if (!$points) {
+      $points = $reportModel->getCountPointForType($this->user_id, '', 1);
+      // Cache for 5 minutes (300 seconds)
+      $this->setCache($cacheKeyPoints, $points, 300);
+    }
+    
     $medium = 0;
     $list = [];
     if (!empty($points)) {
