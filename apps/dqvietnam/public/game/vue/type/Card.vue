@@ -49,7 +49,7 @@ export default {
 
     getImg(card) {
       if (card.card.length) return this.media_url + card.card;
-      return this.base_url + 'public/game/images/card_empty.png';
+      return this.base_url + 'public/game/images/card_empty.webp';
     },
 
     chooseCard(card, index) {

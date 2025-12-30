@@ -149,11 +149,11 @@ export default {
     },
     checkUrlImage: (sender, type = 'bg') => {
 
-      return `public/game/images/chat/${type}-${sender}.png`;
+      return `public/game/images/chat/${type}-${sender}.webp`;
     },
     getAvatarUser(account) {
       if (account.avatar == '') {
-        return `public/game/images/avatar.png`;
+        return `public/game/images/avatar.webp`;
       }
 
       return account.avatar;

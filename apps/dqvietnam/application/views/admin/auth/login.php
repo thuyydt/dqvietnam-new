@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
-<body class="hold-transition login-page" style="background: url('<?php echo base_url() ?>public/admin/img/back2019.jpg') center center no-repeat; background-size: cover;overflow: hidden;">
+<body class="hold-transition login-page" style="background: url('<?php echo base_url() ?>public/admin/img/back2019.webp') center center no-repeat; background-size: cover;overflow: hidden;">
   <div class="login-box">
     <div class="login-logo">
     </div>

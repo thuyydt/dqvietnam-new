@@ -29,10 +29,10 @@ $home_banner = $this->info->get('home_banner');
         <img src="<?php echo $home_banner ?>" loading="lazy" class="element element-01">
       <?php } else { ?>
         <img src="public/images/element-24.jfif" loading="lazy" class="element element-01">
-        <img src="public/images/element-21.png" loading="lazy" class="element element-02">
-        <img src="public/images/element-22.png" loading="lazy" class="element element-03">
-        <img src="public/images/element-23.png" loading="lazy" class="element element-04">
-        <img src="public/images/logo-02.png" loading="lazy" class="element element-05">
+        <img src="public/images/element-21.webp" loading="lazy" class="element element-02">
+        <img src="public/images/element-22.webp" loading="lazy" class="element element-03">
+        <img src="public/images/element-23.webp" loading="lazy" class="element element-04">
+        <img src="public/images/logo-02.webp" loading="lazy" class="element element-05">
       <?php } ?>
       <a style="left: 30%" href="https://docs.google.com/forms/d/e/1FAIpQLSdb79Q6Sm9ASZq8_RptQDsrhJlqMlgHU2MumLST3CfeRMt1Sw/viewform?usp=header" class="btn btn-02">ĐĂNG KÍ PHONG TRÀO</a>
     </div>
@@ -76,7 +76,7 @@ $home_banner = $this->info->get('home_banner');
   <!-- section 01 -->
 
   <section class="c-section__home-02">
-    <img src="public/images/element-02.jpeg" class="bg">
+    <img src="public/images/element-02.webp" class="bg">
     <div class="container">
       <h1>Tổng quan<span>Khóa học</span></h1>
       <p>Chương trình kỹ năng số “Người Hùng DQ”, hưởng ứng phong trào “Bình Dân Học Vụ Số” theo Nghị quyết
@@ -103,7 +103,7 @@ $home_banner = $this->info->get('home_banner');
           <h2>Học thử<br>miễn phí</h2>
           <a href="<?= urlRoute('guide?type=try_game') ?>" class="btn btn-02">Tham gia ngay</a>
         </div>
-        <img src="public/images/element-07.png" loading="lazy" style="width:60%" class="bg">
+        <img src="public/images/element-07.webp" loading="lazy" style="width:60%" class="bg">
       </div>
     </div>
   </section>

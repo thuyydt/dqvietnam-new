@@ -1,5 +1,5 @@
-<img src="<?= $this->templates_assets ?>/images/element-06.png" class="element-bg element-bg-01" loading="lazy" />
-<img src="<?= $this->templates_assets ?>/images/element-07.png" class="element-bg element-bg-02" loading="lazy" />
+<img src="<?= $this->templates_assets ?>/images/element-06.webp" class="element-bg element-bg-01" loading="lazy" />
+<img src="<?= $this->templates_assets ?>/images/element-07.webp" class="element-bg element-bg-02" loading="lazy" />
 
 <main class="c-main v1">
   <?php if (!empty($packages)) foreach ($packages as $key => $item) { ?>

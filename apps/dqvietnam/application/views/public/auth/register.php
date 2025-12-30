@@ -1,5 +1,5 @@
-<img src="<?= $this->templates_assets ?>/images/element-06.png" class="element-bg element-bg-01" loading="lazy" />
-<img src="<?= $this->templates_assets ?>/images/element-07.png" class="element-bg element-bg-02" loading="lazy" />
+<img src="<?= $this->templates_assets ?>/images/element-06.webp" class="element-bg element-bg-01" alt="Background Element 1" loading="lazy" />
+<img src="<?= $this->templates_assets ?>/images/element-07.webp" class="element-bg element-bg-02" alt="Background Element 2" loading="lazy" />
 
 <main class="c-main v1">
 
@@ -24,7 +24,7 @@
         <div class="info">
           <?= $item->detail ?>
         </div>
-        <a href="<?= $url[$key] ?>" class="btn">Đăng ký</a>
+        <a href="<?= $url[$key] ?>" class="btn" title="Đăng ký <?= $item->name ?>">Đăng ký</a>
       </div>
     </div>
   <?php } ?>

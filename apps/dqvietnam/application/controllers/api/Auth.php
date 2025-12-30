@@ -247,7 +247,7 @@ class Auth extends API_Controller
           "message" => "Đăng ký tài khoản thành công."
         ];
 
-        $logo = $this->email->attach(base_url('public/email/img/logo.png'), 'inline');
+        $logo = $this->email->attach(base_url('public/email/img/logo.webp'), 'inline');
         $logoCid = $this->email->attachment_cid($logo);
         $this->sendMail([
           'title' => 'Thông tin tài khoản DQ',

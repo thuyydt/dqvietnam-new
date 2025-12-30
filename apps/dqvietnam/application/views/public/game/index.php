@@ -2,7 +2,7 @@
   <div class="inner">
     <a href="javascript:;" class="btn-menu info">
       <div class="avatar-menu">
-        <img class="lazy" src="<?= empty($account->avatar) ? 'public/game/images/avatar.png' : getImageThumb($account->avatar) ?>" loading="lazy" />
+        <img class="lazy" src="<?= empty($account->avatar) ? 'public/game/images/avatar.webp' : getImageThumb($account->avatar) ?>" loading="lazy" />
       </div>
     </a>
     <button type="button" class="btn-menu music">

@@ -119,13 +119,13 @@
 .about-dq .bg-top {
   background-position: top; }
 .about-dq .bg-one {
-  background-image: url("../img/one.png"); }
+  background-image: url("../img/one.webp"); }
 .about-dq .bg-two {
-  background-image: url("../img/two.png"); }
+  background-image: url("../img/two.webp"); }
 .about-dq .bg-three {
-  background-image: url("../img/three.png"); }
+  background-image: url("../img/three.webp"); }
 .about-dq .block-1 {
-  background-image: url("../img/playground.png");
+  background-image: url("../img/playground.webp");
   background-size: cover;
   background-repeat: no-repeat; }
   .about-dq .block-1 .fields .mg-top-60 {

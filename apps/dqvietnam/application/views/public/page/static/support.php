@@ -18,15 +18,15 @@
           <div class="step-title">
             Bước 2: Xem video giới thiệu về Người hùng DQ
           </div>
-          <img src="../../../../public/images/supports/qr.png" alt="" srcset="" loading="lazy" />
+          <img src="../../../../public/images/supports/qr.webp" alt="" srcset="" loading="lazy" />
           <div class="divider"></div>
           <div class="step-title">Bước 3: Thực hiện nhiệm vụ từ 1 – 80</div>
-          <img src="../../../../public/images/supports/ipad.png" alt="" srcset="" loading="lazy" />
+          <img src="../../../../public/images/supports/ipad.webp" alt="" srcset="" loading="lazy" />
           <div class="divider"></div>
           <div class="step-title">
             Bước 4: Ôn tập kiến thức thông qua bộ học liệu
           </div>
-          <img src="../../../../public/images/supports/tailieu.png" alt="" srcset="" loading="lazy" />
+          <img src="../../../../public/images/supports/tailieu.webp" alt="" srcset="" loading="lazy" />
         </div>
         <div class="tab-pane">
           <div class="step-title">1. DQ là viết tắt của gì?</div>
@@ -51,7 +51,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/1.png" loading="lazy" />
+                    <img src="../../../../public/images/dqlagi/learn/1.webp" loading="lazy" />
                   </div>
                   <div class="txt">
                     <p class="item-title">
@@ -64,7 +64,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/5.png" loading="lazy" />
+                    <img src="../../../../public/images/dqlagi/learn/5.webp" loading="lazy" />
                   </div>
                   <div class="txt">
                     <p class="item-title">Quản lý an ninh mạng</p>
@@ -75,7 +75,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/2.png" loading="lazy" />
+                    <img src="../../../../public/images/dqlagi/learn/2.webp" loading="lazy" />
                   </div>
                   <div class="txt">
                     <p class="item-title">Quản lý bắt nạt trên mạng</p>
@@ -86,7 +86,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/6.png" loading="lazy" />
+                    <img src="../../../../public/images/dqlagi/learn/6.webp" loading="lazy" />
                   </div>
                   <div class="txt">
                     <p class="item-title">Quản lý dấu chân kỹ thuật số</p>
@@ -97,7 +97,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/3.png" loading="lazy" />
+                    <img src="../../../../public/images/dqlagi/learn/3.webp" loading="lazy" />
                   </div>
                   <div class="txt">
                     <p class="item-title">Quản lý quyền riêng tư</p>
@@ -108,7 +108,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/7.png" loading="lazy" />
+                    <img src="../../../../public/images/dqlagi/learn/7.webp" loading="lazy" />
                   </div>
                   <div class="txt">
                     <p class="item-title">Tư duy phản biện</p>
@@ -119,7 +119,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/4.png" loading="lazy" />
+                    <img src="../../../../public/images/dqlagi/learn/4.webp" loading="lazy" />
                   </div>
                   <div class="txt">
                     <p class="item-title">Danh tính kỹ thuật số</p>
@@ -130,7 +130,7 @@
               <div class="col-lg-6">
                 <div class="box">
                   <div class="icon">
-                    <img src="../../../../public/images/dqlagi/learn/8.png" loading="lazy" />
+                    <img src="../../../../public/images/dqlagi/learn/8.webp" loading="lazy" />
                   </div>
                   <div class="txt">
                     <p class="item-title">Cảm thông kỹ thuật số</p>

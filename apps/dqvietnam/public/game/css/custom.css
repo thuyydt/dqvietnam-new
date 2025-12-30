@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    background-image: url(../images/bg-01.jpg);
+    background-image: url(../images/bg-01.webp);
 }
 
 .exactly {
@@ -12,37 +12,37 @@ body {
 
 @keyframes blinkingText {
     0% {
-        background-image: url(../images/bg-08-b.png);
+        background-image: url(../images/bg-08-b.webp);
     }
     10% {
-        background-image: url(../images/bg-08.png);
+        background-image: url(../images/bg-08.webp);
     }
     20% {
-        background-image: url(../images/bg-08-b.png);
+        background-image: url(../images/bg-08-b.webp);
     }
     30% {
-        background-image: url(../images/bg-08.png);
+        background-image: url(../images/bg-08.webp);
     }
     40% {
-        background-image: url(../images/bg-08-b.png);
+        background-image: url(../images/bg-08-b.webp);
     }
     50% {
-        background-image: url(../images/bg-08.png);
+        background-image: url(../images/bg-08.webp);
     }
     60% {
-        background-image: url(../images/bg-08-b.png);
+        background-image: url(../images/bg-08-b.webp);
     }
     70% {
-        background-image: url(../images/bg-08.png);
+        background-image: url(../images/bg-08.webp);
     }
     80% {
-        background-image: url(../images/bg-08-b.png);
+        background-image: url(../images/bg-08-b.webp);
     }
     90% {
-        background-image: url(../images/bg-08.png);
+        background-image: url(../images/bg-08.webp);
     }
     100% {
-        background-image: url(../images/bg-08-b.png);
+        background-image: url(../images/bg-08-b.webp);
     }
 }
 
@@ -672,7 +672,7 @@ body {
     transform: translateY(-50%) translateX(-26%);
     height: 62.77777777777778vh;
     width: 23.425925925925924vh;
-    background-image: url(../images/group-btn.png);
+    background-image: url(../images/group-btn.webp);
     background-size: 100% 100%
 }
 
@@ -1533,7 +1533,7 @@ body {
     width: 3.5185185185185186vh;
     height: 5.833333333333333vh;
     background-size: 100% 100%;
-    background-image: url(../images/arrow-01.png);
+    background-image: url(../images/arrow-01.webp);
     top: 50%;
     cursor: pointer
 }

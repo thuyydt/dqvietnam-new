@@ -80,11 +80,22 @@ function menus_main($classname = '', $id = '', $submenuclass = '')
   if (!empty($data)) foreach ($data as $page) {
     $active = $page->slug == $slug ? 'active' : '';
     $link = BASE_URL . $page->slug;
-    $link = $page->outer_link ? $page->outer_link : $link;
+    $is_external = false;
+    if (!empty($page->outer_link)) {
+      $link = $page->outer_link;
+      $is_external = true;
+    }
+
+    $attr = "";
+    if ($is_external) {
+      $attr = 'target="_blank" rel="noopener noreferrer"';
+    }
+    $name_attr = htmlspecialchars($page->name, ENT_QUOTES, 'UTF-8');
+
     if ($page->location == 1) {
-      $right .= "<li class='nav-item'><a href='$link' class='nav-link $active'>$page->name</a></li>";
+      $right .= "<li class='nav-item'><a href='$link' class='nav-link $active' title='$name_attr' $attr>$page->name</a></li>";
     } else {
-      $left .= "<li class='nav-item'><a href='$link'  class='nav-link $active'>$page->name</a></li>";
+      $left .= "<li class='nav-item'><a href='$link'  class='nav-link $active' title='$name_attr' $attr>$page->name</a></li>";
     }
   }
 
@@ -115,7 +126,20 @@ function menus_footer($classname = '', $id = '', $submenuclass = '')
 
   $menuHtml = "<ul class='$classname'>";
   if (!empty($data)) foreach ($data as $page) {
-    $menuHtml .= "<li class='nav-item'><a href='/" . $page->slug . "' class='nav-link'>$page->name</a></li>";
+    $link = BASE_URL . $page->slug;
+    $is_external = false;
+    if (!empty($page->outer_link)) {
+      $link = $page->outer_link;
+      $is_external = true;
+    }
+
+    $attr = "";
+    if ($is_external) {
+      $attr = 'target="_blank" rel="noopener noreferrer"';
+    }
+    $name_attr = htmlspecialchars($page->name, ENT_QUOTES, 'UTF-8');
+
+    $menuHtml .= "<li class='nav-item'><a href='$link' class='nav-link' title='$name_attr' $attr>$page->name</a></li>";
   }
   $menuHtml .= '</ul>';
 

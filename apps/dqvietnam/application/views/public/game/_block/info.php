@@ -66,7 +66,7 @@
       <div class="right">
         <div class="avatar-info">
           <div class="image-avatar"><img loading="lazy"
-              src="<?= empty($account->avatar) ? 'public/game/images/avatar.png' : getImageThumb($account->avatar) ?>"
+              src="<?= empty($account->avatar) ? 'public/game/images/avatar.webp' : getImageThumb($account->avatar) ?>"
               alt="image-avatar"></div>
           <label for="avatar" class="btn add-avatar">
             <svg width="34" height="34" viewBox="0 0 34 34" fill="none"

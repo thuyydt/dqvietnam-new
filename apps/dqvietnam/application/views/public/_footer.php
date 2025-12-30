@@ -1,17 +1,17 @@
 <div class="img-bg">
-  <img src="<?= $this->templates_assets ?>images/element-03.png" loading="lazy" />
+  <img src="<?= $this->templates_assets ?>images/element-03.webp" alt="Background Element" loading="lazy" />
 </div>
 <footer class="footer">
   <div class="container">
     <div class="row inner-footer">
       <div class="col-12 col-lg-4">
-        <img src="<?= $this->templates_assets ?>images/logo-01.png" loading="lazy" class="logo" />
+        <img src="<?= $this->templates_assets ?>images/logo-01.webp" alt="DQ Vietnam Logo" loading="lazy" class="logo" />
         <div class="info">
           <p class="strong">
             <?= $this->info->get('company[name]') ?>
           </p>
           <p>
-            <spans class="strong">Địa chỉ:</spans><?= $this->info->get('company[address]') ?>
+            <span class="strong">Địa chỉ:</span><?= $this->info->get('company[address]') ?>
           </p>
           <p>
             <span class="strong">Tel: </span> <?= $this->info->get('company[phone]') ?>
@@ -24,7 +24,7 @@
       <div class="col-12 col-lg-8 right-footer-menu">
         <div class="row">
           <div class="col-12 col-xl-4 col-lg-4 col-md-6">
-            <h2><a href="">Trang Chủ</a></h2>
+            <h2><a href="<?= base_url() ?>">Trang Chủ</a></h2>
             <ul class="footer-list">
               <li class="footer-item"><a href="/dq-la-gi">DQ là gì?</a></li>
               <li class="footer-item">
@@ -51,7 +51,7 @@
             </ul>
           </div>
           <div class="col-12 col-xl-4 col-lg-4 col-md-12">
-            <h2><a href="">Hỗ trợ</a></h2>
+            <h2><a href="/ho-tro">Hỗ trợ</a></h2>
             <ul class="footer-list">
               <li class="footer-item">
                 <a href="/ho-tro#study">Hướng dẫn học</a>
@@ -66,12 +66,12 @@
     </div>
     <div class="row footer-bottom">
       <div class="col-12 col-lg-2">
-        <a href="/dieu-khoan-su-dung" target="_blank">
+        <a href="/dieu-khoan-su-dung" target="_blank" rel="noopener noreferrer">
           <span class="">Điều khoản sử dụng</span>
         </a>
       </div>
       <div class="col-12 col-lg-2">
-        <a href="/chinh-sach-bao-mat" target="_blank">
+        <a href="/chinh-sach-bao-mat" target="_blank" rel="noopener noreferrer">
           <span class="">Chính sách bảo mật</span>
         </a>
       </div>
@@ -83,15 +83,14 @@
       </div>
       <div class="col-12 col-lg-2">
         <div class="social flex-end">
-          <a href="<?= $this->info->get('social[facebook]') ?>" target="_blank">
-            <img src="../../../../public/images/iconfacebook.png" alt="" srcset="" loading="lazy" />
+          <a href="<?= $this->info->get('social[facebook]') ?>" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="<?= $this->templates_assets ?>images/iconfacebook.webp" alt="Facebook" loading="lazy" />
           </a>
-          <a href="<?= $this->info->get('social[youtube]') ?>" target="_blank">
-            <img src="../../../../public/images/iconyoutube.png" alt="" srcset="" loading="lazy" />
+          <a href="<?= $this->info->get('social[youtube]') ?>" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
+            <img src="<?= $this->templates_assets ?>images/iconyoutube.webp" alt="Youtube" loading="lazy" />
           </a>
-          <a href="<?= $this->info->get('social[instagram]') ?>"
-            target="_blank">
-            <img src="../../../../public/images/iconinsta.png" alt="" srcset="" loading="lazy" />
+          <a href="<?= $this->info->get('social[instagram]') ?>" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="<?= $this->templates_assets ?>images/iconinsta.webp" alt="Instagram" loading="lazy" />
           </a>
         </div>
       </div>

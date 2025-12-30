@@ -580,7 +580,7 @@ body {
     font-size: 4vh;
     width: 133.42592592592592vh;
     height: 34.72222222222222vh;
-    background-image: url(../images/bg-03.png);
+    background-image: url(../images/bg-03.webp);
     background-size: 100% 100%;
     color: #fff;
     font-weight: 500;
@@ -1413,14 +1413,14 @@ body {
 }
 
 .slider .slick-arrow.slick-next {
-    background-image: url(../images/arrow-right.png);
+    background-image: url(../images/arrow-right.webp);
     right: -0.25vw;
     -webkit-transform: translateY(-50%) translateX(100%);
     transform: translateY(-50%) translateX(100%)
 }
 
 .slider .slick-arrow.slick-prev {
-    background-image: url(../images/arrow-left.png);
+    background-image: url(../images/arrow-left.webp);
     left: -0.35vw;
     -webkit-transform: translateY(-50%) translateX(-100%);
     transform: translateY(-50%) translateX(-100%)
@@ -1662,7 +1662,7 @@ body {
     margin-top: 2vh;
     height: calc(100% - 2vh);
     min-height: 7vh;
-    background-image: url(../images/bg-08.png);
+    background-image: url(../images/bg-08.webp);
     background-size: 100% 100%;
     font-size: 3.5vh;
     color: #dc5a48;
@@ -1675,12 +1675,12 @@ body {
 
 .slider .page .selects .answer .btn-answer.active {
     color: #fff;
-    background-image: url(../images/bg-08-a.png)
+    background-image: url(../images/bg-08-a.webp)
 }
 
 .slider .page .selects .answer .btn-answer:hover {
     color: #fff;
-    background-image: url(../images/bg-09.png)
+    background-image: url(../images/bg-09.webp)
 }
 
 
@@ -1806,7 +1806,7 @@ body {
     font-size: 4vh;
     width: 133.42592592592592vh;
     height: 34.72222222222222vh;
-    background-image: url(../images/bg-03.png);
+    background-image: url(../images/bg-03.webp);
     background-size: 100% 100%;
     color: #fff;
     font-weight: 500;
@@ -1842,7 +1842,7 @@ body {
     transform: translateY(-50%) translateX(-26%);
     height: 62.77777777777778vh;
     width: 23.425925925925924vh;
-    background-image: url(../images/group-btn.png);
+    background-image: url(../images/group-btn.webp);
     background-size: 100% 100%
 }
 
@@ -2898,7 +2898,7 @@ body {
     width: 3.5185185185185186vh;
     height: 5.833333333333333vh;
     background-size: 100% 100%;
-    background-image: url(../images/arrow-01.png);
+    background-image: url(../images/arrow-01.webp);
     top: 50%;
     cursor: pointer
 }

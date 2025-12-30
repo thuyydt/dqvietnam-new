@@ -1,11 +1,11 @@
 <header class="c-header">
   <div class="block">
-    <a class="navbar-brand" href=" <?= urlRoute() ?>">
-      <img src="<?= $this->templates_assets ?>/images/logo-01.png" loading="lazy" />
+    <a class="navbar-brand" href=" <?= urlRoute() ?>" aria-label="Trang chủ">
+      <img src="<?= $this->templates_assets ?>/images/logo-01.webp" alt="DQ Vietnam Logo" loading="lazy" />
     </a>
     <div class="account">
-      <a href="<?= urlRoute('register') ?>" class="btn-header">Đăng Ký</a>
-      <a href="<?= urlRoute('login') ?>" class="btn-header">Đăng Nhập</a>
+      <a href="<?= urlRoute('register') ?>" class="btn-header" aria-label="Đăng Ký" rel="nofollow">Đăng Ký</a>
+      <a href="<?= urlRoute('login') ?>" class="btn-header" aria-label="Đăng Nhập" rel="nofollow">Đăng Nhập</a>
     </div>
   </div>
 </header>

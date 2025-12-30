@@ -1,5 +1,5 @@
 <template>
-    <div class="app" style="background-image: url(./public/guide/images/bg-main.jpg);">
+    <div class="app" style="background-image: url(./public/guide/images/bg-main.webp);">
 
         <Step1 v-if="step===1"></Step1>
         <Step2 v-if="step===2"></Step2>

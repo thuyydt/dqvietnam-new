@@ -4,7 +4,7 @@
       <a href="<?= base_url() ?>" class="btn-exit"></a>
       <div class="col left">
 
-        <div class="img"><img src="<?= $this->templates_assets ?>images/element-05.png" loading="lazy"></div>
+        <div class="img"><img src="<?= $this->templates_assets ?>images/element-05.webp" loading="lazy"></div>
 
       </div>
       <div class="col right">

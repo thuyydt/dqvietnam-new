@@ -12,7 +12,7 @@
     <button style="display: none" ref="btnRef" @click="playVideo">Play</button>
 
     <div class="firework" v-if="is_firework">
-      <img class="" :src="base_url + 'public/game/images/firework.png'" alt="firework">
+      <img class="" :src="base_url + 'public/game/images/firework.webp'" alt="firework">
     </div>
   </div>
 </template>

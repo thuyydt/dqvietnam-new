@@ -13,13 +13,13 @@ $version = time();
       "@context": "http:\/\/schema.org",
       "@type": "WebSite",
       "@id": "#website",
-      "url": "https:\/\/web.vn\/",
-      "name": "web.vn"
+      "url": "<?= base_url() ?>",
+      "name": "DQ Vietnam"
     }
   </script>
-  <link rel="stylesheet" href="<?= $this->templates_assets . 'css/app.css?v=' . time() ?>">
-  <link rel="stylesheet" href="<?= $this->templates_assets . 'css/main.min.css?v=' . time() ?>">
-  <link rel="stylesheet" href="<?= BASE_URL . 'public/css/home.css?v=' . time() ?>">
+  <link rel="stylesheet" href="<?= $this->templates_assets . 'css/app.css?v=' . ASSET_VERSION ?>">
+  <link rel="stylesheet" href="<?= $this->templates_assets . 'css/main.min.css?v=' . ASSET_VERSION ?>">
+  <link rel="stylesheet" href="<?= BASE_URL . 'public/css/home.css?v=' . ASSET_VERSION ?>">
   <script>
     var current_url = '<?= current_url() ?>',
       base_url = '<?= BASE_URL ?>',
@@ -185,7 +185,7 @@ $version = time();
   </div>
 
   <div id="notify-rotate">
-    <img src="public/images/rotatedevice.jpg" alt="" loading="lazy" />
+    <img src="public/images/rotatedevice.webp" alt="" loading="lazy" />
   </div>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="<?= $this->templates_assets . 'js/app.js?v=' . $version ?>"></script>

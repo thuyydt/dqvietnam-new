@@ -1,4 +1,9 @@
 <main class="parents padding-bot-500">
+  <style>
+    .parents .banner {
+      background-image: url("public/images/parents/banner.webp") !important;
+    }
+  </style>
   <section class="section banner">
     <div class="container padding-top-168">
       <div class="keywords">
@@ -15,10 +20,10 @@
     </div>
     <div class="fan">
       <div class="fan-item">
-        <img src="../../../../public/images/parents/fan1.png" alt="" srcset="" loading="lazy" />
+        <img src="public/images/parents/fan1.webp" alt="Fan 1" loading="lazy" />
       </div>
       <div class="fan-item">
-        <img src="../../../../public/images/parents/fan2.png" alt="" srcset="" loading="lazy" />
+        <img src="public/images/parents/fan2.webp" alt="Fan 2" loading="lazy" />
       </div>
     </div>
   </section>
@@ -42,7 +47,7 @@
         </div>
         <div class="col-lg-6">
           <div class="img-wrap">
-            <img src="/public/img/bia-parent.jpeg" alt="" srcset="" loading="lazy" />
+            <img src="public/img/bia-parent.webp" alt="Sổ tay cha mẹ" loading="lazy" />
           </div>
         </div>
       </div>
@@ -58,7 +63,7 @@
           <div class="box shadow-card">
             <div class="inner-box">
               <div class="icon">
-                <img src="../../../../public/images/dqlagi/learn/1.png" loading="lazy" />
+                <img src="public/images/dqlagi/learn/1.webp" alt="Quản lý thời gian tiếp xúc màn hình" loading="lazy" />
               </div>
               <div class="txt">
                 <p class="item-title color-1">
@@ -77,7 +82,7 @@
           <div class="box shadow-card">
             <div class="inner-box">
               <div class="icon">
-                <img src="../../../../public/images/dqlagi/learn/2.png" loading="lazy" />
+                <img src="public/images/dqlagi/learn/2.webp" alt="Quản lý an ninh mạng" loading="lazy" />
               </div>
               <div class="txt">
                 <p class="item-title color-2">
@@ -96,7 +101,7 @@
           <div class="box shadow-card">
             <div class="inner-box">
               <div class="icon">
-                <img src="../../../../public/images/dqlagi/learn/3.png" loading="lazy" />
+                <img src="public/images/dqlagi/learn/3.webp" alt="Quản lý bắt nạt trên mạng" loading="lazy" />
               </div>
               <div class="txt">
                 <p class="item-title color-3">
@@ -114,7 +119,7 @@
           <div class="box shadow-card">
             <div class="inner-box">
               <div class="icon">
-                <img src="../../../../public/images/dqlagi/learn/4.png" loading="lazy" />
+                <img src="public/images/dqlagi/learn/4.webp" alt="Quản lý dấu chân kỹ thuật số" loading="lazy" />
               </div>
               <div class="txt">
                 <p class="item-title color-4">
@@ -132,7 +137,7 @@
           <div class="box shadow-card">
             <div class="inner-box">
               <div class="icon">
-                <img src="../../../../public/images/dqlagi/learn/5.png" loading="lazy" />
+                <img src="public/images/dqlagi/learn/5.webp" alt="Quản lý quyền riêng tư" loading="lazy" />
               </div>
               <div class="txt">
                 <p class="item-title color-5">
@@ -151,7 +156,7 @@
           <div class="box shadow-card">
             <div class="inner-box">
               <div class="icon">
-                <img src="../../../../public/images/dqlagi/learn/6.png" loading="lazy" />
+                <img src="public/images/dqlagi/learn/6.webp" alt="Tư duy phản biện" loading="lazy" />
               </div>
               <div class="txt">
                 <p class="item-title color-6">
@@ -170,7 +175,7 @@
           <div class="box shadow-card">
             <div class="inner-box">
               <div class="icon">
-                <img src="../../../../public/images/dqlagi/learn/7.png" loading="lazy" />
+                <img src="public/images/dqlagi/learn/7.webp" alt="Danh tính công dân kỹ thuật số" loading="lazy" />
               </div>
               <div class="txt">
                 <p class="item-title color-7">
@@ -188,7 +193,7 @@
           <div class="box shadow-card">
             <div class="inner-box">
               <div class="icon">
-                <img src="../../../../public/images/dqlagi/learn/8.png" loading="lazy" />
+                <img src="public/images/dqlagi/learn/8.webp" alt="Cảm thông kỹ thuật số" loading="lazy" />
               </div>
               <div class="txt">
                 <p class="item-title color-8">
@@ -222,7 +227,7 @@
           <a href="<?= urlRoute('register') ?>" class="btn-maintain text-center">Tham gia ngay</a>
         </div>
         <div class="col-lg-6 margin-bot-200">
-          <img src="../../../../public/img/rp-parent.jpeg" alt="" srcset="" loading="lazy" />
+          <img src="public/img/rp-parent.webp" alt="Báo cáo rủi ro" srcset="" loading="lazy" />
         </div>
       </div>
     </div>
@@ -237,7 +242,7 @@
           <div class="why-box">
             <ul>
               <li class="why-item">
-                <img src="../../../../public/images/parents/icon1.png" alt="" loading="lazy" />
+                <img src="public/images/parents/icon1.webp" alt="Công dân số toàn diện" loading="lazy" />
                 <div class="why-item-content">
                   Trang bị và cung cấp các kiến thức và kỹ năng để trẻ trở
                   thành công dân số toàn diện, chuẩn bị các kỹ năng và tiền
@@ -245,7 +250,7 @@
                 </div>
               </li>
               <li class="why-item">
-                <img src="../../../../public/images/parents/icon2.png" alt="" loading="lazy" />
+                <img src="public/images/parents/icon2.webp" alt="Làm chủ công nghệ" loading="lazy" />
                 <div class="why-item-content">
                   Rèn luyện thói quen và phát triển tư duy thông minh khi sử
                   dụng mạng internet và các thiết bị điện tử một cách sáng
@@ -254,7 +259,7 @@
                 </div>
               </li>
               <li class="why-item">
-                <img src="../../../../public/images/parents/icon3.png" alt="" loading="lazy" />
+                <img src="public/images/parents/icon3.webp" alt="Công dân tốt trên mạng" loading="lazy" />
                 <div class="why-item-content">
                   Dạy trẻ là một công dân tốt trên mạng, biết đánh giá, xem
                   xét, phân tích, chọn lọc và xác thực thông tin khi tham
@@ -266,7 +271,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <img class="why-img" src="../../../../public/images/parents/why.png" alt="" loading="lazy" />
+          <img class="why-img" src="public/images/parents/why.webp" alt="Tại sao cần DQ" loading="lazy" />
         </div>
       </div>
       <div class="row">
@@ -275,7 +280,7 @@
             <div class="why-box">
               <ul>
                 <li class="why-item">
-                  <img src="../../../../public/images/parents/icon4.png" alt="" loading="lazy" />
+                  <img src="public/images/parents/icon4.webp" alt="Giảm căng thẳng cho cha mẹ" loading="lazy" />
                   <div class="why-item-content">
                     Giảm bớt căng thẳng cho cha mẹ trong việc nuôi và bảo vệ
                     con khi trẻ biết sử dụng và tham gia hoạt động trực
@@ -285,7 +290,7 @@
                   </div>
                 </li>
                 <li class="why-item">
-                  <img src="../../../../public/images/parents/icon5.png" alt="" loading="lazy" />
+                  <img src="public/images/parents/icon5.webp" alt="Nền tảng kỹ năng số" loading="lazy" />
                   <div class="why-item-content">
                     Giúp tạo nền tảng cho trẻ em thực hành các kỹ năng kỹ
                     thuật số quan trọng, biết mức độ phù hợp và an toàn của
@@ -294,7 +299,7 @@
                   </div>
                 </li>
                 <li class="why-item">
-                  <img src="../../../../public/images/parents/icon6.png" alt="" loading="lazy" />
+                  <img src="public/images/parents/icon6.webp" alt="Người văn minh trên mạng" loading="lazy" />
                   <div class="why-item-content">
                     Giúp trẻ lớn lên trở thành một người văn minh trong việc
                     sử dụng mạng xã hội, có kỷ luật và có trách nhiệm. Tôn

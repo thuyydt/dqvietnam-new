@@ -7020,7 +7020,7 @@ body {
   position: absolute;
   width: 287px;
   height: 44px;
-  background-image: url(../images/element-08.png);
+  background-image: url(../images/element-08.webp);
   background-size: 100% 100%;
   top: calc(100% - 1px);
   left: 50%;
@@ -7610,7 +7610,7 @@ body {
 }
 
 .c-section__dp-02 {
-  background-image: url(../images/element-10.jpg);
+  background-image: url(../images/element-10.webp);
   background-size: 1495px 1446px;
   background-repeat: no-repeat;
   background-position: center top;
@@ -7714,7 +7714,7 @@ body {
 .c-section__dp-03 {
   padding-top: 105px;
   padding-bottom: 124px;
-  background-image: url(../images/element-12.png);
+  background-image: url(../images/element-12.webp);
   background-size: 100% 100%;
 }
 
@@ -7889,7 +7889,7 @@ body {
 .c-section__dp-hero-01 {
   position: relative;
   height: 100vh;
-  background-image: url(../images/element-14.jpg);
+  background-image: url(../images/element-14.webp);
   background-size: cover;
   min-height: 800px;
   overflow: hidden;
@@ -7910,7 +7910,7 @@ body {
   bottom: -1px;
   z-index: 3;
   pointer-events: none;
-  background-image: url(../images/element-15.png);
+  background-image: url(../images/element-15.webp);
   background-size: 100% 100%;
 }
 
@@ -7985,7 +7985,7 @@ body {
 }
 
 .c-section__dp-hero-02 {
-  background-image: url(../images/element-21.jpg);
+  background-image: url(../images/element-21.webp);
   height: 100vh;
 }
 
@@ -8177,7 +8177,7 @@ body {
   left: 50px;
   width: 898px;
   height: 512px;
-  background-image: url(../images/element-20.png);
+  background-image: url(../images/element-20.webp);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }

@@ -1,4 +1,13 @@
 <main class="schools padding-top-168 padding-bot-500">
+  <style>
+    .schools .nangluc {
+      background-image: url("public/images/dqlagi/bg1.webp") !important;
+    }
+
+    .schools .plan {
+      background-image: url("public/images/dqlagi/bg2.webp") !important;
+    }
+  </style>
   <section class="section letter">
     <div class="container">
       <div class="wrap-letter">
@@ -7,7 +16,7 @@
             <div class="title-letter">THƯ NGỎ</div>
           </div>
           <div class="col-lg-6 avatar-img">
-            <img class="avatar" src="../../../../public/images/schools/giaosu.png" alt="" srcset="" loading="lazy" />
+            <img class="avatar" src="public/images/schools/giaosu.webp" alt="NGND.PGS.TS. Nguyễn Võ Kỳ Anh" loading="lazy" />
             <div class="img-desc">NGND.PGS.TS. Nguyễn Võ Kỳ Anh</div>
           </div>
         </div>
@@ -85,25 +94,25 @@
           </div>
           <ul class="list">
             <li class="item-list">
-              <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt="" srcset="" loading="lazy" />
+              <img class="icon-check" src="public/images/dqlagi/icon-check.webp" alt="Check" loading="lazy" />
               <span>Phát triển sự hiểu biết về thế giới kỹ thuật số </span>
             </li>
             <li class="item-list">
-              <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt="" srcset="" loading="lazy" />
+              <img class="icon-check" src="public/images/dqlagi/icon-check.webp" alt="Check" loading="lazy" />
               <span>
                 Khám phá những hành vi tích cực cần thiết để trở nên tử tế
                 và tôn trọng trên mạng
               </span>
             </li>
             <li class="item-list">
-              <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt="" srcset="" loading="lazy" />
+              <img class="icon-check" src="public/images/dqlagi/icon-check.webp" alt="Check" loading="lazy" />
               <span>
                 Kiểm soát các rủi ro trực tuyến, hành vi tiêu cực, tin tức
                 giả mạo, các cuộc tấn công mạng
               </span>
             </li>
             <li class="item-list">
-              <img class="icon-check" src="../../../../public/images/dqlagi/icon-check.png" alt="" srcset="" loading="lazy" />
+              <img class="icon-check" src="public/images/dqlagi/icon-check.webp" alt="Check" loading="lazy" />
               <span>
                 Biết tìm kiếm sự giúp đỡ từ những người đáng tin cậy
               </span>
@@ -111,7 +120,7 @@
           </ul>
         </div>
         <div class="col-lg-6">
-          <img src="../../../../public/images/dqlagi/soccon.gif" alt="" srcset="" loading="lazy" />
+          <img src="public/images/dqlagi/soccon.gif" alt="Sóc con" loading="lazy" />
         </div>
       </div>
     </div>
@@ -313,7 +322,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="/public/img/bia-school.jpeg" alt="" srcset="" loading="lazy" />
+          <img src="public/img/bia-school.webp" alt="Bìa sách nhà trường" loading="lazy" />
         </div>
       </div>
     </div>

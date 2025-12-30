@@ -3,7 +3,7 @@
 
   <div class="section-info">
     <div class="item item-01">
-      <img :src="base_url + 'public/game/images/name.png'">
+      <img :src="base_url + 'public/game/images/name.webp'">
       <div class="item-info">{{ task.name }}</div>
       <div class="avatar"><img :src="getAvatarUser(account)"></div>
     </div>
@@ -13,20 +13,20 @@
              v-if="isGetCoins">
           <span class="plus">+</span>{{ numCoins }}
         </div>
-        <img :src="base_url + 'public/game/images/vang.png'">
+        <img :src="base_url + 'public/game/images/vang.webp'">
         <div class="item-info" :key="coins">{{ coins }}</div>
       </div>
       <div class="item item-03">
         <div class="effect-get-gift get-cards" v-if="isGetCards">
-          +<img :src="base_url + 'public/game/images/card_empty.png'"/>
+          +<img :src="base_url + 'public/game/images/card_empty.webp'"/>
         </div>
-        <img :src="base_url + 'public/game/images/the-bao.png'">
+        <img :src="base_url + 'public/game/images/the-bao.webp'">
       </div>
       <div class="item item-03 btn-menu settings">
-        <img :src="base_url + 'public/img/setting-btn.png'">
+        <img :src="base_url + 'public/img/setting-btn.webp'">
       </div>
       <div @click="closeGame()" style="cursor: pointer" class="item item-04">
-        <img :src="base_url + 'public/game/images/x.png'">
+        <img :src="base_url + 'public/game/images/x.webp'">
       </div>
     </div>
   </div>
@@ -171,7 +171,7 @@ export default {
     },
     getAvatarUser(account) {
       if (account.avatar == '') {
-        return `public/game/images/avatar.png`;
+        return `public/game/images/avatar.webp`;
       }
 
       return account.avatar;
@@ -206,28 +206,28 @@ export default {
         let key = parseInt(task.key);
 
         if (key <= 10) {
-          this.theme.background = this.base_url + 'public/game/images/bgk1.png';
+          this.theme.background = this.base_url + 'public/game/images/bgk1.webp';
           this.theme.layout = 'round-1';
         } else if (key <= 20) {
-          this.theme.background = this.base_url + 'public/game/images/bgk2.png';
+          this.theme.background = this.base_url + 'public/game/images/bgk2.webp';
           this.theme.layout = 'round-2';
         } else if (key <= 30) {
-          this.theme.background = this.base_url + 'public/game/images/bgk3.png';
+          this.theme.background = this.base_url + 'public/game/images/bgk3.webp';
           this.theme.layout = 'round-3';
         } else if (key <= 40) {
-          this.theme.background = this.base_url + 'public/game/images/bgk4.png';
+          this.theme.background = this.base_url + 'public/game/images/bgk4.webp';
           this.theme.layout = 'round-4';
         } else if (key <= 50) {
-          this.theme.background = this.base_url + 'public/game/images/bgk5.png';
+          this.theme.background = this.base_url + 'public/game/images/bgk5.webp';
           this.theme.layout = 'round-5';
         } else if (key <= 60) {
-          this.theme.background = this.base_url + 'public/game/images/bgk6.png';
+          this.theme.background = this.base_url + 'public/game/images/bgk6.webp';
           this.theme.layout = 'round-6';
         } else if (key <= 70) {
-          this.theme.background = this.base_url + 'public/game/images/bgk7.png';
+          this.theme.background = this.base_url + 'public/game/images/bgk7.webp';
           this.theme.layout = 'round-7';
         } else if (key <= 80) {
-          this.theme.background = this.base_url + 'public/game/images/bgk8.png';
+          this.theme.background = this.base_url + 'public/game/images/bgk8.webp';
           this.theme.layout = 'round-8';
         }
       }

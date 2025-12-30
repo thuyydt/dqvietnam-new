@@ -70,7 +70,7 @@ body {
     transform: translateY(-50%) translateX(-26%);
     height: 62.77777777777778vh;
     width: 23.425925925925924vh;
-    background-image: url(../images/group-btn.png);
+    background-image: url(../images/group-btn.webp);
     background-size: 100% 100%
 }
 
@@ -936,7 +936,7 @@ body {
     width: 3.5185185185185186vh;
     height: 5.833333333333333vh;
     background-size: 100% 100%;
-    background-image: url(../images/arrow-01.png);
+    background-image: url(../images/arrow-01.webp);
     top: 50%;
     cursor: pointer
 }

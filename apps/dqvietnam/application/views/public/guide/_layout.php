@@ -32,7 +32,7 @@ $version = "3.8";
 
 <body>
   <?php echo !empty($main_content) ? $main_content : ''; ?>
-  <div id="notify-rotate"><img src="public/images/rotatedevice.jpg" alt="" loading="lazy" /></div>
+  <div id="notify-rotate"><img src="public/images/rotatedevice.webp" alt="" loading="lazy" /></div>
   <script src="<?= $this->templates_assets . 'js/app.js?v=' . time() ?>"></script>
   <script src="<?= $this->templates_assets . 'js/vue.js?v=' . time() ?>"></script>
   <?= !empty($this->settings['embeb_js']) ? $this->settings['embeb_js'] : '' ?>

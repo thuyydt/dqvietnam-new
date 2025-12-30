@@ -13,7 +13,7 @@
             img_payright: '',
             pay_content: '',
             "home_banner": "/public/images/element-24.jfif",
-            "hero_banner": "/public/images/dqlagi/banner.jpg",
+            "hero_banner": "/public/images/dqlagi/banner.webp",
             "social[facebook]": "",
             "social[youtube]": "",
             "social[twitter]": "",

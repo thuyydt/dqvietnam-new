@@ -77,7 +77,7 @@ $version = "3.8";
     });
   </script>
   <div id="notify-rotate">
-    <img src="public/images/rotatedevice.jpg" alt="" loading="lazy" />
+    <img src="public/images/rotatedevice.webp" alt="" loading="lazy" />
   </div>
 </body>
 

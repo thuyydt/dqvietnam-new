@@ -1,5 +1,5 @@
 <template>
-    <img class="bg-content" src="../images/bg-02.png">
+    <img class="bg-content" src="../images/bg-02.webp">
 </template>
 
 <script>

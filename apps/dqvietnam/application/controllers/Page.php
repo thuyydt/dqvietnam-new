@@ -50,6 +50,15 @@ class Page extends Public_Controller
   {
     $id = $this->_data->slugToId($slug);
     $data['main'] = $main = $this->_data->getById($id, '');
+
+    $data['SEO'] = [
+      'meta_title' => !empty($main->meta_title) ? $main->meta_title : (isset($this->settings['title']) ? $this->settings['title'] : $this->settings['meta_title']),
+      'meta_description' => !empty($main->meta_description) ? $main->meta_description : '',
+      'meta_keyword' => !empty($main->meta_keyword) ? $main->meta_keyword : '',
+      'url' => BASE_URL . $slug,
+      'image' => !empty($main->thumbnail) ? getImageThumb($main->thumbnail) : ''
+    ];
+
     $data['main_content'] = $this->load->view($this->template_path . 'page/static/about', $data, TRUE);
 
     $this->load->view($this->template_main, $data);
@@ -59,6 +68,15 @@ class Page extends Public_Controller
   {
     $id = $this->_data->slugToId($slug);
     $data['main'] = $main = $this->_data->getById($id, '');
+
+    $data['SEO'] = [
+      'meta_title' => !empty($main->meta_title) ? $main->meta_title : (isset($this->settings['title']) ? $this->settings['title'] : $this->settings['meta_title']),
+      'meta_description' => !empty($main->meta_description) ? $main->meta_description : '',
+      'meta_keyword' => !empty($main->meta_keyword) ? $main->meta_keyword : '',
+      'url' => BASE_URL . $slug,
+      'image' => !empty($main->thumbnail) ? getImageThumb($main->thumbnail) : ''
+    ];
+
     $data['main_content'] = $this->load->view($this->template_path . 'page/static/hero', $data, TRUE);
 
     $this->load->view($this->template_main, $data);
@@ -68,6 +86,15 @@ class Page extends Public_Controller
   {
     $id = $this->_data->slugToId($slug);
     $data['main'] = $main = $this->_data->getById($id, '');
+
+    $data['SEO'] = [
+      'meta_title' => !empty($main->meta_title) ? $main->meta_title : (isset($this->settings['title']) ? $this->settings['title'] : $this->settings['meta_title']),
+      'meta_description' => !empty($main->meta_description) ? $main->meta_description : '',
+      'meta_keyword' => !empty($main->meta_keyword) ? $main->meta_keyword : '',
+      'url' => BASE_URL . $slug,
+      'image' => !empty($main->thumbnail) ? getImageThumb($main->thumbnail) : ''
+    ];
+
     $data['main_content'] = $this->load->view($this->template_path . 'page/static/parent', $data, TRUE);
 
     $this->load->view($this->template_main, $data);
@@ -86,6 +113,15 @@ class Page extends Public_Controller
   {
     $id = $this->_data->slugToId($slug);
     $data['main'] = $main = $this->_data->getById($id, '');
+
+    $data['SEO'] = [
+      'meta_title' => !empty($main->meta_title) ? $main->meta_title : (isset($this->settings['title']) ? $this->settings['title'] : $this->settings['meta_title']),
+      'meta_description' => !empty($main->meta_description) ? $main->meta_description : '',
+      'meta_keyword' => !empty($main->meta_keyword) ? $main->meta_keyword : '',
+      'url' => BASE_URL . $slug,
+      'image' => !empty($main->thumbnail) ? getImageThumb($main->thumbnail) : ''
+    ];
+
     $data['main_content'] = $this->load->view($this->template_path . 'page/static/school', $data, TRUE);
     $this->load->view($this->template_main, $data);
   }

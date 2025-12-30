@@ -464,7 +464,7 @@ body {
   height: 28.645833333333332vw;
   top: 0;
   right: 0;
-  background-image: url(../images/element-02.png);
+  background-image: url(../images/element-02.webp);
   -webkit-animation: element-2 2s ease-in-out;
   animation: element-2 2s ease-in-out;
 }
@@ -473,7 +473,7 @@ body {
   height: 43.645833333333336vw;
   bottom: 0;
   left: 0;
-  background-image: url(../images/element-01.png);
+  background-image: url(../images/element-01.webp);
   -webkit-animation: element-1 2s ease-in-out;
   animation: element-1 2s ease-in-out;
 }
@@ -548,7 +548,7 @@ body {
   }
 }
 .c-main .account-box .wrapper .left {
-  background-image: url(../images/element-04.png);
+  background-image: url(../images/element-04.webp);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -714,7 +714,7 @@ body {
   .form
   .form-group
   .form-control.input-school {
-  background-image: url(../images/ic-1.png);
+  background-image: url(../images/ic-1.webp);
 }
 .c-main
   .account-box
@@ -723,7 +723,7 @@ body {
   .form
   .form-group
   .form-control.input-account {
-  background-image: url(../images/ic-2.png);
+  background-image: url(../images/ic-2.webp);
 }
 .c-main
   .account-box
@@ -752,7 +752,7 @@ body {
   .form
   .form-group
   .form-control.input-password {
-  background-image: url(../images/ic-3.png);
+  background-image: url(../images/ic-3.webp);
 }
 .c-main .account-box .wrapper .right .form .btn {
   display: block;
@@ -781,7 +781,7 @@ body {
   text-decoration: none;
 }
 .c-main.v1 {
-  background-image: url(../images/element-03.jpg);
+  background-image: url(../images/element-03.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1028,7 +1028,7 @@ body {
   }
 }
 .c-pay .wrapper .heading {
-  background-image: url(../images/element-09.jpg);
+  background-image: url(../images/element-09.webp);
   background-size: 100% 100%;
 }
 .c-pay .wrapper .heading .title {

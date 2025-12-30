@@ -2,7 +2,7 @@ const generatePassword = () => {
     return Math.random().toString(36).slice(-8);
 }
 const CONSTANTS = {
-    NO_IMAGE: '/public/admin/img/no-photo.png'
+    NO_IMAGE: '/public/admin/img/no-photo.webp'
 }
 const toDate = (key, row) => {
     if (!key) {

@@ -386,12 +386,12 @@ function checkImageSrc() {
     image.onload = function () {
         cnsole.log(image);
         if (image.length == 0) {
-            image.attr('src', base_url + 'img/no-photo.png'); // replace with other image
+            image.attr('src', base_url + 'img/no-photo.webp'); // replace with other image
         }
     };
     image.onerror = function () {
         alert('error image');
-        image.attr('src', base_url + 'img/no-photo.png'); // replace with other image
+        image.attr('src', base_url + 'img/no-photo.webp'); // replace with other image
     };
 }
 

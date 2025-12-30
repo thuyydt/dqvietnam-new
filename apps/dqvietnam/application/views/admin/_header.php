@@ -18,13 +18,13 @@
         <!-- User Account: style can be found in dropdown.less -->
         <li class="dropdown user user-menu">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            <img src="<?php echo $this->templates_assets; ?>img/avatar.png" class="user-image" alt="<?php echo $this->session->user; ?>" loading="lazy" />
+            <img src="<?php echo $this->templates_assets; ?>img/avatar.webp" class="user-image" alt="<?php echo $this->session->user; ?>" loading="lazy" />
             <span class="hidden-xs"><?php echo $this->session->user; ?></span>
           </a>
           <ul class="dropdown-menu">
             <!-- User image -->
             <li class="user-header">
-              <img src="<?php echo $this->templates_assets; ?>img/avatar.png" class="img-circle" alt="User Image" loading="lazy" />
+              <img src="<?php echo $this->templates_assets; ?>img/avatar.webp" class="img-circle" alt="User Image" loading="lazy" />
               <p><?php echo $this->session->user; ?></p>
             </li>
             <!-- Menu Footer-->
