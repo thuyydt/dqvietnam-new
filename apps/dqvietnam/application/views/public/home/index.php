@@ -90,7 +90,7 @@ $home_banner = $this->info->get('home_banner');
     </div>
     <?php if (!empty($this->settings['video_tutorial'])) : ?>
       <a href="https://dqvietnam.edu.vn/public/videos/dq_pr.mp4" class="play" data-fancybox="gallery-0"><img
-          src="./public/images/element-06.png"></a>
+          src="./public/images/element-06.webp"></a>
     <?php endif; ?>
     </div>
   </section>

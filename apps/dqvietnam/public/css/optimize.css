@@ -149,7 +149,7 @@
       .about-dq .block-1 .fields .box .txt > p:first-child {
         text-align: center; }
 .about-dq .block-2 {
-  background-image: url("/public/img/bg-block2.png"); }
+  background-image: url("/public/img/bg-block2.webp"); }
   .about-dq .block-2 .box {
     background-size: 100% 100%;
     max-width: 350px;
@@ -163,7 +163,7 @@
       justify-content: end;
       flex-direction: column; }
 .about-dq .block-4 {
-  background-image: url("../img/bg-block4.png");
+  background-image: url("../img/bg-block4.webp");
   background-position: center;
   background-size: cover;
   background-repeat: non-repeat; }

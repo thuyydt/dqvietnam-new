@@ -1,4 +1,4 @@
-<div class="app" style="background-image: url(<?= $this->templates_assets ?>images/bg-main.jpg);">
+<div class="app" style="background-image: url(<?= $this->templates_assets ?>images/bg-main.webp);">
   <img class="bg-content" src="<?= $this->templates_assets ?>images/bg-01.webp" loading="lazy" />
   <div class="btn-box">
     <a href="<?= urlRoute('guide/step-') . ($step - 1) ?>" class="btn">TRỞ LẠI</a>
