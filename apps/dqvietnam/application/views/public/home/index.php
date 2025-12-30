@@ -118,7 +118,7 @@ $home_banner = $this->info->get('home_banner');
         <div class="col-12 col-sm-6 col-md-4 item">
           <a href="javascript:;" class="wrapper">
             <div class="inner">
-              <img src="../../../../public/images/1.jpg" loading="lazy" />
+              <img src="../../../../public/images/1.webp" loading="lazy" />
               <div class="info">
                 <h3 class="title-card">
                   Quản lý thời gian tiếp xúc màn hình
@@ -135,7 +135,7 @@ $home_banner = $this->info->get('home_banner');
         <div class="col-12 col-sm-6 col-md-4 item">
           <a href="javascript:;" class="wrapper">
             <div class="inner">
-              <img src="../../../../public/images/2.jpeg" loading="lazy" />
+              <img src="../../../../public/images/2.webp" loading="lazy" />
               <div class="info">
                 <h3 class="title-card">Quản lý bắt nạt trên mạng</h3>
                 <div class="description">
@@ -150,7 +150,7 @@ $home_banner = $this->info->get('home_banner');
         <div class="col-12 col-sm-6 col-md-4 item">
           <a href="javascript:;" class="wrapper">
             <div class="inner">
-              <img src="../../../../public/images/3.jpeg" loading="lazy" />
+              <img src="../../../../public/images/3.webp" loading="lazy" />
               <div class="info">
                 <h3 class="title-card">Quản lý quyền riêng tư</h3>
                 <div class="description">
@@ -166,7 +166,7 @@ $home_banner = $this->info->get('home_banner');
         <div class="col-12 col-sm-6 col-md-4 item">
           <a href="javascript:;" class="wrapper">
             <div class="inner">
-              <img src="../../../../public/images/4.jpeg" loading="lazy" />
+              <img src="../../../../public/images/4.webp" loading="lazy" />
               <div class="info">
                 <h3 class="title-card">Danh tính công dân kỹ thuật số</h3>
                 <div class="description">
@@ -181,7 +181,7 @@ $home_banner = $this->info->get('home_banner');
         <div class="col-12 col-sm-6 col-md-4 item">
           <a href="javascript:;" class="wrapper">
             <div class="inner">
-              <img src="../../../../public/images/5.jpeg" loading="lazy" />
+              <img src="../../../../public/images/5.webp" loading="lazy" />
               <div class="info">
                 <h3 class="title-card">Quản lý an ninh mạng</h3>
                 <div class="description">
@@ -196,7 +196,7 @@ $home_banner = $this->info->get('home_banner');
         <div class="col-12 col-sm-6 col-md-4 item">
           <a href="javascript:;" class="wrapper">
             <div class="inner">
-              <img src="../../../../public/images/6.jpeg" loading="lazy" />
+              <img src="../../../../public/images/6.webp" loading="lazy" />
               <div class="info">
                 <h3 class="title-card">Quản lý dấu chân kỹ thuật số</h3>
                 <div class="description">
@@ -211,7 +211,7 @@ $home_banner = $this->info->get('home_banner');
         <div class="col-12 col-sm-6 col-md-4 item">
           <a href="javascript:;" class="wrapper">
             <div class="inner">
-              <img src="../../../../public/images/7.jpeg" loading="lazy" />
+              <img src="../../../../public/images/7.webp" loading="lazy" />
               <div class="info">
                 <h3 class="title-card">Tư duy phản biện</h3>
                 <div class="description">
@@ -230,7 +230,7 @@ $home_banner = $this->info->get('home_banner');
         <div class="col-12 col-sm-6 col-md-4 item">
           <a href="javascript:;" class="wrapper">
             <div class="inner">
-              <img src="../../../../public/images/8.jpeg" loading="lazy" />
+              <img src="../../../../public/images/8.webp" loading="lazy" />
               <div class="info">
                 <h3 class="title-card">Cảm thông kỹ thuật số</h3>
                 <div class="description">
