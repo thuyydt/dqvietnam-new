@@ -38,12 +38,11 @@
   <meta property="og:description"
     content="<?php echo isset($this->settings['meta_desc']) ? $this->settings['meta_desc'] : ''; ?>" />
   <meta property="og:image" content="<?= MEDIA_URL . ($this->settings['image_share_default'] ?? '') ?>" />
-  <meta property="og:image:alt"
-   meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image:alt" content="<?php echo isset($this->settings['meta_desc']) ? $this->settings['meta_desc'] : ''; ?>" />
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="<?php echo isset($this->settings['title']) ? $this->settings['title'] . ' | ' . $this->settings['name'] : ''; ?>">
   <meta name="twitter:description" content="<?php echo isset($this->settings['meta_desc']) ? $this->settings['meta_desc'] : ''; ?>">
   <meta name="twitter:image" content="<?= MEDIA_URL . ($this->settings['image_share_default'] ?? '') ?>">
-  < content="<?php echo isset($this->settings['meta_desc']) ? $this->settings['meta_desc'] : ''; ?>" />
   <meta property="thumbnail" content="<?= MEDIA_URL . ($this->settings['image_share_default'] ?? '') ?>" />
   <meta property="og:url" content="<?php echo current_url(); ?>" />
   <!--Meta Facebook Homepage-->
