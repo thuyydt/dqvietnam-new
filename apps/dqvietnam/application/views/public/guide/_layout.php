@@ -1,6 +1,5 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-$version = "3.8";
 ?>
 <!DOCTYPE html>
 <html lang="<?= $this->lang_code ?>">
@@ -17,8 +16,8 @@ $version = "3.8";
       "name": "web.vn"
     }
   </script>
-  <link rel="stylesheet" href="<?= $this->templates_assets . 'css/main.min.css?v=' . time() ?>">
-  <link rel="stylesheet" href="<?= $this->templates_assets . 'css/app.css?v=' . time() ?>">
+  <link rel="stylesheet" href="<?= $this->templates_assets . 'css/main.min.css?v=' . ASSET_VERSION ?>">
+  <link rel="stylesheet" href="<?= $this->templates_assets . 'css/app.css?v=' . ASSET_VERSION ?>">
   <script>
     var current_url = '<?= current_url() ?>',
       base_url = '<?= BASE_URL ?>',
@@ -33,11 +32,11 @@ $version = "3.8";
 <body>
   <?php echo !empty($main_content) ? $main_content : ''; ?>
   <div id="notify-rotate"><img src="public/images/rotatedevice.webp" alt="" loading="lazy" /></div>
-  <script src="<?= $this->templates_assets . 'js/app.js?v=' . time() ?>"></script>
-  <script src="<?= $this->templates_assets . 'js/vue.js?v=' . time() ?>"></script>
+  <script src="<?= $this->templates_assets . 'js/app.js?v=' . ASSET_VERSION ?>"></script>
+  <script src="<?= $this->templates_assets . 'js/vue.js?v=' . ASSET_VERSION ?>"></script>
   <?= !empty($this->settings['embeb_js']) ? $this->settings['embeb_js'] : '' ?>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script defer src="/public/auth/js/version2.js?v=<?= time() ?>"></script>
+  <script defer src="/public/auth/js/version2.js?v=<?= ASSET_VERSION ?>"></script>
   <script>
     let heartbeatInterval = null;
     document.addEventListener('DOMContentLoaded', function() {

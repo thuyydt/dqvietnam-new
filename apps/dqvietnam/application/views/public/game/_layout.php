@@ -1,6 +1,5 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-$version = "3.8";
 ?>
 
 <!DOCTYPE html>
@@ -20,14 +19,14 @@ $version = "3.8";
   </script>
 
   <?php if ($type_lib == 'play') { ?>
-    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/app.css?v=' . time() ?>">
-    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/main.min.css?v=' . time() ?>">
+    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/app.css?v=' . ASSET_VERSION ?>">
+    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/main.min.css?v=' . ASSET_VERSION ?>">
   <?php } else { ?>
-    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/app.css?v=' . time() ?>">
-    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/main.min.css?v=' . time() ?>">
-    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/custom.css?v=' . time() ?>">
+    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/app.css?v=' . ASSET_VERSION ?>">
+    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/main.min.css?v=' . ASSET_VERSION ?>">
+    <link rel="stylesheet" href="<?= $this->templates_assets . 'css/custom.css?v=' . ASSET_VERSION ?>">
   <?php } ?>
-  <link rel="stylesheet" href="<?= '/public/game/css/optimize.css?v=' . time() ?>">
+  <link rel="stylesheet" href="<?= '/public/game/css/optimize.css?v=' . ASSET_VERSION ?>">
   <script>
     var current_url = '<?= current_url() ?>',
       base_url = '<?= BASE_URL ?>',
@@ -50,12 +49,12 @@ $version = "3.8";
   <script defer src="/public/game/list/js/chart.js"></script>
   <script defer src="/public/js/utils.js"></script>
   <script defer src="/public/game/list/js/main.js?v=2.7"></script>
-  <script defer src="/public/js/common.js?v=<?php echo time() ?>"></script>
+  <script defer src="/public/js/common.js?v=<?php echo ASSET_VERSION ?>"></script>
   <?php if ($type_lib == 'play') { ?>
-    <script defer src="<?= $this->templates_assets . 'js/vue.js?v=' . time() ?>"></script>
+    <script defer src="<?= $this->templates_assets . 'js/vue.js?v=' . ASSET_VERSION ?>"></script>
   <?php } ?>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script defer src="/public/auth/js/version2.js?v=<?= time() ?>"></script>
+  <script defer src="/public/auth/js/version2.js?v=<?= ASSET_VERSION ?>"></script>
   <script>
     const onResetPwd = async (element) => {
       const formData = $('#form-update-password').serializeArray();

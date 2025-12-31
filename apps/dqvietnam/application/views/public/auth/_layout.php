@@ -1,6 +1,5 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-$version = time();
 ?>
 <!DOCTYPE html>
 <html lang="<?= $this->lang_code ?>">
@@ -188,9 +187,9 @@ $version = time();
     <img src="public/images/rotatedevice.webp" alt="" loading="lazy" />
   </div>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="<?= $this->templates_assets . 'js/app.js?v=' . $version ?>"></script>
-  <script src="<?= $this->templates_assets . 'js/version2.js?v=' . $version ?>"></script>
-  <script src="<?= $this->templates_assets . 'js/custom.js?v=' . $version ?>"></script>
+  <script src="<?= $this->templates_assets . 'js/app.js?v=' . ASSET_VERSION ?>"></script>
+  <script src="<?= $this->templates_assets . 'js/version2.js?v=' . ASSET_VERSION ?>"></script>
+  <script src="<?= $this->templates_assets . 'js/custom.js?v=' . ASSET_VERSION ?>"></script>
   <?= !empty($this->settings['embeb_js']) ? $this->settings['embeb_js'] : '' ?>
 </body>
 
