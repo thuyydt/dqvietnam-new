@@ -1,7 +1,7 @@
-<img src="<?= $this->templates_assets ?>/images/element-06.webp" class="element-bg element-bg-01" alt="Background Element 1" loading="lazy" />
-<img src="<?= $this->templates_assets ?>/images/element-07.webp" class="element-bg element-bg-02" alt="Background Element 2" loading="lazy" />
+<img src="<?= $this->templates_assets ?>/images/element-06.webp" class="element-bg element-bg-01" alt="" loading="lazy" decoding="async" />
+<img src="<?= $this->templates_assets ?>/images/element-07.webp" class="element-bg element-bg-02" alt="" loading="lazy" decoding="async" />
 
-<main class="c-main v1">
+<main class="c-main v1" role="main">
 
   <?php
 

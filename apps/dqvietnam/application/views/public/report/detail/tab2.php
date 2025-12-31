@@ -46,7 +46,7 @@ if (!$keyAnswer) {
     </div>
     <div class="clearfix mt-5"></div>
     <div class="col-12  mb-4">
-      <p class="title text-bold orange">khuyến nghị</p>
+      <h3 class="title text-bold orange">khuyến nghị</h3>
     </div>
     <div class="col-md-6">
       <p class="txt">

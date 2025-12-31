@@ -1,8 +1,8 @@
-<div class="app" style="background-color: #fff;">
+<div class="app" role="main" style="background-color: #fff;">
   <div class="tong-ket">
     <div class="container-tk">
 
-      <div class="heading" style="text-transform: uppercase">Báo cáo cấp độ rủi ro trong<br>không gian mạng</div>
+      <h1 class="heading" style="text-transform: uppercase">Báo cáo cấp độ rủi ro trong<br>không gian mạng</h1>
 
       <div class="left" style="position: relative">
         <div class="bieu-do">

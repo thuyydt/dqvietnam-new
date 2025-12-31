@@ -1,7 +1,7 @@
 <header class="c-header">
   <div class="block">
-    <a class="navbar-brand" href=" <?= urlRoute() ?>" aria-label="Trang chủ">
-      <img src="<?= $this->templates_assets ?>/images/logo-01.webp" alt="DQ Vietnam Logo" loading="lazy" />
+    <a class="navbar-brand" href="<?= urlRoute() ?>" aria-label="Trang chủ">
+      <img src="<?= $this->templates_assets ?>/images/logo-01.webp" alt="DQ Vietnam Logo" fetchpriority="high" />
     </a>
     <div class="account">
       <a href="<?= urlRoute('register') ?>" class="btn-header" aria-label="Đăng Ký" rel="nofollow">Đăng Ký</a>

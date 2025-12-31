@@ -13,8 +13,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
       "@context": "http:\/\/schema.org",
       "@type": "WebSite",
       "@id": "#website",
-      "url": "https:\/\/web.vn\/",
-      "name": "web.vn"
+      "url": "<?= base_url() ?>",
+      "name": "DQ Vietnam"
     }
   </script>
 
@@ -26,6 +26,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <link rel="stylesheet" href="<?= $this->templates_assets . 'css/main.min.css?v=' . ASSET_VERSION ?>">
     <link rel="stylesheet" href="<?= $this->templates_assets . 'css/custom.css?v=' . ASSET_VERSION ?>">
   <?php } ?>
+  <link rel="preload" as="image" href="public/game/images/bg-01.webp">
   <link rel="stylesheet" href="<?= '/public/game/css/optimize.css?v=' . ASSET_VERSION ?>">
   <script>
     var current_url = '<?= current_url() ?>',
@@ -41,19 +42,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
   <?php echo !empty($main_content) ? $main_content : ''; ?>
 
-  <!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-->
-
   <script defer src="/public/vendor/jquery-3.3.1.min.js"></script>
   <script defer src="/public/vendor/toastr/toastr.js"></script>
   <script defer src="/public/vendor/slick.min.js"></script>
   <script defer src="/public/game/list/js/chart.js"></script>
   <script defer src="/public/js/utils.js"></script>
-  <script defer src="/public/game/list/js/main.js?v=2.7"></script>
+  <script defer src="/public/game/list/js/main.js?v=<?= ASSET_VERSION ?>"></script>
   <script defer src="/public/js/common.js?v=<?php echo ASSET_VERSION ?>"></script>
   <?php if ($type_lib == 'play') { ?>
     <script defer src="<?= $this->templates_assets . 'js/vue.js?v=' . ASSET_VERSION ?>"></script>
   <?php } ?>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="/public/auth/js/version2.js?v=<?= ASSET_VERSION ?>"></script>
   <script>
     const onResetPwd = async (element) => {
@@ -76,7 +75,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
     });
   </script>
   <div id="notify-rotate">
-    <img src="public/images/rotatedevice.webp" alt="" loading="lazy" />
+    <img src="public/images/rotatedevice.webp" alt="Vui lòng xoay thiết bị" loading="lazy" decoding="async" />
   </div>
 </body>
 

@@ -3,9 +3,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-12">
-          <h2 class="title mb-2">
+          <h1 class="title mb-2">
             DQ – TRÍ THÔNG MINH KIỂU MỚI TRONG THỜI ĐẠI 4.0
-          </h2>
+          </h1>
           <p>
             Trí thông minh kỹ thuật số (DQ) là một tập hợp toàn diện các năng lực kỹ thuật, nhận thức, siêu nhận thức và
             cảm xúc xã hội dựa trên các giá trị đạo đức phổ quát và cho phép các cá nhân đối mặt với các thách thức và
@@ -19,22 +19,37 @@
     </div>
   </div>
   <div class="text-scroll">
-    <marquee>
-      <div class="d-flex justify-content-between">
+    <div class="marquee-wrapper">
+      <div class="marquee-content d-flex justify-content-between">
         <p>HƯỞNG ỨNG PHONG TRÀO “BÌNH DÂN HỌC VỤ SỐ”</p>
         <p>THEO NGHỊ QUYẾT 57-NQ/TW NGÀY 22/12/2024 CỦA BỘ CHÍNH TRỊ</p>
       </div>
-    </marquee>
+    </div>
+    <style>
+      .marquee-wrapper {
+        overflow: hidden;
+      }
+      .marquee-content {
+        animation: marquee 15s linear infinite;
+      }
+      @keyframes marquee {
+        from { transform: translateX(100%); }
+        to { transform: translateX(-100%); }
+      }
+      .marquee-wrapper:hover .marquee-content {
+        animation-play-state: paused;
+      }
+    </style>
   </div>
   <div class="block-1 pb-5">
     <div class="container">
       <div class="standard py-5">
         <div class="row">
           <div class="col-lg-6 col-md-12">
-            <h1 class="txt-red fz-48 fw-800">
+            <h2 class="txt-red fz-48 fw-800">
               KHUNG TI&Ecirc;U CHUẨN<br />
               TO&Agrave;N CẦU
-            </h1>
+            </h2>
             <div class="txt-normal fz-22">
               <span class="strong">DQ</span> và
               <span class="strong">khung tiêu chuẩn DQ</span>
@@ -51,7 +66,7 @@
 
           <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="box">
-              <img width="100%" alt="Tiến sĩ Yuhyun Park – Viện trưởng Viện DQ Hoa Kỳ tại Diễn đàn kinh tế thế giới" class="img-fluid" src="public/img/author.webp" loading="lazy" />
+              <img width="100%" alt="Tiến sĩ Yuhyun Park – Viện trưởng Viện DQ Hoa Kỳ tại Diễn đàn kinh tế thế giới" class="img-fluid" src="public/img/author.webp" loading="lazy" decoding="async" />
               <p class="txt-normal2 text-center fz-20 fw-700">
                 Tiến sĩ Yuhyun Park &ndash; Viện trưởng Viện DQ Hoa Kỳ
                 tại Diễn đ&agrave;n kinh tế thế giới
@@ -60,7 +75,7 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="box">
-              <img width="100%" alt="Giấy công nhận bởi các tổ chức quốc tế" class="img-fluid" src="public/img/certification.webp" loading="lazy" />
+              <img width="100%" alt="Giấy công nhận bởi các tổ chức quốc tế" class="img-fluid" src="public/img/certification.webp" loading="lazy" decoding="async" />
               <p class="txt-normal2 text-center fz-20 fw-700">
                 Được c&ocirc;ng nhận bởi c&aacute;c tổ chức quốc tế
               </p>
@@ -70,11 +85,11 @@
         </div>
       </div>
       <div class="fields">
-        <h1 class="txt-red fz-48 text-center">8 lĩnh vực</h1>
+        <h2 class="txt-red fz-48 text-center">8 lĩnh vực</h2>
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
-              <div class="icon"><img src="public/img/person.svg" alt="Danh tính kỹ thuật số" loading="lazy" /></div>
+              <div class="icon"><img src="public/img/person.svg" alt="Danh tính kỹ thuật số" loading="lazy" decoding="async" /></div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
                   Danh t&iacute;nh kỹ thuật số (Digital Identity)
@@ -88,7 +103,7 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
-              <div class="icon"><img src="public/img/clock.svg" alt="Sử dụng kỹ thuật số" loading="lazy" /></div>
+              <div class="icon"><img src="public/img/clock.svg" alt="Sử dụng kỹ thuật số" loading="lazy" decoding="async" /></div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
                   Sử dụng kỹ thuật số (Digital Use)
@@ -102,7 +117,7 @@
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
               <div class="icon">
-                <img src="public/img/block.svg" alt="An toàn kỹ thuật số" loading="lazy" />
+                <img src="public/img/block.svg" alt="An toàn kỹ thuật số" loading="lazy" decoding="async" />
               </div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
@@ -121,7 +136,7 @@
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
               <div class="icon">
-                <img src="public/img/def.svg" alt="Bảo mật kỹ thuật số" loading="lazy" />
+                <img src="public/img/def.svg" alt="Bảo mật kỹ thuật số" loading="lazy" decoding="async" />
               </div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
@@ -141,7 +156,7 @@
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
               <div class="icon">
-                <img src="public/img/min.svg" alt="Trí thông minh cảm xúc kỹ thuật số" loading="lazy" />
+                <img src="public/img/min.svg" alt="Trí thông minh cảm xúc kỹ thuật số" loading="lazy" decoding="async" />
               </div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
@@ -159,7 +174,7 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
-              <div class="icon"><img src="public/img/new.svg" alt="Giao tiếp kỹ thuật số" loading="lazy" /></div>
+              <div class="icon"><img src="public/img/new.svg" alt="Giao tiếp kỹ thuật số" loading="lazy" decoding="async" /></div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
                   Giao tiếp kỹ thuật số (Digital Communication)
@@ -173,7 +188,7 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
-              <div class="icon"><img src="public/img/person.svg" alt="Trình độ kỹ thuật số" loading="lazy" /></div>
+              <div class="icon"><img src="public/img/person.svg" alt="Trình độ kỹ thuật số" loading="lazy" decoding="async" /></div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
                   Tr&igrave;nh độ kỹ thuật số (Digital Literacy)
@@ -188,7 +203,7 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 mg-top-60">
             <div class="box">
-              <div class="icon"><img src="public/img/person.svg" alt="Quyền kỹ thuật số" loading="lazy" /></div>
+              <div class="icon"><img src="public/img/person.svg" alt="Quyền kỹ thuật số" loading="lazy" decoding="async" /></div>
               <div class="txt">
                 <p class="fw-700 txt-box fz-22">
                   Quyền kỹ thuật số (Digital Rights)
@@ -269,7 +284,7 @@
         </h2>
         <div class="row">
           <div class="col-12">
-            <img src="public/img/info.webp" class="img-fluid w-100" alt="24 năng lực kỹ thuật số" loading="lazy" />
+            <img src="public/img/info.webp" class="img-fluid w-100" alt="24 năng lực kỹ thuật số" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -299,7 +314,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="public/images/dqlagi/learn/1.webp" alt="Quản lý thời gian tiếp xúc màn hình" loading="lazy" />
+                  <img src="public/images/dqlagi/learn/1.webp" alt="Quản lý thời gian tiếp xúc màn hình" loading="lazy" decoding="async" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-1">
@@ -318,7 +333,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="public/images/dqlagi/learn/2.webp" alt="Quản lý an ninh mạng" loading="lazy" />
+                  <img src="public/images/dqlagi/learn/2.webp" alt="Quản lý an ninh mạng" loading="lazy" decoding="async" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-2">
@@ -337,7 +352,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="public/images/dqlagi/learn/3.webp" alt="Quản lý bắt nạt trên mạng" loading="lazy" />
+                  <img src="public/images/dqlagi/learn/3.webp" alt="Quản lý bắt nạt trên mạng" loading="lazy" decoding="async" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-3">
@@ -355,7 +370,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="public/images/dqlagi/learn/4.webp" alt="Quản lý dấu chân kỹ thuật số" loading="lazy" />
+                  <img src="public/images/dqlagi/learn/4.webp" alt="Quản lý dấu chân kỹ thuật số" loading="lazy" decoding="async" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-4">
@@ -373,7 +388,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="public/images/dqlagi/learn/5.webp" alt="Quản lý quyền riêng tư" loading="lazy" />
+                  <img src="public/images/dqlagi/learn/5.webp" alt="Quản lý quyền riêng tư" loading="lazy" decoding="async" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-5">
@@ -392,7 +407,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="public/images/dqlagi/learn/6.webp" alt="Tư duy phản biện" loading="lazy" />
+                  <img src="public/images/dqlagi/learn/6.webp" alt="Tư duy phản biện" loading="lazy" decoding="async" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-6">
@@ -412,7 +427,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="public/images/dqlagi/learn/7.webp" alt="Danh tính công dân kỹ thuật số" loading="lazy" />
+                  <img src="public/images/dqlagi/learn/7.webp" alt="Danh tính công dân kỹ thuật số" loading="lazy" decoding="async" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-7">
@@ -430,7 +445,7 @@
             <div class="box">
               <div class="inner-box">
                 <div class="icon">
-                  <img src="public/images/dqlagi/learn/8.webp" alt="Cảm thông kỹ thuật số" loading="lazy" />
+                  <img src="public/images/dqlagi/learn/8.webp" alt="Cảm thông kỹ thuật số" loading="lazy" decoding="async" />
                 </div>
                 <div class="txt">
                   <p class="item-title color-8">

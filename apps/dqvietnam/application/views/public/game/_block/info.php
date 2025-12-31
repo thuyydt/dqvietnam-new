@@ -2,7 +2,7 @@
   <?php if (!empty($this->auth)) : ?>
     <form id="form-update-account" class="info-user__wrapper v1" action="" enctype="multipart/form-data">
       <div class="left">
-        <div class="heading">THÔNG TIN HỌC VIÊN</div>
+        <h2 class="heading">THÔNG TIN HỌC VIÊN</h2>
         <div class="form">
 
           <div class="form-group">
@@ -65,10 +65,10 @@
 
       <div class="right">
         <div class="avatar-info">
-          <div class="image-avatar"><img loading="lazy"
+          <div class="image-avatar"><img loading="lazy" decoding="async"
               src="<?= empty($account->avatar) ? 'public/game/images/avatar.webp' : getImageThumb($account->avatar) ?>"
-              alt="image-avatar"></div>
-          <label for="avatar" class="btn add-avatar">
+              alt="Avatar của <?= $account->full_name ?? 'người dùng' ?>"></div>
+          <label for="avatar" class="btn add-avatar" aria-label="Tải lên ảnh đại diện">
             <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M29.376 7.20703H4.65796V27.369H29.376V7.20703Z" fill="white" />
@@ -90,7 +90,7 @@
     </form>
   <?php else: ?>
     <div class="info-user__wrapper v1" style="height: 100%;">
-      <div class="heading">BẠN HÃY ĐĂNG NHẬP ĐỄ TIẾP TỤC!</div>
+      <h2 class="heading">BẠN HÃY ĐĂNG NHẬP ĐỄ TIẾP TỤC!</h2>
       <div style="display: block; width: 100%;">
         <a href="<?= urlRoute('login?redirect=' . current_url()) ?>" class="btn btn-login-info">Đi đến trang
           Đăng Nhập</a>

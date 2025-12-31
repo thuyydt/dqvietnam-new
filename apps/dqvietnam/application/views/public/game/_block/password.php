@@ -1,7 +1,7 @@
 <div class="info-user password" style="display: none">
   <?php if (!empty($this->auth)) : ?>
     <form id="form-update-password" class="info-user__wrapper v3" action="">
-      <div class="heading">THAY ĐỔI MẬT KHẨU</div>
+      <h2 class="heading">THAY ĐỔI MẬT KHẨU</h2>
       <div class="form">
         <input type="hidden" name="key" value="<?= $this->auth->id ?>" />
         <div class="form-group">
@@ -22,7 +22,7 @@
     </form>
   <?php else: ?>
     <div class="info-user__wrapper v1" style="height: 100%;">
-      <div class="heading">BẠN HÃY ĐĂNG NHẬP ĐỄ TIẾP TỤC!</div>
+      <h2 class="heading">BẠN HÃY ĐĂNG NHẬP ĐỄ TIẾP TỤC!</h2>
       <div style="display: block; width: 100%;">
         <a href="<?= urlRoute('login?redirect=' . current_url()) ?>" class="btn btn-login-info">Đi đến trang
           Đăng Nhập</a>

@@ -9,7 +9,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
   <?php $this->load->view($this->template_path . '_meta') ?>
   <script type="application/ld+json">
     {
-      "@context": "http:\/\/schema.org",
+      "@context": "https:\/\/schema.org",
       "@type": "WebSite",
       "@id": "#website",
       "url": "<?= base_url() ?>",
@@ -19,6 +19,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
   <link rel="stylesheet" href="<?= $this->templates_assets . 'css/app.css?v=' . ASSET_VERSION ?>">
   <link rel="stylesheet" href="<?= $this->templates_assets . 'css/main.min.css?v=' . ASSET_VERSION ?>">
   <link rel="stylesheet" href="<?= BASE_URL . 'public/css/home.css?v=' . ASSET_VERSION ?>">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="dns-prefetch" href="https://unpkg.com">
   <script>
     var current_url = '<?= current_url() ?>',
       base_url = '<?= BASE_URL ?>',
@@ -184,12 +186,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
   </div>
 
   <div id="notify-rotate">
-    <img src="public/images/rotatedevice.webp" alt="" loading="lazy" />
+    <img src="public/images/rotatedevice.webp" alt="Rotate device" width="150" height="150" loading="lazy" />
   </div>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="<?= $this->templates_assets . 'js/app.js?v=' . ASSET_VERSION ?>"></script>
-  <script src="<?= $this->templates_assets . 'js/version2.js?v=' . ASSET_VERSION ?>"></script>
-  <script src="<?= $this->templates_assets . 'js/custom.js?v=' . ASSET_VERSION ?>"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+  <script src="<?= $this->templates_assets . 'js/app.js?v=' . ASSET_VERSION ?>" defer></script>
+  <script src="<?= $this->templates_assets . 'js/version2.js?v=' . ASSET_VERSION ?>" defer></script>
+  <script src="<?= $this->templates_assets . 'js/custom.js?v=' . ASSET_VERSION ?>" defer></script>
   <?= !empty($this->settings['embeb_js']) ? $this->settings['embeb_js'] : '' ?>
 </body>
 

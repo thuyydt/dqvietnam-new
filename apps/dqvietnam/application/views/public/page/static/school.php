@@ -13,10 +13,10 @@
       <div class="wrap-letter">
         <div class="row">
           <div class="col-lg-6 color-red flex-left-end">
-            <div class="title-letter">THƯ NGỎ</div>
+            <h1 class="title-letter">THƯ NGỎ</h1>
           </div>
           <div class="col-lg-6 avatar-img">
-            <img class="avatar" src="public/images/schools/giaosu.webp" alt="NGND.PGS.TS. Nguyễn Võ Kỳ Anh" loading="lazy" />
+            <img class="avatar" src="public/images/schools/giaosu.webp" alt="NGND.PGS.TS. Nguyễn Võ Kỳ Anh" fetchpriority="high" />
             <div class="img-desc">NGND.PGS.TS. Nguyễn Võ Kỳ Anh</div>
           </div>
         </div>
@@ -49,9 +49,9 @@
             giai đoạn 2021 - 2025” của Thủ tướng Chính Phủ, Công ty CP
             Truyền thông và Giáo dục Cầu Vồng đã phát triển chương trình học
             trực tuyến
-            <spans class="highlight">Người Hùng DQ - Giáo dục 8 năng lực công dân kỹ thuật số cho
+            <span class="highlight">Người Hùng DQ - Giáo dục 8 năng lực công dân kỹ thuật số cho
               trẻ em (8 - 14 tuổi)
-            </spans>
+            </span>
             trên nền tảng trực tuyến dqvietnam.edu.vn, nhằm trang bị các
             kiến thức cần thiết để các em tránh được những rủi ro từ không
             gian mạng. Đồng thời thông qua chương trình, Nhà trường và Phụ
@@ -60,7 +60,7 @@
           </p>
           <p>
             Chương trình
-            <spans class="highlight">Người hùng DQ</spans> không chỉ trang
+            <span class="highlight">Người hùng DQ</span> không chỉ trang
             bị kiến thức kỹ thuật số an toàn trên không gian mạng cho các em
             mà còn là nơi các em có thể thỏa sức sáng tạo và tối đa hóa
             những cơ hội từ thế giới số mang lại. Trân trọng!
@@ -80,9 +80,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <div class="title color-red">
+          <h2 class="title color-red">
             Giáo dục 8 năng lực công dân kỹ thuật số
-          </div>
+          </h2>
           <div class="desc">
             Chương trình Người hùng DQ là chương trình đầu tiên tại Việt Nam
             giúp trang bị đầy đủ những kiến thức cần thiết để các học sinh
@@ -94,25 +94,25 @@
           </div>
           <ul class="list">
             <li class="item-list">
-              <img class="icon-check" src="public/images/dqlagi/icon-check.webp" alt="Check" loading="lazy" />
+              <img class="icon-check" src="public/images/dqlagi/icon-check.webp" alt="Check" loading="lazy" decoding="async" />
               <span>Phát triển sự hiểu biết về thế giới kỹ thuật số </span>
             </li>
             <li class="item-list">
-              <img class="icon-check" src="public/images/dqlagi/icon-check.webp" alt="Check" loading="lazy" />
+              <img class="icon-check" src="public/images/dqlagi/icon-check.webp" alt="Check" loading="lazy" decoding="async" />
               <span>
                 Khám phá những hành vi tích cực cần thiết để trở nên tử tế
                 và tôn trọng trên mạng
               </span>
             </li>
             <li class="item-list">
-              <img class="icon-check" src="public/images/dqlagi/icon-check.webp" alt="Check" loading="lazy" />
+              <img class="icon-check" src="public/images/dqlagi/icon-check.webp" alt="Check" loading="lazy" decoding="async" />
               <span>
                 Kiểm soát các rủi ro trực tuyến, hành vi tiêu cực, tin tức
                 giả mạo, các cuộc tấn công mạng
               </span>
             </li>
             <li class="item-list">
-              <img class="icon-check" src="public/images/dqlagi/icon-check.webp" alt="Check" loading="lazy" />
+              <img class="icon-check" src="public/images/dqlagi/icon-check.webp" alt="Check" loading="lazy" decoding="async" />
               <span>
                 Biết tìm kiếm sự giúp đỡ từ những người đáng tin cậy
               </span>
@@ -120,14 +120,14 @@
           </ul>
         </div>
         <div class="col-lg-6">
-          <img src="public/images/dqlagi/soccon.gif" alt="Sóc con" loading="lazy" />
+          <img src="public/images/dqlagi/soccon.gif" alt="Sóc con" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>
   </section>
   <section class="section plan">
     <div class="container">
-      <div class="title color-white">Lộ trình dạy và học tại trường</div>
+      <h2 class="title color-white">Lộ trình dạy và học tại trường</h2>
       <div class="thoikhoabieu">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-6">
@@ -312,7 +312,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 report">
-          <div class="title color-red">Báo cáo cho nhà trường</div>
+          <h2 class="title color-red">Báo cáo cho nhà trường</h2>
           <div class="desc">
             Sau khi các học sinh của trường hoàn thành các bài học kỹ năng
             tại dqvietnam.edu.vn, nhà trường sẽ nhận được báo cáo chi tiết
@@ -322,7 +322,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <img src="public/img/bia-school.webp" alt="Bìa sách nhà trường" loading="lazy" />
+          <img src="public/img/bia-school.webp" alt="Bìa sách nhà trường" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>

@@ -1,17 +1,17 @@
 <nav class="menu">
   <div class="inner">
-    <a href="javascript:;" class="btn-menu info">
+    <a href="javascript:;" class="btn-menu info" aria-label="Thông tin tài khoản">
       <div class="avatar-menu">
-        <img class="lazy" src="<?= empty($account->avatar) ? 'public/game/images/avatar.webp' : getImageThumb($account->avatar) ?>" loading="lazy" />
+        <img class="lazy" src="<?= empty($account->avatar) ? 'public/game/images/avatar.webp' : getImageThumb($account->avatar) ?>" alt="Avatar người chơi" decoding="async" />
       </div>
     </a>
-    <button type="button" class="btn-menu music">
-      <img class="statu-1 lazy" src="public/game/list/images/btn-02.webp" loading="lazy" />
-      <img class="statu-2 lazy" src="public/game/list/images/btn-02-h.webp" loading="lazy" />
+    <button type="button" class="btn-menu music" aria-label="Bật/Tắt nhạc">
+      <img class="statu-1 lazy" src="public/game/list/images/btn-02.webp" alt="Bật nhạc" decoding="async" />
+      <img class="statu-2 lazy" src="public/game/list/images/btn-02-h.webp" alt="Tắt nhạc" decoding="async" />
     </button>
-    <a href="javascript:;" class="btn-menu points"><img class="lazy" src="public/game/list/images/btn-03.webp" loading="lazy" /></a>
-    <a href="javascript:;" class="btn-menu medal"><img class="lazy" src="public/game/list/images/btn-04.webp" loading="lazy" /></a>
-    <a href="javascript:;" class="btn-menu cards"><img class="lazy" src="public/game/list/images/btn-05.webp" loading="lazy" /></a>
+    <a href="javascript:;" class="btn-menu points" aria-label="Điểm số"><img class="lazy" src="public/game/list/images/btn-03.webp" alt="Điểm số" decoding="async" /></a>
+    <a href="javascript:;" class="btn-menu medal" aria-label="Huy hiệu"><img class="lazy" src="public/game/list/images/btn-04.webp" alt="Huy hiệu" decoding="async" /></a>
+    <a href="javascript:;" class="btn-menu cards" aria-label="Thẻ bài"><img class="lazy" src="public/game/list/images/btn-05.webp" alt="Thẻ bài" decoding="async" /></a>
   </div>
 </nav>
 
@@ -23,25 +23,25 @@
 <?php endif; ?>
 
 <div class="app" data-turn="<?= $turn ?>">
-  <img src="public/game/list/images/bg-main.webp" class="bg-main lazy" id="bg-list-main" loading="lazy" />
+  <img src="public/game/list/images/bg-main.webp" class="bg-main" id="bg-list-main" alt="Bản đồ thế giới DQ" fetchpriority="high" decoding="async" />
 
   <?php for ($i = 1; $i <= 19; $i++) { ?>
-    <div class="e e-<?= $i <= 9 ? '0' . $i : $i ?>"><img class="lazy" src="public/game/list/images/e-<?= $i ?>.webp" loading="lazy" /></div>
+    <div class="e e-<?= $i <= 9 ? '0' . $i : $i ?>"><img class="lazy" src="public/game/list/images/e-<?= $i ?>.webp" alt="" loading="lazy" decoding="async" /></div>
   <?php } ?>
 
   <?php if ($turn > 80) : ?>
-    <div class="e e-20"><img class="lazy" src="public/game/list/images/e-20.webp" loading="lazy" /></div>
-    <div class="e e-21"><img class="lazy" src="public/game/list/images/e-21.webp" loading="lazy" /></div>
-    <div class="e e-22"><img class="lazy" src="public/game/list/images/e-22.webp" loading="lazy" /></div>
+    <div class="e e-20"><img class="lazy" src="public/game/list/images/e-20.webp" alt="" loading="lazy" decoding="async" /></div>
+    <div class="e e-21"><img class="lazy" src="public/game/list/images/e-21.webp" alt="" loading="lazy" decoding="async" /></div>
+    <div class="e e-22"><img class="lazy" src="public/game/list/images/e-22.webp" alt="" loading="lazy" decoding="async" /></div>
   <?php endif; ?>
 
   <?php
   for ($i = 1; $i <= 80; $i++) { ?>
     <?php if ($i > $turn) : ?>
-      <a href="<?= urlRoute('hocbai/nhiemvu/' . $i) ?>" class="lv lv-<?= $i ?> disabled"><?= $i ?></a>
+      <a href="<?= urlRoute('hocbai/nhiemvu/' . $i) ?>" class="lv lv-<?= $i ?> disabled" aria-label="Bài học <?= $i ?> (Chưa mở)"><?= $i ?></a>
     <?php else : ?>
       <a href="<?= $i == $turn ? urlRoute('hocbai/nhiemvu/' . $i) : urlRoute('hocbai/review/' . $i) ?>"
-        class="lv lv-<?= $i ?> <?= $i == $turn ? 'current-space' : '' ?>">
+        class="lv lv-<?= $i ?> <?= $i == $turn ? 'current-space' : '' ?>" aria-label="Bài học <?= $i ?>">
         <?= $i ?>
       </a>
     <?php endif ?>

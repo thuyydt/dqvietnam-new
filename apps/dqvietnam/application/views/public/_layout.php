@@ -4,6 +4,8 @@
 <head>
   <base href="<?= BASE_URL ?>">
   <?php $this->load->view($this->template_path . '_meta') ?>
+  <link rel="preconnect" href="<?= MEDIA_URL ?>">
+  <link rel="dns-prefetch" href="<?= MEDIA_URL ?>">
   <script type="application/ld+json">
     {
       "@context": "http:\/\/schema.org",
@@ -37,7 +39,7 @@
     ?>
   </div>
   <div id="fb-root"></div>
-  <script src="<?= $this->templates_assets . 'js/app.js?v=' . ASSET_VERSION ?>"></script>
+  <script defer src="<?= $this->templates_assets . 'js/app.js?v=' . ASSET_VERSION ?>"></script>
   <?= !empty($this->settings['embeb_js']) ? $this->settings['embeb_js'] : '' ?>
 </body>
 

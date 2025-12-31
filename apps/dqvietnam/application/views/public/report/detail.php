@@ -1,4 +1,4 @@
-<div class="tong-ket" style="position: unset; margin: 0 auto">
+<div class="tong-ket" role="main" style="position: unset; margin: 0 auto">
   <div class="container-tk">
     <div class="tab-content">
       <a href="/report" class="btn btn-primary">Trở về trước</a>

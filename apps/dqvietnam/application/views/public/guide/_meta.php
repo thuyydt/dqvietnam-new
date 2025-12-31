@@ -1,6 +1,9 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://unpkg.com">
+<link rel="dns-prefetch" href="https://unpkg.com">
 <meta content="<?= $this->security->get_csrf_hash() ?>" data-name="<?= $this->security->get_csrf_token_name() ?>"
   name="csrf-token">
 <?php if (!empty($SEO)) : ?>
@@ -18,6 +21,10 @@
   <meta property="thumbnail" content="<?php echo isset($SEO['image']) ? $SEO['image'] : ''; ?>" />
   <meta property="og:url" content="<?php echo current_url(); ?>" />
   <!--Meta Facebook Page Other-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<?php echo isset($SEO['meta_title']) ? $SEO['meta_title'] : ''; ?>">
+  <meta name="twitter:description" content="<?php echo isset($SEO['meta_description']) ? $SEO['meta_description'] : ''; ?>">
+  <meta name="twitter:image" content="<?php echo isset($SEO['image']) ? $SEO['image'] : ''; ?>">
   <link rel="canonical" href="<?php echo isset($SEO['url']) ? $SEO['url'] : base_url(); ?>" />
 <?php else : ?>
   <title><?php echo $this->settings['meta_name'] . ' - ' . $this->settings['meta_title']; ?></title>
@@ -37,6 +44,10 @@
   <meta property="thumbnail" content="<?= MEDIA_URL . ($this->settings['image_share_default'] ?? '') ?>" />
   <meta property="og:url" content="<?php echo current_url(); ?>" />
   <!--Meta Facebook Homepage-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<?php echo isset($this->settings['title']) ? $this->settings['title'] . ' | ' . $this->settings['name'] : ''; ?>">
+  <meta name="twitter:description" content="<?php echo isset($this->settings['meta_desc']) ? $this->settings['meta_desc'] : ''; ?>">
+  <meta name="twitter:image" content="<?= MEDIA_URL . ($this->settings['image_share_default'] ?? '') ?>">
   <link rel="canonical" href="<?php echo base_url(); ?>" />
 <?php endif; ?>
 

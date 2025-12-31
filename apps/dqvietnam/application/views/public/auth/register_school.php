@@ -1,10 +1,10 @@
-<main class="c-main" id="page-register-schools">
+<main class="c-main" id="page-register-schools" role="main">
   <div class="account-box">
     <div class="wrapper">
-      <a href="<?= base_url() ?>" class="btn-exit"></a>
+      <a href="<?= base_url() ?>" class="btn-exit" aria-label="Thoát"></a>
       <div class="col left">
 
-        <div class="img v1"><img src="<?= $this->templates_assets ?>/images/element-08.webp" loading="lazy" /></div>
+        <div class="img v1"><img src="<?= $this->templates_assets ?>/images/element-08.webp" alt="" loading="lazy" decoding="async" /></div>
 
       </div>
       <div class="col right">
@@ -14,15 +14,15 @@
 
           <form class="form spacing-25" id="form-register-schools">
             <div class="form-group">
-              <input name="name" type="text" class="form-control input-school" placeholder="Tên trường học">
+              <input name="name" type="text" class="form-control input-school" placeholder="Tên trường học" aria-label="Tên trường học">
               <!-- <div class="form-text">Thông báo lỗi</div> -->
             </div>
             <div class="form-group spacing-25">
-              <input name="email" type="text" class="form-control input-account" placeholder="Email">
+              <input name="email" type="text" class="form-control input-account" placeholder="Email" aria-label="Email">
               <!-- <div class="form-text">Thông báo lỗi</div> -->
             </div>
             <div class="form-group spacing-25">
-              <input name="phone" type="text" class="form-control input-account" placeholder="Số điện thoại">
+              <input name="phone" type="text" class="form-control input-account" placeholder="Số điện thoại" aria-label="Số điện thoại">
               <!-- <div class="form-text">Thông báo lỗi</div> -->
             </div>
             <button type="submit" class="btn">ĐĂNG KÝ</button>

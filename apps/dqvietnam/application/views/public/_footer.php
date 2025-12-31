@@ -1,11 +1,11 @@
-<div class="img-bg">
-  <img src="<?= $this->templates_assets ?>images/element-03.webp" alt="Background Element" loading="lazy" />
+<div class="img-bg" aria-hidden="true">
+  <img src="<?= $this->templates_assets ?>images/element-03.webp" alt="" loading="lazy" decoding="async" />
 </div>
 <footer class="footer">
   <div class="container">
     <div class="row inner-footer">
       <div class="col-12 col-lg-4">
-        <img src="<?= $this->templates_assets ?>images/logo-01.webp" alt="DQ Vietnam Logo" loading="lazy" class="logo" />
+        <img src="<?= $this->templates_assets ?>images/logo-01.webp" alt="DQ Vietnam Logo" loading="lazy" decoding="async" class="logo" />
         <div class="info">
           <p class="strong">
             <?= $this->info->get('company[name]') ?>
@@ -84,13 +84,13 @@
       <div class="col-12 col-lg-2">
         <div class="social flex-end">
           <a href="<?= $this->info->get('social[facebook]') ?>" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <img src="<?= $this->templates_assets ?>images/iconfacebook.webp" alt="Facebook" loading="lazy" />
+            <img src="<?= $this->templates_assets ?>images/iconfacebook.webp" alt="" loading="lazy" decoding="async" />
           </a>
           <a href="<?= $this->info->get('social[youtube]') ?>" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
-            <img src="<?= $this->templates_assets ?>images/iconyoutube.webp" alt="Youtube" loading="lazy" />
+            <img src="<?= $this->templates_assets ?>images/iconyoutube.webp" alt="" loading="lazy" decoding="async" />
           </a>
           <a href="<?= $this->info->get('social[instagram]') ?>" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <img src="<?= $this->templates_assets ?>images/iconinsta.webp" alt="Instagram" loading="lazy" />
+            <img src="<?= $this->templates_assets ?>images/iconinsta.webp" alt="" loading="lazy" decoding="async" />
           </a>
         </div>
       </div>

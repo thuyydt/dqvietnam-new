@@ -1,10 +1,12 @@
 <main class="c-main" id="page-login">
   <div class="account-box">
     <div class="wrapper">
-      <a href="<?= base_url() ?>" class="btn-exit"></a>
+      <a href="<?= base_url() ?>" class="btn-exit" aria-label="Trang chủ"></a>
       <div class="col left">
 
-        <div class="img"><img src="<?= $this->templates_assets ?>images/element-05.webp" loading="lazy"></div>
+        <div class="img">
+          <img src="<?= $this->templates_assets ?>images/element-05.webp" fetchpriority="high" alt="Đăng nhập DQ Vietnam" />
+        </div>
 
       </div>
       <div class="col right">
@@ -15,11 +17,11 @@
           <form class="form" id="form-login">
             <div class="form-group">
               <input name="username" type="text" class="form-control input-account"
-                placeholder="Email hoặc Tên đăng nhập">
+                placeholder="Email hoặc Tên đăng nhập" aria-label="Email hoặc Tên đăng nhập">
               <!-- <div class="form-text">Thông báo lỗi</div> -->
             </div>
             <div class="form-group spacing-25 group-password">
-              <input name="password" type="password" class="form-control input-password" placeholder="Mật khẩu">
+              <input name="password" type="password" class="form-control input-password" placeholder="Mật khẩu" aria-label="Mật khẩu">
               <!-- <div class="form-text">Thông báo lỗi</div> -->
             </div>
             <div class="form-group form-check">

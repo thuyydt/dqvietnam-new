@@ -11,14 +11,14 @@
   </div>
   <div class="row">
     <div class="col-md-8 offset-2">
-      <canvas id="rada" width="300" height="auto"></canvas>
+      <canvas id="rada" width="300" height="auto" aria-label="Biểu đồ radar điểm số DQ" role="img"></canvas>
     </div>
   </div>
   <div class="info-level">
     <div class="row mb-5">
       <div class="col-md-4">
         <div class="level">
-          <p>Cấp độ 1</p>
+          <h3>Cấp độ 1</h3>
           <div class="badge blue">
             <span>Tốt</span>
             <span>(80 - 100 điểm)</span>
@@ -39,7 +39,7 @@
     <div class="row mb-5 mt-5">
       <div class="col-md-4">
         <div class="level ">
-          <p>Cấp độ 2</p>
+          <h3>Cấp độ 2</h3>
           <div class="badge yellow">
             <span>Cơ bản</span>
             <span>(60 - <80 điểm)</span>
@@ -56,7 +56,7 @@
     <div class="row mb-5">
       <div class="col-md-4">
         <div class="level">
-          <p>Cấp độ 3</p>
+          <h3>Cấp độ 3</h3>
           <div class="badge orange">
             <span>Trung bình</span>
             <span>(40 - <60 điểm)</span>
@@ -75,7 +75,7 @@
     <div class="row mb-5">
       <div class="col-md-4">
         <div class="level">
-          <p>Cấp độ 4</p>
+          <h3>Cấp độ 4</h3>
           <div class="badge red">
             <span>Báo động</span>
             <span>(<40 điểm)</span>

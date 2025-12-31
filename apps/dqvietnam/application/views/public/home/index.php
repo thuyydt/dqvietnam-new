@@ -26,21 +26,45 @@ $home_banner = $this->info->get('home_banner');
   <section class="c-section__home-01">
     <div class="hero">
       <?php if ($home_banner) { ?>
-        <img src="<?php echo $home_banner ?>" loading="lazy" class="element element-01">
+        <img src="<?php echo $home_banner ?>" alt="Banner trang chủ" fetchpriority="high" decoding="async" class="element element-01">
       <?php } else { ?>
-        <img src="public/images/element-24.jfif" loading="lazy" class="element element-01">
-        <img src="public/images/element-21.webp" loading="lazy" class="element element-02">
-        <img src="public/images/element-22.webp" loading="lazy" class="element element-03">
-        <img src="public/images/element-23.webp" loading="lazy" class="element element-04">
-        <img src="public/images/logo-02.webp" loading="lazy" class="element element-05">
+        <img src="public/images/element-24.jfif" alt="Banner trang chủ" fetchpriority="high" decoding="async" class="element element-01">
+        <img src="public/images/element-21.webp" alt="Element 21" loading="lazy" decoding="async" class="element element-02">
+        <img src="public/images/element-22.webp" alt="Element 22" loading="lazy" decoding="async" class="element element-03">
+        <img src="public/images/element-23.webp" alt="Element 23" loading="lazy" decoding="async" class="element element-04">
+        <img src="public/images/logo-02.webp" alt="Logo DQ Vietnam" loading="lazy" decoding="async" class="element element-05">
       <?php } ?>
-      <a style="left: 30%" href="https://docs.google.com/forms/d/e/1FAIpQLSdb79Q6Sm9ASZq8_RptQDsrhJlqMlgHU2MumLST3CfeRMt1Sw/viewform?usp=header" class="btn btn-02">ĐĂNG KÍ PHONG TRÀO</a>
+      <a style="left: 30%" href="https://docs.google.com/forms/d/e/1FAIpQLSdb79Q6Sm9ASZq8_RptQDsrhJlqMlgHU2MumLST3CfeRMt1Sw/viewform?usp=header" class="btn btn-02" title="Đăng kí phong trào" aria-label="Đăng kí phong trào">ĐĂNG KÍ PHONG TRÀO</a>
     </div>
 
+    <style>
+      .marquee-wrapper {
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .marquee-content {
+        display: inline-block;
+        animation: marquee 30s linear infinite;
+      }
+
+      .marquee-content:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
     <div class="runtext-container">
-      <div class="main-runtext">
-        <marquee direction="" onmouseover="this.stop();" onmouseout="this.start();">
-          <div class="holder">
+      <div class="main-runtext marquee-wrapper">
+        <div class="holder marquee-content">
             <div class="text-container">
               <a data-fancybox-group="gallery" class="fancybox text-uppercase" href="#">Làm chủ công nghệ
                 với 8 năng lực
@@ -69,14 +93,13 @@ $home_banner = $this->info->get('home_banner');
                 TRÀO “BÌNH DÂN HỌC VỤ SỐ”</a>
             </div>
           </div>
-        </marquee>
       </div>
     </div>
   </section>
   <!-- section 01 -->
 
   <section class="c-section__home-02">
-    <img src="public/images/element-02.webp" class="bg">
+    <img src="public/images/element-02.webp" class="bg" alt="Background Section 2" loading="lazy" decoding="async">
     <div class="container">
       <h1>Tổng quan<span>Khóa học</span></h1>
       <p>Chương trình kỹ năng số “Người Hùng DQ”, hưởng ứng phong trào “Bình Dân Học Vụ Số” theo Nghị quyết
@@ -85,12 +108,12 @@ $home_banner = $this->info->get('home_banner');
       <!-- <?php if (!empty($pages['hero'])) : ?>
       <a href="<?= getUrlPage($pages['hero']) ?>" data-fancybox="gallery-0" class="btn btn-02">Tìm hiểu thêm</a>
       <?php endif; ?> -->
-      <a href="<?= urlRoute('nguoi-hung-dq') ?>" class="btn btn-02">Tìm hiểu thêm</a>
+      <a href="<?= urlRoute('nguoi-hung-dq') ?>" class="btn btn-02" title="Tìm hiểu thêm" aria-label="Tìm hiểu thêm">Tìm hiểu thêm</a>
 
     </div>
     <?php if (!empty($this->settings['video_tutorial'])) : ?>
-      <a href="https://dqvietnam.edu.vn/public/videos/dq_pr.mp4" class="play" data-fancybox="gallery-0"><img
-          src="./public/images/element-06.webp"></a>
+      <a href="https://dqvietnam.edu.vn/public/videos/dq_pr.mp4" class="play" data-fancybox="gallery-0" title="Xem video giới thiệu" aria-label="Xem video giới thiệu"><img
+          src="public/images/element-06.webp" alt="Video thumbnail" loading="lazy" decoding="async"></a>
     <?php endif; ?>
     </div>
   </section>
@@ -101,9 +124,9 @@ $home_banner = $this->info->get('home_banner');
       <div class="inner">
         <div class="box">
           <h2>Học thử<br>miễn phí</h2>
-          <a href="<?= urlRoute('guide?type=try_game') ?>" class="btn btn-02">Tham gia ngay</a>
+          <a href="<?= urlRoute('guide?type=try_game') ?>" class="btn btn-02" title="Tham gia ngay" aria-label="Tham gia ngay">Tham gia ngay</a>
         </div>
-        <img src="public/images/element-07.webp" loading="lazy" style="width:60%" class="bg">
+        <img src="public/images/element-07.webp" loading="lazy" decoding="async" style="width:60%" class="bg" alt="Học thử miễn phí">
       </div>
     </div>
   </section>
@@ -111,14 +134,14 @@ $home_banner = $this->info->get('home_banner');
 
   <section class="c-section__home-04">
     <div class="container">
-      <div class="title text-center">
+      <h2 class="title text-center">
         8 KỸ NĂNG SỐ <br />CẦN THIẾT CHO TRẺ EM
-      </div>
+      </h2>
       <div class="row group">
         <div class="col-12 col-sm-6 col-md-4 item">
-          <a href="javascript:;" class="wrapper">
+          <a href="javascript:;" class="wrapper" title="Quản lý thời gian tiếp xúc màn hình" aria-label="Quản lý thời gian tiếp xúc màn hình">
             <div class="inner">
-              <img src="../../../../public/images/1.webp" loading="lazy" />
+              <img src="public/images/1.webp" loading="lazy" decoding="async" alt="Quản lý thời gian tiếp xúc màn hình" />
               <div class="info">
                 <h3 class="title-card">
                   Quản lý thời gian tiếp xúc màn hình
@@ -133,9 +156,9 @@ $home_banner = $this->info->get('home_banner');
         </div>
         <!-- / item -->
         <div class="col-12 col-sm-6 col-md-4 item">
-          <a href="javascript:;" class="wrapper">
+          <a href="javascript:;" class="wrapper" title="Quản lý bắt nạt trên mạng" aria-label="Quản lý bắt nạt trên mạng">
             <div class="inner">
-              <img src="../../../../public/images/2.webp" loading="lazy" />
+              <img src="public/images/2.webp" loading="lazy" decoding="async" alt="Quản lý bắt nạt trên mạng" />
               <div class="info">
                 <h3 class="title-card">Quản lý bắt nạt trên mạng</h3>
                 <div class="description">
@@ -148,9 +171,9 @@ $home_banner = $this->info->get('home_banner');
         </div>
         <!-- / item -->
         <div class="col-12 col-sm-6 col-md-4 item">
-          <a href="javascript:;" class="wrapper">
+          <a href="javascript:;" class="wrapper" title="Quản lý quyền riêng tư" aria-label="Quản lý quyền riêng tư">
             <div class="inner">
-              <img src="../../../../public/images/3.webp" loading="lazy" />
+              <img src="public/images/3.webp" loading="lazy" decoding="async" alt="Quản lý quyền riêng tư" />
               <div class="info">
                 <h3 class="title-card">Quản lý quyền riêng tư</h3>
                 <div class="description">
@@ -164,9 +187,9 @@ $home_banner = $this->info->get('home_banner');
         </div>
         <!-- / item -->
         <div class="col-12 col-sm-6 col-md-4 item">
-          <a href="javascript:;" class="wrapper">
+          <a href="javascript:;" class="wrapper" title="Danh tính công dân kỹ thuật số" aria-label="Danh tính công dân kỹ thuật số">
             <div class="inner">
-              <img src="../../../../public/images/4.webp" loading="lazy" />
+              <img src="public/images/4.webp" loading="lazy" decoding="async" alt="Danh tính công dân kỹ thuật số" />
               <div class="info">
                 <h3 class="title-card">Danh tính công dân kỹ thuật số</h3>
                 <div class="description">
@@ -179,9 +202,9 @@ $home_banner = $this->info->get('home_banner');
         </div>
         <!-- / item -->
         <div class="col-12 col-sm-6 col-md-4 item">
-          <a href="javascript:;" class="wrapper">
+          <a href="javascript:;" class="wrapper" title="Quản lý an ninh mạng" aria-label="Quản lý an ninh mạng">
             <div class="inner">
-              <img src="../../../../public/images/5.webp" loading="lazy" />
+              <img src="public/images/5.webp" loading="lazy" decoding="async" alt="Quản lý an ninh mạng" />
               <div class="info">
                 <h3 class="title-card">Quản lý an ninh mạng</h3>
                 <div class="description">
@@ -194,9 +217,9 @@ $home_banner = $this->info->get('home_banner');
         </div>
         <!-- / item -->
         <div class="col-12 col-sm-6 col-md-4 item">
-          <a href="javascript:;" class="wrapper">
+          <a href="javascript:;" class="wrapper" title="Quản lý dấu chân kỹ thuật số" aria-label="Quản lý dấu chân kỹ thuật số">
             <div class="inner">
-              <img src="../../../../public/images/6.webp" loading="lazy" />
+              <img src="public/images/6.webp" loading="lazy" decoding="async" alt="Quản lý dấu chân kỹ thuật số" />
               <div class="info">
                 <h3 class="title-card">Quản lý dấu chân kỹ thuật số</h3>
                 <div class="description">
@@ -209,9 +232,9 @@ $home_banner = $this->info->get('home_banner');
         </div>
         <!-- / item -->
         <div class="col-12 col-sm-6 col-md-4 item">
-          <a href="javascript:;" class="wrapper">
+          <a href="javascript:;" class="wrapper" title="Tư duy phản biện" aria-label="Tư duy phản biện">
             <div class="inner">
-              <img src="../../../../public/images/7.webp" loading="lazy" />
+              <img src="public/images/7.webp" loading="lazy" decoding="async" alt="Tư duy phản biện" />
               <div class="info">
                 <h3 class="title-card">Tư duy phản biện</h3>
                 <div class="description">
@@ -228,9 +251,9 @@ $home_banner = $this->info->get('home_banner');
         </div>
         <!-- / item -->
         <div class="col-12 col-sm-6 col-md-4 item">
-          <a href="javascript:;" class="wrapper">
+          <a href="javascript:;" class="wrapper" title="Cảm thông kỹ thuật số" aria-label="Cảm thông kỹ thuật số">
             <div class="inner">
-              <img src="../../../../public/images/8.webp" loading="lazy" />
+              <img src="public/images/8.webp" loading="lazy" decoding="async" alt="Cảm thông kỹ thuật số" />
               <div class="info">
                 <h3 class="title-card">Cảm thông kỹ thuật số</h3>
                 <div class="description">

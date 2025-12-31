@@ -42,7 +42,7 @@ $isAnswerTrue = $keyAnswer ?  str_contains(mb_strtolower($keyAnswer['title']), '
     </div>
     <div class="clearfix mt-5"></div>
     <div class="col-md-6">
-      <p class="title text-bold orange mb-4">khuyến nghị</p>
+      <h3 class="title text-bold orange mb-4">khuyến nghị</h3>
 
       <p class="txt">
         Cha mẹ cần thường xuyên trò chuyện với trẻ, khuyến khích trẻ thực hành các kiến thức về cảm thông kỹ

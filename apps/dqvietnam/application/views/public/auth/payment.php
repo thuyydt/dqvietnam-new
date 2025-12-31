@@ -74,7 +74,7 @@
     display: flex;
   }
 </style>
-<main class="pay-main row pt-5 justify-content-center">
+<main class="pay-main row pt-5 justify-content-center" role="main">
   <div class="col-md-7">
     <div class="content-pay">
       <div class="row">
@@ -86,10 +86,10 @@
                 // Check if URL is absolute (contains http:// or https://)
                 $img_left_url = (strpos($img_left, 'http://') === 0 || strpos($img_left, 'https://') === 0) ? $img_left : base_url($img_left);
               ?>
-              <img src="<?php echo $img_left_url ?>" width="100%" class="img-fluid" loading="lazy" />
+              <img src="<?php echo $img_left_url ?>" width="100%" class="img-fluid" alt="Payment Banner" loading="lazy" decoding="async" />
             </div>
             <div class="input-group">
-              <input id="pay-code" placeholder="DQ02494" class="form-input" />
+              <input id="pay-code" placeholder="DQ02494" class="form-input" aria-label="Mã thanh toán" />
               <button id="btnPayment">Thanh toán</button>
               <input id="accountKey" type="hidden" value="<?php echo $this->auth->user_id ?>" />
             </div>

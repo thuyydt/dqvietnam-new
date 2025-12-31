@@ -1,7 +1,7 @@
-<img src="<?= $this->templates_assets ?>/images/element-06.webp" class="element-bg element-bg-01" loading="lazy" />
-<img src="<?= $this->templates_assets ?>/images/element-07.webp" class="element-bg element-bg-02" loading="lazy" />
+<img src="<?= $this->templates_assets ?>/images/element-06.webp" class="element-bg element-bg-01" alt="" loading="lazy" decoding="async" />
+<img src="<?= $this->templates_assets ?>/images/element-07.webp" class="element-bg element-bg-02" alt="" loading="lazy" decoding="async" />
 
-<main class="c-main v1">
+<main class="c-main v1" role="main">
   <?php if (!empty($packages)) foreach ($packages as $key => $item) { ?>
     <div class="class-account class-account-0<?= $key + 1 ?>">
       <div class="wrapper">

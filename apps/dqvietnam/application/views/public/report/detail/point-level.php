@@ -1,4 +1,4 @@
-<div class="point-desc">
+<div class="point-desc" role="note" aria-label="Chú thích điểm số">
   <div class="point-item left">
     <span>Cần quan tâm và giám sát</span>
     <span>

@@ -6,6 +6,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 <head>
   <base href="<?= BASE_URL ?>">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="dns-prefetch" href="https://unpkg.com">
   <?php $this->load->view($this->template_path . '_meta') ?>
   <script type="application/ld+json">
     {
@@ -16,6 +18,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
       "name": "web.vn"
     }
   </script>
+  <link rel="preload" href="<?= $this->templates_assets . 'css/main.min.css?v=' . ASSET_VERSION ?>" as="style">
+  <link rel="preload" href="<?= $this->templates_assets . 'css/app.css?v=' . ASSET_VERSION ?>" as="style">
   <link rel="stylesheet" href="<?= $this->templates_assets . 'css/main.min.css?v=' . ASSET_VERSION ?>">
   <link rel="stylesheet" href="<?= $this->templates_assets . 'css/app.css?v=' . ASSET_VERSION ?>">
   <script>
@@ -31,11 +35,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 <body>
   <?php echo !empty($main_content) ? $main_content : ''; ?>
-  <div id="notify-rotate"><img src="public/images/rotatedevice.webp" alt="" loading="lazy" /></div>
+  <div id="notify-rotate"><img src="public/images/rotatedevice.webp" alt="Rotate Device" width="100" height="100" loading="lazy" /></div>
   <script src="<?= $this->templates_assets . 'js/app.js?v=' . ASSET_VERSION ?>"></script>
   <script src="<?= $this->templates_assets . 'js/vue.js?v=' . ASSET_VERSION ?>"></script>
   <?= !empty($this->settings['embeb_js']) ? $this->settings['embeb_js'] : '' ?>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="/public/auth/js/version2.js?v=<?= ASSET_VERSION ?>"></script>
   <script>
     let heartbeatInterval = null;

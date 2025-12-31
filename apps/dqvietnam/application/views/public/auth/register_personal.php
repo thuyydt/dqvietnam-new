@@ -1,10 +1,10 @@
-<main class="c-main" id="page-register-personal">
+<main class="c-main" id="page-register-personal" role="main">
   <div class="account-box">
     <div class="wrapper">
-      <a href="<?= base_url() ?>" class="btn-exit"></a>
+      <a href="<?= base_url() ?>" class="btn-exit" aria-label="Thoát"></a>
       <div class="col left">
 
-        <div class="img v1"><img src="<?= $this->templates_assets ?>/images/element-08.webp" loading="lazy" /></div>
+        <div class="img v1"><img src="<?= $this->templates_assets ?>/images/element-08.webp" alt="" loading="lazy" decoding="async" /></div>
 
       </div>
       <div class="col right" style="padding: 69px 73.5px 25px 73.5px;">
@@ -14,28 +14,28 @@
 
           <form class="form" id="form-register-personal" style="margin-top: 40px;">
             <div class="form-group spacing-10">
-              <input name="full_name" type="text" class="form-control input-account" placeholder="Họ và tên">
+              <input name="full_name" type="text" class="form-control input-account" placeholder="Họ và tên" aria-label="Họ và tên">
               <!-- <div class="form-text">Thông báo lỗi</div> -->
             </div>
             <div class="form-group spacing-10">
-              <input name="username" type="text" class="form-control input-email" placeholder="Email (Cha/Me) ">
+              <input name="username" type="text" class="form-control input-email" placeholder="Email (Cha/Me) " aria-label="Email">
               <!-- <div class="form-text">Thông báo lỗi</div> -->
             </div>
             <div class="form-group spacing-10">
-              <input name="phone" type="text" class="form-control input-account" placeholder="Số điện thoại">
+              <input name="phone" type="text" class="form-control input-account" placeholder="Số điện thoại" aria-label="Số điện thoại">
               <!-- <div class="form-text">Thông báo lỗi</div> -->
             </div>
             <div class="form-group spacing-10">
-              <input name="birthday" type="date" class="form-control input-date" placeholder="Ngày sinh">
+              <input name="birthday" type="date" class="form-control input-date" placeholder="Ngày sinh" aria-label="Ngày sinh">
               <!-- <div class="form-text">Thông báo lỗi</div> -->
             </div>
             <div class="form-group spacing-10 group-password">
-              <input name="password" type="password" class="form-control input-password" placeholder="Mật khẩu">
+              <input name="password" type="password" class="form-control input-password" placeholder="Mật khẩu" aria-label="Mật khẩu">
               <!-- <div class="form-text">Thông báo lỗi</div> -->
             </div>
             <div class="form-group spacing-10 group-re-password">
               <input name="re_password" type="password" class="form-control input-password"
-                placeholder="Nhập lại mật khẩu">
+                placeholder="Nhập lại mật khẩu" aria-label="Nhập lại mật khẩu">
               <!-- <div class="form-text">Thông báo lỗi</div> -->
             </div>
             <button type="button" onclick="onRegister(this)" class="btn">ĐĂNG KÝ</button>

@@ -1,4 +1,4 @@
-<header class="c-header">
+<header class="c-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
   <div class="container">
     <?= menus_main() ?>
     <div class="account">

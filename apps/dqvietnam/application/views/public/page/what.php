@@ -4,11 +4,11 @@
       <div class="row">
 
         <div class="col-12 col-lg-6 col-left">
-          <img class="bg" src="./public/images/element-09.webp" loading="lazy" />
+          <img class="bg" src="./public/images/element-09.webp" alt="DQ – Trí thông minh kiểu mới" fetchpriority="high" decoding="async" />
         </div>
         <div class="col-12 col-lg-6 col-right">
           <div class="inner">
-            <h2 class="heading">DQ – TRÍ THÔNG MINH KIỂU MỚI TRONG THỜI ĐẠI 4.0</h2>
+            <h1 class="heading" style="font-size: 2rem; font-weight: bold; color: #0056b3;">DQ – TRÍ THÔNG MINH KIỂU MỚI TRONG THỜI ĐẠI 4.0</h1>
             <div class="description">Trí thông minh kỹ thuật số (DQ) là một tập hợp toàn diện các năng lực kỹ thuật, nhận thức, siêu nhận thức và cảm xúc xã hội dựa trên các giá trị đạo đức phổ quát và cho phép các cá nhân đối mặt với các thách thức và khai thác các cơ hội của cuộc sống kỹ thuật số.
               <br>
               DQ không chỉ đơn thuần đề cập đến các kỹ năng cần thiết để sử dụng công nghệ hiệu quả hơn mà còn nhận thức được những nguy cơ tiềm ẩn đối với trẻ em thường xuyên trực tuyến.
@@ -20,14 +20,14 @@
   </section>
   <!-- End section -->
 
-  <div class="c-section__dp-02">
+  <section class="c-section__dp-02">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-4">
           <div class="info info-left">
-            <h3 class="title">
+            <h2 class="title">
               KHUNG <br>TIÊU <br>CHUẨN <br>TOÀN CẦU
-            </h3>
+            </h2>
             <div class="content">
               Cũng giống như cách mà Chỉ số thông minh (IQ) và Trí tuệ xúc cảm (EQ) đo lường mức độ thông minh chung và cảm xúc, Chỉ số thông minh kỹ thuật số (DQ) có thể được giải mã thành tám lĩnh vực chính: Nhận dạng kỹ thuật số; Quyền kỹ thuật số; Trình độ kỹ thuật số; Sử dụng kỹ thuật số; Giao tiếp kỹ thuật số; An toàn kỹ thuật số; Trí thông minh cảm xúc kỹ thuật số; Bảo mật kỹ thuật số.
               <br>
@@ -41,16 +41,16 @@
             <div class="content">
               DQ và khung tiêu chuẩn DQ được đặt ra lần đầu vào năm 2016 bởi Tiến sĩ Yuhyun Park và Viện DQ (DQ Institute). Sau khi được Diễn đàn Kinh tế Thế giới (WEF) công bố năm 2016, khung tiêu chuẩn DQ đã được công nhận chuẩn toàn cầu và sử dụng rộng rãi tại nhiều quốc gia trên thế giới như Anh, Mỹ,Úc, Nhật Bản, Hàn Quốc,…
             </div>
-            <h4 class="title">
+            <h3 class="title">
               3 MỨC TRƯỞNG THÀNH
-            </h4>
-            <img src="./public/images/element-11.webp" loading="lazy" />
+            </h3>
+            <img src="./public/images/element-11.webp" alt="3 mức trưởng thành DQ" loading="lazy" decoding="async" />
           </div>
 
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- End section -->
 
   <section class="c-section__dp-03">
@@ -63,9 +63,9 @@
 
       <div class="row group">
         <figure class="col-12 col-md-6 item">
-          <a class="inner" href="#">
+          <a class="inner" href="#" aria-label="Quản lý thời gian tiếp xúc màn hình">
             <div class="img">
-              <img src="./public/images/ic-1.webp" loading="lazy" />
+              <img src="./public/images/ic-1.webp" alt="Quản lý thời gian tiếp xúc màn hình" loading="lazy" decoding="async" />
             </div>
             <div class="info">
               <h3 class="title" style="color: #F4AA1A;">Quản lý thời gian tiếp xúc<br>màn hình</h3>
@@ -74,9 +74,9 @@
           </a>
         </figure> <!-- / item -->
         <figure class="col-12 col-md-6 item">
-          <a class="inner" href="#">
+          <a class="inner" href="#" aria-label="Quản lý an ninh mạng">
             <div class="img">
-              <img src="./public/images/ic-2.webp" loading="lazy" />
+              <img src="./public/images/ic-2.webp" alt="Quản lý an ninh mạng" loading="lazy" decoding="async" />
             </div>
             <div class="info">
               <h3 class="title" style="color: #3CB6F4;">Quản lý an ninh mạng</h3>
@@ -85,9 +85,9 @@
           </a>
         </figure> <!-- / item -->
         <figure class="col-12 col-md-6 item">
-          <a class="inner" href="#">
+          <a class="inner" href="#" aria-label="Quản lý bắt nạt trên mạng">
             <div class="img">
-              <img src="./public/images/ic-3.webp" loading="lazy" />
+              <img src="./public/images/ic-3.webp" alt="Quản lý bắt nạt trên mạng" loading="lazy" decoding="async" />
             </div>
             <div class="info">
               <h3 class="title" style="color: #ED444A;">Quản lý bắt nạt trên mạng</h3>
@@ -96,9 +96,9 @@
           </a>
         </figure> <!-- / item -->
         <figure class="col-12 col-md-6 item">
-          <a class="inner" href="#">
+          <a class="inner" href="#" aria-label="Quản lý dấu chân kỹ thuật số">
             <div class="img">
-              <img src="./public/images/ic-4.webp" loading="lazy" />
+              <img src="./public/images/ic-4.webp" alt="Quản lý dấu chân kỹ thuật số" loading="lazy" decoding="async" />
             </div>
             <div class="info">
               <h3 class="title" style="color: #9140FF;">Quản lý dấu chân kỹ thuật số</h3>
@@ -107,9 +107,9 @@
           </a>
         </figure> <!-- / item -->
         <figure class="col-12 col-md-6 item">
-          <a class="inner" href="#">
+          <a class="inner" href="#" aria-label="Quản lý quyền riêng tư">
             <div class="img">
-              <img src="./public/images/ic-5.webp" loading="lazy" />
+              <img src="./public/images/ic-5.webp" alt="Quản lý quyền riêng tư" loading="lazy" decoding="async" />
             </div>
             <div class="info">
               <h3 class="title" style="color: #366AF6;">Quản lý quyền riêng tư</h3>
@@ -118,9 +118,9 @@
           </a>
         </figure> <!-- / item -->
         <figure class="col-12 col-md-6 item">
-          <a class="inner" href="#">
+          <a class="inner" href="#" aria-label="Tư duy phản biện">
             <div class="img">
-              <img src="./public/images/ic-6.webp" loading="lazy" />
+              <img src="./public/images/ic-6.webp" alt="Tư duy phản biện" loading="lazy" decoding="async" />
             </div>
             <div class="info">
               <h3 class="title" style="color: #FF65A5;">Tư duy phản biện</h3>
@@ -129,9 +129,9 @@
           </a>
         </figure> <!-- / item -->
         <figure class="col-12 col-md-6 item">
-          <a class="inner" href="#">
+          <a class="inner" href="#" aria-label="Danh tính công dân kỹ thuật số">
             <div class="img">
-              <img src="./public/images/ic-7.webp" loading="lazy" />
+              <img src="./public/images/ic-7.webp" alt="Danh tính công dân kỹ thuật số" loading="lazy" decoding="async" />
             </div>
             <div class="info">
               <h3 class="title" style="color: #43D78B;">Danh tính công dân kỹ thuật số</h3>
@@ -140,9 +140,9 @@
           </a>
         </figure> <!-- / item -->
         <figure class="col-12 col-md-6 item">
-          <a class="inner" href="#">
+          <a class="inner" href="#" aria-label="Cảm thông kỹ thuật số">
             <div class="img">
-              <img src="./public/images/ic-8.webp" loading="lazy" />
+              <img src="./public/images/ic-8.webp" alt="Cảm thông kỹ thuật số" loading="lazy" decoding="async" />
             </div>
             <div class="info">
               <h3 class="title" style="color: #FF9041;">Cảm thông kỹ thuật số</h3>

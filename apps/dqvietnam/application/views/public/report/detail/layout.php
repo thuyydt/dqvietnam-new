@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <title>Báo cáo</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Báo cáo tổng quan DQ - Đánh giá năng lực số của học sinh">
+  <meta name="theme-color" content="#ffffff">
 
   <link rel="icon" href="<?= base_url('public/favicon.ico') ?>" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -57,20 +59,20 @@
     ],
   ];
   ?>
-  <main>
+  <main role="main">
     <header>
       <div class="container">
         <div class="d-flex justify-content-between">
           <div class="info">
-            <h2>BÁO CÁO TỔNG QUAN DQ</h2>
+            <h1>BÁO CÁO TỔNG QUAN DQ</h1>
             <div class="d-flex mt-2 justify-content-sm-between">
               <p>Họ tên: <?= $info->full_name ?></p>
               <p style="margin-left: 30px">Email: <?= $info->username ?></p>
             </div>
           </div>
           <div class="d-flex flex-column align-items-center">
-            <img width="250" src="/public/admin/img/report/logo.webp" alt="logo" loading="lazy" />
-            <button class="btn mt-3 btn-download btn-default">Tải xuống <i class="fa fa-download"></i></button>
+            <img width="250" src="/public/admin/img/report/logo.webp" alt="DQ Vietnam Logo" loading="lazy" decoding="async" />
+            <button class="btn mt-3 btn-download btn-default" aria-label="Tải xuống báo cáo">Tải xuống <i class="fa fa-download" aria-hidden="true"></i></button>
           </div>
         </div>
       </div>

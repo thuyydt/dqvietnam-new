@@ -1,10 +1,12 @@
 <main class="c-main" id="page-forget-password">
   <div class="account-box">
     <div class="wrapper">
-      <button class="btn-exit"></button>
+      <button class="btn-exit" aria-label="Close"></button>
       <div class="col left">
 
-        <div class="img"><img src="<?= $this->templates_assets ?>images/element-05.webp" loading="lazy"></div>
+        <div class="img">
+          <img src="<?= $this->templates_assets ?>images/element-05.webp" alt="Forgot Password Illustration" width="500" height="500" loading="lazy">
+        </div>
 
       </div>
       <div class="col right">
@@ -14,7 +16,7 @@
 
           <form class="form" id="form-forget-password">
             <div class="form-group">
-              <input name="email" type="text" class="form-control input-account" placeholder="Email">
+              <input name="email" type="text" class="form-control input-account" placeholder="Email" aria-label="Email">
               <!-- <div class="form-text">Thông báo lỗi</div> -->
             </div>
             <button type="submit" class="btn">GỬI</button>
