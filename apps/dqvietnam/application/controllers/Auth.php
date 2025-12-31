@@ -35,6 +35,7 @@ class Auth extends Public_Controller
   public function register($type = '')
   {
     $this->settings['meta_title'] = 'Đăng Ký';
+    $this->settings['meta_desc'] = 'Đăng ký tài khoản thành viên tại DQ Vietnam để trải nghiệm các khóa học và dịch vụ tốt nhất.';
     $layout = 'register_';
     switch ($type) {
       case 'personal':

@@ -46,7 +46,7 @@
   <meta property="thumbnail" content="<?= MEDIA_URL . ($this->settings['image_share_default'] ?? '') ?>" />
   <meta property="og:url" content="<?php echo current_url(); ?>" />
   <!--Meta Facebook Homepage-->
-  <link rel="canonical" href="<?php echo base_url(); ?>" />
+  <link rel="canonical" href="<?php echo current_url(); ?>" />
 <?php endif; ?>
 <link rel="icon"
   href="<?php echo !empty($this->settings['favicon']) ? getImageThumb($this->settings['favicon'], 32, 32) : base_url("public/favicon.ico"); ?>"

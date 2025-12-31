@@ -181,7 +181,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <?php
     $this->load->view($this->template_path . '_header');
     echo !empty($main_content) ? $main_content : '';
-    $this->load->view($this->template_path . '_footer');
     ?>
   </div>
 
